@@ -144,15 +144,15 @@ The extractor replaces the old number +971 55 765 1866 in every format it appear
 
 1. **Deploy to Vercel.** Import the repo with **Root Directory** set to `website`. Commit `public/wp-content/uploads/` (about 29 MB); it holds every site image now that WordPress is going away.
 2. **Resend.**
-   - Verify `junkremovalgarbage.com` (or a subdomain) in Resend by adding its SPF/DKIM DNS records.
-   - Set `RESEND_API_KEY`, `QUOTE_TO_EMAIL` and `QUOTE_FROM_EMAIL` (a sender on the verified domain) in Vercel, then redeploy.
-   - Without these, `/api/quote/` returns a 503 and tells visitors to call or WhatsApp. Calls, WhatsApp and the form's "Send via WhatsApp" button work without any setup.
+   - Verify `junkremovalgarbage.com` in Resend by adding its SPF/DKIM DNS records. The form sends from `quotes@junkremovalgarbage.com`.
+   - Set `RESEND_API_KEY` in Vercel, then redeploy. It is the only environment variable the site uses. Enquiries go to the business email shown on the site; the addresses are set in `app/api/quote/route.ts`.
+   - Without the key, `/api/quote/` returns a 503 and tells visitors to call or WhatsApp. Calls, WhatsApp and the form's "Send via WhatsApp" button work without any setup.
 3. **Domain.**
    - Add `junkremovalgarbage.com` and `www` in Vercel → Domains, with the non-www domain as primary.
    - Point DNS at Vercel as instructed.
    - Keep any existing MX/email DNS records when changing DNS, so mailboxes keep working.
 4. **Spam protection.** The form has a honeypot field and a best-effort rate limit (per function instance). Consider adding Cloudflare Turnstile or the Vercel Firewall if spam appears.
-5. **Analytics and verification.** Set `NEXT_PUBLIC_GA_ID` and `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` if used. Vercel Web Analytics can also be enabled from the dashboard.
+5. **Analytics and verification.** No analytics script is built in. Vercel Web Analytics can be enabled from the dashboard. Verify Google Search Console with a DNS TXT record at your domain provider.
 6. **Maps.** Area and contact pages use keyless Google Maps embeds. No setup is needed.
 7. **After launch.**
    - Submit `/sitemap.xml` in Google Search Console and watch the coverage report for 404s.

@@ -2,6 +2,10 @@ import { site } from '@/lib/content';
 
 export const runtime = 'nodejs';
 
+// Enquiries go to the business email shown on the site. The sender must be on a domain verified in Resend.
+const QUOTE_TO = site.email;
+const QUOTE_FROM = `${site.name} <quotes@junkremovalgarbage.com>`;
+
 const clean = (v: unknown, max = 2000) => String(v ?? '').replace(/[\r\n]+/g, ' ').trim().slice(0, max);
 const escapeHtml = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -46,9 +50,9 @@ export async function POST(req: Request) {
     return Response.json({ message: `Too many requests. Please call or WhatsApp us on ${site.phone}.` }, { status: 429 });
   }
 
-  const { RESEND_API_KEY, QUOTE_TO_EMAIL, QUOTE_FROM_EMAIL } = process.env;
-  if (!RESEND_API_KEY || !QUOTE_TO_EMAIL) {
-    console.error('[quote] RESEND_API_KEY / QUOTE_TO_EMAIL not configured; enquiry not sent', { name, phone, service, area, page });
+  const { RESEND_API_KEY } = process.env;
+  if (!RESEND_API_KEY) {
+    console.error('[quote] RESEND_API_KEY not configured; enquiry not sent', { name, phone, service, area, page });
     return Response.json(
       { message: `Online enquiries are temporarily unavailable. Please call or WhatsApp us on ${site.phone}.` },
       { status: 503 },
@@ -77,8 +81,8 @@ ${rows.map(([k, v]) => `<tr><td style="color:#555"><strong>${k}</strong></td><td
     method: 'POST',
     headers: { Authorization: `Bearer ${RESEND_API_KEY}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      from: QUOTE_FROM_EMAIL || `${site.name} <onboarding@resend.dev>`,
-      to: QUOTE_TO_EMAIL.split(',').map((s) => s.trim()).filter(Boolean),
+      from: QUOTE_FROM,
+      to: [QUOTE_TO],
       reply_to: email || undefined,
       subject: `New quote request: ${service || 'Junk removal'} – ${name}`,
       text,

@@ -70,7 +70,7 @@ export const pages = pagesData as unknown as Page[];
 export const posts = postsData as unknown as Post[]; // newest first
 export const site = {
   ...siteData,
-  url: (process.env.NEXT_PUBLIC_SITE_URL || siteData.url).replace(/\/$/, ''),
+  url: siteData.url.replace(/\/$/, ''),
 };
 export const navigation = navData as { primary: NavItem[]; footer: NavItem[] };
 export const terms = termsData as { categories: Record<string, string>; tags: Record<string, string> };

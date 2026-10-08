@@ -18,7 +18,7 @@ A Next.js 16 (App Router) site that replaces the old WordPress/Elementor site. I
 ```bash
 cd website
 npm install
-cp .env.example .env.local      # then add your Resend key (see below)
+cp .env.example .env.local      # then add RESEND_API_KEY (see below)
 npm run dev                     # http://localhost:3000
 ```
 
@@ -36,7 +36,7 @@ npm start                       # serves the build on port 3000
    - **Root Directory:** `website` (if the repo root is the parent folder)
    - **Framework preset:** Next.js (detected automatically)
    - **Build command, output directory and Node version:** leave the defaults
-3. Under **Settings → Environment Variables**, add the variables in the table below, at least for **Production**.
+3. Under **Settings → Environment Variables**, add `RESEND_API_KEY` (the only variable needed).
 4. Deploy, then open the `*.vercel.app` URL and test the quote form.
 5. Under **Settings → Domains**, add `junkremovalgarbage.com` and `www.junkremovalgarbage.com`.
    - Make `junkremovalgarbage.com` (no www) the primary domain and have www redirect to it, because every canonical URL uses the non-www domain.
@@ -48,13 +48,17 @@ Preview deployments automatically serve a `robots.txt` that blocks crawling (`VE
 
 ## Resend setup (quote form)
 
+`RESEND_API_KEY` is the only environment variable the site uses.
+
 1. Create a Resend account and an API key with **Sending access**.
-2. Under **Domains**, add `junkremovalgarbage.com` (or a subdomain such as `mail.junkremovalgarbage.com`). Add the DNS records Resend shows (SPF/DKIM) at your DNS provider, then wait for it to show as **Verified**.
-3. Set these in Vercel:
-   - `RESEND_API_KEY`: the key
-   - `QUOTE_TO_EMAIL`: the inbox that should receive enquiries (comma-separate several addresses)
-   - `QUOTE_FROM_EMAIL`: a sender on the verified domain, e.g. `Shanan Junk Removal <quotes@junkremovalgarbage.com>`
-4. Redeploy. Environment variable changes only apply to new deployments.
+2. Under **Domains**, add `junkremovalgarbage.com`. Add the DNS records Resend shows (SPF/DKIM) at your DNS provider, then wait until it shows **Verified**. The form sends from `quotes@junkremovalgarbage.com`, so this step is required.
+3. In Vercel → **Settings → Environment Variables**, add `RESEND_API_KEY`, then redeploy. Environment variable changes only apply to new deployments.
+
+Where enquiries go:
+
+- **To:** the business email shown on the site (`email` in `content/site.json`, currently `shanancargotransportsofficial@gmail.com`).
+- **From:** `Shanan Junk Removal <quotes@junkremovalgarbage.com>`.
+- **To change either address:** edit `QUOTE_TO` / `QUOTE_FROM` at the top of `app/api/quote/route.ts`.
 
 What each email contains:
 
@@ -63,21 +67,7 @@ What each email contains:
 - one-tap **Call customer** and **WhatsApp customer** links
 - `Reply-To` set to the customer's email, when they gave one
 
-Until the domain is verified, Resend only allows sending from `onboarding@resend.dev` to the email address of your own Resend account. That works for a first test.
-
-If the key is missing or Resend returns an error, visitors see a message asking them to call or WhatsApp instead. Errors are logged in Vercel under **Logs**.
-
-## Environment variables
-
-| Variable | Required | Purpose |
-| --- | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | recommended | Canonical origin, no trailing slash. Defaults to `https://junkremovalgarbage.com`. |
-| `RESEND_API_KEY` | yes for the quote form | Resend API key. |
-| `QUOTE_TO_EMAIL` | yes for the quote form | Inbox(es) that receive enquiries. |
-| `QUOTE_FROM_EMAIL` | yes once the domain is verified | Sender address on your Resend-verified domain. |
-| `NEXT_PUBLIC_GA_ID` | optional | Google Analytics 4 measurement ID. |
-| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | optional | Google Search Console meta-tag token. |
-| `NEXT_PUBLIC_NOINDEX` | optional | Set to `true` to block crawling on a deployment. Vercel previews already do this automatically. |
+If the key is missing or Resend returns an error (for example, the domain isn't verified yet), visitors see a message asking them to call or WhatsApp instead. Errors are logged in Vercel under **Logs**.
 
 ## Changing the phone number or business details
 
