@@ -33,7 +33,7 @@ export function ServiceTemplate({ page, description }: { page: Page; description
 
       <HowItWorks />
 
-      <section className="pb-20">
+      <section className="pb-14 sm:pb-20">
         <div className="container-x">
           <h2 className="text-2xl font-bold">Other services</h2>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

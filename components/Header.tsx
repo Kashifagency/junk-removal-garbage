@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { navigation, site, telHref } from '@/lib/content';
+import { navigation, site, telHref, whatsappHref } from '@/lib/content';
 import { Icon } from './Icon';
 import { MobileNav } from './MobileNav';
 
@@ -10,13 +10,13 @@ export const primaryNav = [...navigation.primary].sort((a, b) => ORDER.indexOf(a
 
 export function Logo({ invert = false }: { invert?: boolean }) {
   return (
-    <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label={`${site.name} – home`}>
-      <Image src="/brand/mark.png" alt="" width={44} height={44} className="h-10 w-10 sm:h-11 sm:w-11" priority />
-      <span className="leading-none">
-        <span className={`block font-display text-[1.05rem] font-extrabold tracking-tight sm:text-lg ${invert ? 'text-white' : 'text-ink-900'}`}>
+    <Link href="/" className="flex min-w-0 shrink items-center gap-2 sm:gap-2.5" aria-label={`${site.name} – home`}>
+      <Image src="/brand/mark.png" alt="" width={44} height={44} className="h-9 w-9 shrink-0 sm:h-11 sm:w-11" priority />
+      <span className="min-w-0 leading-none">
+        <span className={`block truncate font-display text-[0.95rem] font-extrabold tracking-tight min-[380px]:text-[1.05rem] sm:text-lg ${invert ? 'text-white' : 'text-ink-900'}`}>
           JunkRemoval<span className="text-brand-500">Garbage</span>
         </span>
-        <span className={`mt-1 block text-[0.65rem] font-semibold tracking-[0.22em] uppercase ${invert ? 'text-ink-300' : 'text-ink-400'}`}>
+        <span className={`mt-1 block truncate text-[0.6rem] font-semibold tracking-[0.18em] uppercase sm:text-[0.65rem] sm:tracking-[0.22em] ${invert ? 'text-ink-300' : 'text-ink-400'}`}>
           Shanan Junk Removal
         </span>
       </span>
@@ -40,7 +40,7 @@ export function Header() {
           </div>
         </div>
       </div>
-      <div className="container-x flex h-[4.25rem] items-center justify-between gap-6">
+      <div className="container-x flex h-[4.25rem] items-center justify-between gap-3 sm:gap-6">
         <Logo />
         <nav aria-label="Main" className="hidden lg:block">
           <ul className="flex items-center gap-1">
@@ -75,7 +75,7 @@ export function Header() {
             <Icon name="phone" className="h-4 w-4" />
             {site.phone}
           </a>
-          <MobileNav items={primaryNav} />
+          <MobileNav items={primaryNav} phone={site.phone} telHref={telHref} whatsappHref={whatsappHref()} />
         </div>
       </div>
     </header>

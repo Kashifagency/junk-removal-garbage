@@ -16,7 +16,7 @@ export function ServiceGrid({ cards }: { cards: Card[] }) {
         const inner = (
           <>
             {c.image && (
-              <div className={`relative aspect-[4/3] overflow-hidden ${cards.length === 5 && i < 2 ? "lg:aspect-[16/8]" : ""}`}>
+              <div className={`relative aspect-[16/9] overflow-hidden sm:aspect-[4/3] ${cards.length === 5 && i < 2 ? "lg:aspect-[16/8]" : ""}`}>
                 <Image
                   src={c.image.src}
                   alt={c.image.alt || c.title}
@@ -26,9 +26,9 @@ export function ServiceGrid({ cards }: { cards: Card[] }) {
                 />
               </div>
             )}
-            <div className="flex flex-1 flex-col p-6">
+            <div className="flex flex-1 flex-col p-5 sm:p-6">
               <h3 className="text-xl font-bold">{c.title}</h3>
-              <p className="mt-3 flex-1 text-[0.95rem] leading-relaxed text-ink-500">{c.text}</p>
+              <p className="mt-3 line-clamp-4 flex-1 text-[0.95rem] leading-relaxed text-ink-500 sm:line-clamp-none">{c.text}</p>
               {c.href && (
                 <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600">
                   Learn more <Icon name="arrowRight" className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -59,7 +59,7 @@ export function FeatureGrid({ features, dark = false }: { features: Feature[]; d
   return (
     <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {features.map((f, i) => (
-        <li key={f.title + i} className={`rounded-3xl p-7 ${dark ? 'bg-white/5 ring-1 ring-white/10' : 'card'}`}>
+        <li key={f.title + i} className={`rounded-3xl p-6 sm:p-7 ${dark ? 'bg-white/5 ring-1 ring-white/10' : 'card'}`}>
           <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-500/10 text-brand-500">
             <Icon name={iconFromFa(String(f.icon || ''), FEATURE_ICONS[i % FEATURE_ICONS.length])} className="h-6 w-6" />
           </span>
@@ -73,10 +73,10 @@ export function FeatureGrid({ features, dark = false }: { features: Feature[]; d
 
 export function AreasBlock({ block }: { block: Extract<Block, { type: 'areas' }> }) {
   return (
-    <section className="bg-sand py-20">
+    <section className="bg-sand py-14 sm:py-20">
       <div className="container-x">
         <SectionHeading title={block.title} text={block.subtitle} center />
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-8 sm:mt-12 grid gap-6 md:grid-cols-3">
           {block.columns.map((col) => (
             <div key={col.title} className="card p-7">
               <h3 className="border-b-2 border-brand-400 pb-3 text-lg font-bold">{col.title}</h3>
@@ -98,7 +98,7 @@ export function AreasBlock({ block }: { block: Extract<Block, { type: 'areas' }>
 export function MapEmbed({ address, title }: { address: string; title: string }) {
   const q = encodeURIComponent(address.includes('Dubai') ? address : `${address}, Dubai`);
   return (
-    <section className="py-20">
+    <section className="py-14 sm:py-20">
       <div className="container-x">
         <SectionHeading eyebrow="Location" title={title} />
         <div className="mt-8 overflow-hidden rounded-3xl ring-1 ring-ink-100">
@@ -121,7 +121,7 @@ export function SplitIntro({ section }: { section: Section }) {
   const heading = section.blocks.find((b) => b.type === 'heading') as Extract<Block, { type: 'heading' }> | undefined;
   const texts = section.blocks.filter((b): b is Extract<Block, { type: 'text' }> => b.type === 'text');
   return (
-    <section className="py-20">
+    <section className="py-14 sm:py-20">
       <div className="container-x grid items-center gap-12 lg:grid-cols-2">
         <div className="relative">
           {images[0]?.image && (
@@ -152,7 +152,7 @@ export function ListSection({ section, tone = 'white' }: { section: Section; ton
   const text = section.blocks.find((b) => b.type === 'text') as Extract<Block, { type: 'text' }> | undefined;
   const list = section.blocks.find((b) => b.type === 'list') as Extract<Block, { type: 'list' }> | undefined;
   return (
-    <section className={`py-16 ${tone === 'sand' ? 'bg-sand' : ''}`}>
+    <section className={`py-12 sm:py-16 ${tone === 'sand' ? 'bg-sand' : ''}`}>
       <div className="container-x grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
           {heading && <SectionHeading title={heading.title.replace(/:$/, '')} />}
@@ -214,10 +214,10 @@ export function Pagination({ base, page, totalPages }: { base: string; page: num
   if (totalPages <= 1) return null;
   const href = (n: number) => (n === 1 ? base : `${base}page/${n}/`);
   return (
-    <nav aria-label="Pagination" className="mt-14 flex items-center justify-center gap-2">
+    <nav aria-label="Pagination" className="mt-14 flex flex-wrap items-center justify-center gap-2">
       {page > 1 && (
-        <Link href={href(page - 1)} rel="prev" className="btn-outline !px-4">
-          <Icon name="chevronLeft" className="h-4 w-4" /> Previous
+        <Link href={href(page - 1)} rel="prev" className="btn-outline !px-3 sm:!px-4">
+          <Icon name="chevronLeft" className="h-4 w-4" /> <span className="sr-only sm:not-sr-only">Previous</span>
         </Link>
       )}
       <ul className="flex gap-1.5">
@@ -234,8 +234,8 @@ export function Pagination({ base, page, totalPages }: { base: string; page: num
         ))}
       </ul>
       {page < totalPages && (
-        <Link href={href(page + 1)} rel="next" className="btn-outline !px-4">
-          Next <Icon name="chevronRight" className="h-4 w-4" />
+        <Link href={href(page + 1)} rel="next" className="btn-outline !px-3 sm:!px-4">
+          <span className="sr-only sm:not-sr-only">Next</span> <Icon name="chevronRight" className="h-4 w-4" />
         </Link>
       )}
     </nav>

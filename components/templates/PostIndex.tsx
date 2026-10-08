@@ -44,7 +44,7 @@ export function PostIndex({
         })}
       />
       <PageHero title={page > 1 ? `${title} – Page ${page}` : title} eyebrow={eyebrow} intro={intro} trail={trail} />
-      <section className="py-20">
+      <section className="py-14 sm:py-20">
         <div className="container-x">
           <PostGrid posts={items} />
           <Pagination base={base} page={page} totalPages={totalPages} />

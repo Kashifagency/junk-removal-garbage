@@ -20,19 +20,19 @@ export function AboutTemplate({ page, description }: { page: Page; description: 
       <JsonLd data={graph(breadcrumbLd(trail))} />
       <PageHero title="About Shanan Junk Removal" eyebrow="About us" intro={description} trail={trail} image={blocksOf(page, 'banner')[0]?.image} />
       {intro && <SplitIntro section={intro} />}
-      <section className="bg-ink-950 py-20">
+      <section className="bg-ink-950 py-14 sm:py-20">
         <div className="container-x">
           <p className="eyebrow !text-brand-300">Why choose us</p>
           <h2 className="mt-3 max-w-3xl text-3xl leading-tight font-extrabold tracking-tight text-white sm:text-4xl">Your reliable junk removal partner in Dubai</h2>
-          <div className="mt-12">
+          <div className="mt-8 sm:mt-12">
             <FeatureGrid features={features} dark />
           </div>
         </div>
       </section>
-      <section className="py-20">
+      <section className="py-14 sm:py-20">
         <div className="container-x">
           <SectionHeading eyebrow={servicesHeading?.eyebrow} title={servicesHeading?.title ?? 'Our services'} />
-          <div className="mt-12">
+          <div className="mt-8 sm:mt-12">
             <ServiceGrid cards={blocksOf(getPageByPath('/services/')!, 'card')} />
           </div>
         </div>
@@ -50,7 +50,7 @@ export function CareersTemplate({ page, description }: { page: Page; description
     <>
       <JsonLd data={graph(breadcrumbLd(trail))} />
       <PageHero title="Careers" eyebrow="Join our team" intro={description} trail={trail} />
-      <section className="py-20">
+      <section className="py-14 sm:py-20">
         <div className="container-x grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="prose-content">
             <h2>Work with Shanan Junk Removal</h2>
@@ -108,7 +108,7 @@ export function ContactTemplate({ page, description }: { page: Page; description
       <PageHero title={heading?.title ?? 'Contact us'} eyebrow={heading?.eyebrow} intro={heading?.text || description} trail={trail} image={blocksOf(page, 'banner')[0]?.image}>
         <CallButtons className="mt-8" />
       </PageHero>
-      <section className="py-20">
+      <section className="py-14 sm:py-20">
         <div className="container-x grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             {text && <div className="prose-content" dangerouslySetInnerHTML={{ __html: text.html }} />}
@@ -120,7 +120,7 @@ export function ContactTemplate({ page, description }: { page: Page; description
                       <Icon name={iconFromFa(f.icon)} className="h-5 w-5" />
                     </span>
                     <span className="text-xs font-semibold tracking-wider text-ink-400 uppercase">{titleFor(f.icon, f.title)}</span>
-                    <span className="font-semibold break-all text-ink-900">{f.text}</span>
+                    <span className="text-[0.85rem] font-semibold break-all text-ink-900 min-[400px]:text-base">{f.text}</span>
                   </a>
                 </li>
               ))}
@@ -148,7 +148,7 @@ export function ServiceAreasTemplate({ page, description }: { page: Page; descri
     <>
       <JsonLd data={graph(breadcrumbLd(trail))} />
       <PageHero title="Junk removal service areas in Dubai" eyebrow="Service areas" intro={description} trail={trail} image={blocksOf(areaPages[1] ?? page, 'hero')[0]?.image} />
-      <section className="py-20">
+      <section className="py-14 sm:py-20">
         <div className="container-x">
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {areaPages.map((p) => {

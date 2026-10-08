@@ -29,7 +29,7 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
       <section className="relative isolate overflow-hidden bg-ink-950">
         {hero?.image && <Image src={hero.image.src} alt="" fill priority sizes="100vw" className="-z-10 object-cover object-[70%_center] opacity-60" />}
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-950 via-ink-950/85 to-ink-950/30" />
-        <div className="container-x py-16 sm:py-24">
+        <div className="container-x py-12 sm:py-16 sm:py-24">
           <Breadcrumbs trail={trail} />
           <p className="eyebrow mt-8 !text-brand-300">{subline}</p>
           <h1 className="mt-4 max-w-3xl text-4xl leading-[1.06] font-extrabold tracking-tight text-white sm:text-5xl">
@@ -41,10 +41,10 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-14 sm:py-20">
         <div className="container-x">
           <SectionHeading eyebrow={servicesHeading?.eyebrow} title={servicesHeading?.title ?? 'Our services'} />
-          <div className="mt-12">
+          <div className="mt-8 sm:mt-12">
             <ServiceGrid cards={blocksOf(page, 'card').map((c) => ({ ...c, href: c.href ?? servicePages.find((p) => p.title === c.title)?.path }))} />
           </div>
         </div>
@@ -52,11 +52,11 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
 
       {areas && <AreasBlock block={areas} />}
 
-      <section className="bg-ink-950 py-20">
+      <section className="bg-ink-950 py-14 sm:py-20">
         <div className="container-x">
           <p className="eyebrow !text-brand-300">{whyHeading?.eyebrow}</p>
           <h2 className="mt-3 max-w-3xl text-3xl leading-tight font-extrabold tracking-tight text-white sm:text-4xl">{whyHeading?.title}</h2>
-          <div className="mt-12">
+          <div className="mt-8 sm:mt-12">
             <FeatureGrid features={blocksOf(page, 'feature')} dark />
           </div>
         </div>
@@ -64,7 +64,7 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
 
       {map && <MapEmbed address={map.address.replace(/,?\s*Dubai$/i, '') + ', Dubai'} title={`Serving ${name} and nearby communities`} />}
 
-      <section className="pb-20">
+      <section className="pb-14 sm:pb-20">
         <div className="container-x">
           <h2 className="text-2xl font-bold">Other areas we cover</h2>
           <ul className="mt-6 flex flex-wrap gap-2.5">

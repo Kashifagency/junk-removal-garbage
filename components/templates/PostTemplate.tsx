@@ -86,7 +86,7 @@ export function PostTemplate({ post, description }: { post: Post; description: s
         </div>
       </article>
 
-      <section className="py-20">
+      <section className="py-14 sm:py-20">
         <div className="container-x">
           <h2 className="text-3xl font-extrabold tracking-tight">Related articles</h2>
           <div className="mt-10">

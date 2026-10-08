@@ -34,7 +34,7 @@ export default function HomePage() {
       <section className="relative isolate overflow-hidden bg-ink-950">
         {hero.image && <Image src={hero.image.src} alt="Shanan junk removal truck loaded with waste on a Dubai highway" fill priority sizes="100vw" className="-z-10 object-cover object-[70%_center]" />}
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-950 via-ink-950/85 to-ink-950/20" />
-        <div className="container-x py-20 sm:py-28 lg:py-36">
+        <div className="container-x py-14 sm:py-20 sm:py-28 lg:py-36">
           <ul className="flex flex-wrap gap-2">
             {tagline.map((t) => (
               <li key={t} className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white ring-1 ring-white/15 backdrop-blur">
@@ -62,7 +62,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 sm:py-24">
+      <section className="py-14 sm:py-24">
         <div className="container-x">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <SectionHeading eyebrow={servicesHeading?.eyebrow} title={servicesHeading?.title ?? 'Our services'} />
@@ -70,19 +70,19 @@ export default function HomePage() {
               All services <Icon name="arrowRight" className="h-4 w-4" />
             </Link>
           </div>
-          <div className="mt-12">
+          <div className="mt-8 sm:mt-12">
             <ServiceGrid cards={cards} />
           </div>
         </div>
       </section>
 
-      <section className="bg-ink-950 py-20 sm:py-24">
+      <section className="bg-ink-950 py-14 sm:py-24">
         <div className="container-x">
           <div className="max-w-3xl">
             <p className="eyebrow !text-brand-300">{whyHeading?.eyebrow}</p>
             <h2 className="mt-3 text-3xl leading-tight font-extrabold tracking-tight text-white sm:text-4xl">{whyHeading?.title}</h2>
           </div>
-          <div className="mt-12">
+          <div className="mt-8 sm:mt-12">
             <FeatureGrid features={features} dark />
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function HomePage() {
 
       <HowItWorks />
 
-      <section className="bg-sand py-20">
+      <section className="bg-sand py-14 sm:py-20">
         <div className="container-x">
           <SectionHeading eyebrow="Service areas" title="Junk removal across Dubai’s communities" text="From Dubai Marina towers to Arabian Ranches villas, our team covers every part of Dubai." />
           <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -113,7 +113,7 @@ export default function HomePage() {
 
       <Faq items={defaultFaq} />
 
-      <section className="py-20">
+      <section className="py-14 sm:py-20">
         <div className="container-x">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <SectionHeading eyebrow="From the blog" title="Junk removal tips & guides" />
@@ -121,7 +121,7 @@ export default function HomePage() {
               Visit the blog <Icon name="arrowRight" className="h-4 w-4" />
             </Link>
           </div>
-          <div className="mt-12">
+          <div className="mt-8 sm:mt-12">
             <PostGrid posts={posts.slice(0, 3)} headingLevel="h3" />
           </div>
         </div>

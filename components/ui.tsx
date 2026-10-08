@@ -91,7 +91,7 @@ export function SectionHeading({ eyebrow, title, text, center = false, as: As = 
 export function Faq({ items, title = 'Frequently asked questions about junk removal in Dubai', eyebrow = 'FAQ' }: { items: FaqItem[]; title?: string; eyebrow?: string }) {
   if (!items.length) return null;
   return (
-    <section className="bg-sand py-20" aria-labelledby="faq-heading">
+    <section className="bg-sand py-14 sm:py-20" aria-labelledby="faq-heading">
       <div className="container-x grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
           <p className="eyebrow">{eyebrow}</p>
@@ -128,10 +128,10 @@ const STEPS = [
 
 export function HowItWorks() {
   return (
-    <section className="py-20">
+    <section className="py-14 sm:py-20">
       <div className="container-x">
         <SectionHeading eyebrow="How it works" title="Junk gone in four simple steps" center />
-        <ol className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-8 sm:mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((s, i) => (
             <li key={s.title} className="card relative p-6">
               <span className="absolute top-5 right-6 font-display text-5xl font-extrabold text-ink-50">{i + 1}</span>
@@ -151,9 +151,9 @@ export function HowItWorks() {
 /** Contact/quote section — every page ends with this (anchor #quote). */
 export function QuoteSection({ title = 'Get a free junk removal quote', text, defaultService, defaultArea }: { title?: string; text?: string; defaultService?: string; defaultArea?: string }) {
   return (
-    <section id="quote" className="scroll-mt-24 bg-ink-950 py-20" aria-labelledby="quote-heading">
+    <section id="quote" className="scroll-mt-24 bg-ink-950 py-14 sm:py-20" aria-labelledby="quote-heading">
       <div className="container-x grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-        <div className="text-ink-200">
+        <div className="min-w-0 text-ink-200">
           <p className="eyebrow !text-brand-300">Contact us</p>
           <h2 id="quote-heading" className="mt-3 text-3xl leading-tight font-extrabold tracking-tight text-white sm:text-4xl">
             {title}
@@ -191,13 +191,13 @@ export function QuoteSection({ title = 'Get a free junk removal quote', text, de
                 </span>
                 <span className="min-w-0">
                   <span className="block text-xs tracking-wider text-ink-400 uppercase">Email</span>
-                  <span className="block truncate font-semibold text-white">{site.email}</span>
+                  <span className="block text-[0.8rem] font-semibold break-all text-white min-[400px]:text-sm sm:text-base">{site.email}</span>
                 </span>
               </a>
             </li>
           </ul>
         </div>
-        <div className="rounded-3xl bg-white p-6 shadow-2xl sm:p-8">
+        <div className="min-w-0 rounded-3xl bg-white p-5 shadow-2xl sm:p-8">
           <QuoteForm whatsapp={site.whatsapp} phone={site.phone} defaultService={defaultService} defaultArea={defaultArea} />
         </div>
       </div>

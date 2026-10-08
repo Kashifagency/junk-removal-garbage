@@ -20,10 +20,10 @@ export default function ServicesPage() {
     <>
       <JsonLd data={graph(breadcrumbLd(trail), faqLd(defaultFaq))} />
       <PageHero title="Our Services" eyebrow="What we do" intro={seo.description} trail={trail} image={blocksOf(page, 'banner')[0]?.image} />
-      <section className="py-20">
+      <section className="py-14 sm:py-20">
         <div className="container-x">
           <SectionHeading title={heading?.title ?? 'Complete junk removal & waste management services in Dubai'} />
-          <div className="mt-12">
+          <div className="mt-8 sm:mt-12">
             <ServiceGrid cards={blocksOf(page, 'card')} />
           </div>
         </div>
