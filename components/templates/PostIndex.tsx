@@ -1,5 +1,5 @@
-import { Pagination, PostGrid } from '@/components/sections';
-import { JsonLd, PageHero, QuoteSection } from '@/components/ui';
+import { Pagination, PostCard, PostGrid } from '@/components/sections';
+import { JsonLd, PageHeader, QuoteSection } from '@/components/ui';
 import { absoluteUrl, paginate, type Post } from '@/lib/content';
 import { breadcrumbLd, graph } from '@/lib/seo';
 
@@ -30,6 +30,7 @@ export function PostIndex({
     { name: crumb, path: base },
     ...(page > 1 ? [{ name: `Page ${page}`, path }] : []),
   ];
+  const [lead, ...rest] = page === 1 && items.length > 3 ? items : [undefined, ...items];
   return (
     <>
       <JsonLd
@@ -43,10 +44,15 @@ export function PostIndex({
           },
         })}
       />
-      <PageHero title={page > 1 ? `${title} – Page ${page}` : title} eyebrow={eyebrow} intro={intro} trail={trail} />
+      <PageHeader title={page > 1 ? `${title} — page ${page}` : title} kicker={eyebrow} intro={intro} trail={trail} />
       <section className="py-14 sm:py-20">
         <div className="container-x">
-          <PostGrid posts={items} />
+          {lead && (
+            <div className="mb-16 border-b border-line pb-16">
+              <PostCard post={lead} size="lg" row />
+            </div>
+          )}
+          <PostGrid posts={rest.filter((p): p is Post => !!p)} />
           <Pagination base={base} page={page} totalPages={totalPages} />
         </div>
       </section>

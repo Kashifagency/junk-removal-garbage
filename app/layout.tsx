@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Bricolage_Grotesque, Plus_Jakarta_Sans } from 'next/font/google';
+import { Archivo, DM_Sans } from 'next/font/google';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { StickyCta } from '@/components/StickyCta';
@@ -8,8 +8,8 @@ import { site } from '@/lib/content';
 import { graph, localBusinessLd, websiteLd } from '@/lib/seo';
 import './globals.css';
 
-const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-jakarta', display: 'swap' });
-const bricolage = Bricolage_Grotesque({ subsets: ['latin'], variable: '--font-bricolage', display: 'swap', weight: ['600', '700', '800'] });
+const body = DM_Sans({ subsets: ['latin'], variable: '--font-body', display: 'swap' });
+const display = Archivo({ subsets: ['latin'], variable: '--font-display-face', display: 'swap', axes: ['wdth'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -20,13 +20,13 @@ export const metadata: Metadata = {
   alternates: { types: { 'application/rss+xml': [{ url: '/feed/', title: `${site.name} – Blog` }] } },
 };
 
-export const viewport: Viewport = { themeColor: '#0a111b', width: 'device-width', initialScale: 1 };
+export const viewport: Viewport = { themeColor: '#18150f', width: 'device-width', initialScale: 1 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${jakarta.variable} ${bricolage.variable}`}>
+    <html lang="en" className={`${body.variable} ${display.variable}`}>
       <body>
-        <a href="#main" className="sr-only z-50 rounded-full bg-brand-500 px-4 py-2 text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3">
+        <a href="#main" className="sr-only z-[70] rounded-full bg-brand-500 px-4 py-2 text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3">
           Skip to content
         </a>
         <Header />

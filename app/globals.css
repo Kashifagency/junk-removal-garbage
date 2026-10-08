@@ -1,50 +1,72 @@
 @import 'tailwindcss';
 
+/* ------------------------------------------------------------------ design tokens */
 @theme {
-  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-bricolage), var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display-face), var(--font-body), ui-sans-serif, system-ui, sans-serif;
 
+  /* Brand orange (from the logo) */
   --color-brand-50: #fff4ec;
-  --color-brand-100: #ffe4d1;
-  --color-brand-200: #ffc49e;
-  --color-brand-300: #ff9c62;
-  --color-brand-400: #fb7c33;
+  --color-brand-100: #fde6d6;
+  --color-brand-200: #fbc8a6;
+  --color-brand-300: #f8a36f;
+  --color-brand-400: #f5843f;
   --color-brand-500: #f26a1b;
-  --color-brand-600: #d9530b;
-  --color-brand-700: #b3410c;
-  --color-brand-800: #8f3611;
-  --color-brand-900: #742f11;
+  --color-brand-600: #d95509;
+  --color-brand-700: #b0430b;
+  --color-brand-800: #8b3710;
+  --color-brand-900: #6f2f11;
 
-  --color-ink-50: #f5f7fa;
-  --color-ink-100: #e8ecf2;
-  --color-ink-200: #cdd5e0;
-  --color-ink-300: #a3b0c2;
-  --color-ink-400: #71819a;
-  --color-ink-500: #4f5f78;
-  --color-ink-600: #3b4a61;
-  --color-ink-700: #2b384c;
-  --color-ink-800: #1b2636;
-  --color-ink-900: #111a27;
-  --color-ink-950: #0a111b;
+  /* Warm neutrals */
+  --color-ink-50: #f7f5f1;
+  --color-ink-100: #ece8e1;
+  --color-ink-200: #dcd5ca;
+  --color-ink-300: #bdb3a4;
+  --color-ink-400: #94897a;
+  --color-ink-500: #6f665a;
+  --color-ink-600: #544c42;
+  --color-ink-700: #3b352e;
+  --color-ink-800: #26221d;
+  --color-ink-900: #18150f;
+  --color-ink-950: #0f0d0a;
 
-  --color-sand: #faf7f2;
+  --color-paper: #f5f2ec;
+  --color-line: #e3ddd2;
   --color-whatsapp: #25d366;
+
+  --radius-card: 1.125rem;
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-marquee: marquee 40s linear infinite;
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
+/* ------------------------------------------------------------------ base */
 @layer base {
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6rem;
   }
   body {
-    @apply bg-white font-sans text-ink-700 antialiased;
+    @apply bg-white font-sans text-[1rem] text-ink-700 antialiased;
   }
   h1,
   h2,
   h3,
   h4 {
     @apply font-display text-ink-900;
+    font-stretch: 108%;
+    letter-spacing: -0.02em;
     text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+  ::selection {
+    @apply bg-brand-500 text-white;
   }
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-brand-500;
@@ -57,55 +79,86 @@
     *::before,
     *::after {
       animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
     }
   }
 }
 
+/* ------------------------------------------------------------------ utilities */
 @utility container-x {
-  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
-}
-@utility eyebrow {
-  @apply inline-flex items-center gap-2 text-xs font-bold tracking-[0.18em] text-brand-600 uppercase;
-  &::before {
-    content: '';
-    @apply h-0.5 w-6 rounded bg-brand-500;
-  }
-}
-@utility btn {
-  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200;
-}
-@utility btn-primary {
-  @apply btn bg-brand-500 text-white shadow-lg shadow-brand-500/25 hover:bg-brand-600;
-}
-@utility btn-whatsapp {
-  @apply btn bg-whatsapp text-ink-950 hover:bg-[#1fbe5a];
-}
-@utility btn-ghost {
-  @apply btn border border-white/30 text-white hover:bg-white/10;
-}
-@utility btn-outline {
-  @apply btn border border-ink-200 text-ink-800 hover:border-brand-500 hover:text-brand-600;
-}
-@utility card {
-  @apply rounded-3xl border border-ink-100 bg-white shadow-[0_1px_2px_rgba(16,24,40,0.04)];
+  @apply mx-auto w-full max-w-[84rem] px-4 sm:px-6 lg:px-10;
 }
 
-/* Long-form article / rich text from WordPress */
+/* Section kicker: "01 — Services" */
+@utility kicker {
+  @apply inline-flex items-center gap-3 font-sans text-[0.72rem] font-semibold tracking-[0.2em] text-ink-500 uppercase;
+}
+
+@utility display-xl {
+  @apply font-display text-[2.3rem] leading-[0.98] min-[380px]:text-[2.6rem] font-extrabold tracking-[-0.035em] sm:text-6xl lg:text-[5.25rem];
+  font-stretch: 112%;
+}
+@utility display-lg {
+  @apply font-display text-[1.85rem] leading-[1.04] min-[380px]:text-[2.1rem] font-extrabold tracking-[-0.03em] sm:text-5xl lg:text-[3.6rem];
+  font-stretch: 110%;
+}
+@utility display-md {
+  @apply font-display text-[1.75rem] leading-[1.08] font-extrabold tracking-[-0.025em] sm:text-4xl;
+  font-stretch: 108%;
+}
+
+/* Orange marker highlight behind a word */
+@utility mark {
+  background: linear-gradient(transparent 62%, color-mix(in oklab, var(--color-brand-500) 35%, transparent) 62%);
+  padding-inline: 0.04em;
+}
+
+@utility btn {
+  @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 text-center text-[0.95rem] leading-tight font-semibold transition-all duration-200 ease-(--ease-out-quint) active:scale-[0.98];
+}
+@utility btn-primary {
+  @apply btn bg-brand-500 text-white hover:bg-brand-600;
+}
+@utility btn-dark {
+  @apply btn bg-ink-900 text-white hover:bg-ink-700;
+}
+@utility btn-light {
+  @apply btn bg-white text-ink-900 hover:bg-ink-100;
+}
+@utility btn-whatsapp {
+  @apply btn bg-whatsapp text-ink-950 hover:brightness-95;
+}
+@utility btn-line {
+  @apply btn border border-ink-200 bg-white text-ink-900 hover:border-ink-900;
+}
+@utility btn-line-light {
+  @apply btn border border-white/25 text-white hover:border-white hover:bg-white/5;
+}
+
+@utility panel {
+  @apply rounded-(--radius-card) border border-line bg-white;
+}
+
+@utility link-arrow {
+  @apply inline-flex items-center gap-1.5 font-semibold text-ink-900 underline decoration-brand-500 decoration-2 underline-offset-[6px] transition-colors hover:text-brand-600;
+}
+
+/* ------------------------------------------------------------------ long-form article / WordPress HTML */
 .prose-content {
-  @apply text-[1.0625rem] leading-relaxed text-ink-600;
+  @apply text-[1.0625rem] leading-[1.75] text-ink-600;
 }
 .prose-content > * + * {
   @apply mt-5;
 }
 .prose-content h2 {
-  @apply mt-12 text-2xl font-bold sm:text-3xl;
+  @apply mt-14 scroll-mt-28 text-[1.6rem] leading-tight font-extrabold sm:text-[1.9rem];
 }
 .prose-content h3 {
-  @apply mt-9 text-xl font-bold;
+  @apply mt-10 text-xl font-bold;
 }
 .prose-content h4 {
-  @apply mt-7 text-lg font-bold;
+  @apply mt-8 text-lg font-bold;
 }
 .prose-content h2 + *,
 .prose-content h3 + *,
@@ -113,40 +166,57 @@
   @apply mt-3;
 }
 .prose-content a {
-  @apply font-medium text-brand-700 underline decoration-brand-300 underline-offset-2 hover:decoration-brand-600;
+  @apply font-medium text-ink-900 underline decoration-brand-400 decoration-2 underline-offset-[3px] hover:text-brand-700;
 }
 .prose-content strong {
-  @apply font-semibold text-ink-800;
+  @apply font-semibold text-ink-900;
 }
 .prose-content ul,
 .prose-content ol {
-  @apply space-y-2 pl-6;
+  @apply space-y-2.5 pl-6;
 }
 .prose-content ul {
-  @apply list-disc marker:text-brand-500;
+  list-style: none;
+  padding-left: 0;
+}
+.prose-content ul > li {
+  @apply relative pl-7;
+}
+.prose-content ul > li::before {
+  content: '';
+  @apply absolute top-[0.72em] left-1 h-2 w-2 rounded-[2px] bg-brand-500;
 }
 .prose-content ol {
-  @apply list-decimal marker:font-semibold marker:text-brand-600;
+  @apply list-decimal marker:font-bold marker:text-brand-600;
 }
 .prose-content img {
-  @apply my-8 h-auto max-w-full rounded-2xl;
+  @apply my-8 h-auto max-w-full rounded-(--radius-card);
 }
 .prose-content blockquote {
-  @apply border-l-4 border-brand-400 bg-brand-50 px-5 py-4 text-ink-700 italic;
+  @apply border-l-4 border-brand-500 bg-paper px-6 py-5 text-ink-800;
 }
 .prose-content table {
-  @apply block w-full overflow-x-auto border-collapse text-sm;
+  @apply block w-full overflow-x-auto text-sm;
+  border-collapse: collapse;
 }
 .prose-content th,
 .prose-content td {
-  @apply border border-ink-100 px-3 py-2 text-left;
+  @apply border border-line px-3 py-2 text-left;
 }
 .prose-content th {
-  @apply bg-ink-50 font-semibold text-ink-800;
+  @apply bg-paper font-semibold text-ink-900;
 }
 .prose-content hr {
-  @apply my-10 border-ink-100;
+  @apply my-12 border-line;
 }
 .prose-content .aligncenter {
   @apply mx-auto block;
+}
+
+/* Dark variant for rich text on ink backgrounds */
+.prose-invert {
+  @apply text-ink-300;
+}
+.prose-invert strong {
+  @apply text-white;
 }

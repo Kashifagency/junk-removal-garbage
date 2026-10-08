@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { Icon } from '@/components/Icon';
 import { ListSection, SplitIntro, blocksOf, sectionHas } from '@/components/sections';
-import { Faq, HowItWorks, JsonLd, PageHero, QuoteSection } from '@/components/ui';
-import { defaultFaq, servicePages, type Page } from '@/lib/content';
+import { Faq, JsonLd, PageHeader, ProcessSteps, QuoteSection, SectionHead } from '@/components/ui';
+import { services } from '@/lib/catalog';
+import { defaultFaq, site, telHref, type Page } from '@/lib/content';
 import { breadcrumbLd, faqLd, graph, serviceLd } from '@/lib/seo';
 
 export function ServiceTemplate({ page, description }: { page: Page; description: string }) {
@@ -11,47 +12,65 @@ export function ServiceTemplate({ page, description }: { page: Page; description
     { name: 'Services', path: '/services/' },
     { name: page.title, path: page.path },
   ];
-  const banner = blocksOf(page, 'banner')[0];
   const intro = page.sections.find((s) => sectionHas(s, 'image') && sectionHas(s, 'text'));
   const listSections = page.sections.filter((s) => sectionHas(s, 'list'));
+  const svc = services.find((s) => s.path === page.path);
+  const others = services.filter((s) => s.path !== page.path);
+  let n = 1;
+  const idx = () => String(n++).padStart(2, '0');
 
   return (
     <>
       <JsonLd data={graph(breadcrumbLd(trail), serviceLd({ name: page.title, description, path: page.path }), faqLd(defaultFaq))} />
-      <PageHero title={page.title} eyebrow="Service" intro={description} trail={trail} image={blocksOf(page, 'image')[0]?.image ?? banner?.image}>
-        <div className="mt-8 flex flex-wrap gap-3">
+      <PageHeader title={page.title} kicker="Service" intro={description} trail={trail} image={svc?.image ?? blocksOf(page, 'image')[0]?.image}>
+        <div className="mt-8 flex flex-col gap-3 min-[420px]:flex-row">
           <a href="#quote" className="btn-primary">
             Get a free quote <Icon name="arrowRight" className="h-4 w-4" />
           </a>
+          <a href={telHref} className="btn-line">
+            <Icon name="phone" className="h-4 w-4" /> {site.phone}
+          </a>
         </div>
-      </PageHero>
+      </PageHeader>
 
-      {intro && <SplitIntro section={intro} />}
+      {intro && <SplitIntro section={intro} index={idx()} />}
       {listSections.map((s, i) => (
-        <ListSection key={i} section={s} tone={i % 2 === 0 ? 'sand' : 'white'} />
+        <ListSection key={i} section={s} index={idx()} tone={i % 2 === 0 ? 'paper' : 'white'} />
       ))}
 
-      <HowItWorks />
-
-      <section className="pb-14 sm:pb-20">
+      <section className="bg-ink-900 py-16 text-white sm:py-24">
         <div className="container-x">
-          <h2 className="text-2xl font-bold">Other services</h2>
-          <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {servicePages
-              .filter((p) => p.id !== page.id)
-              .map((p) => (
-                <li key={p.id}>
-                  <Link href={p.path} className="group flex h-full items-center justify-between gap-3 rounded-2xl px-5 py-4 font-semibold text-ink-800 ring-1 ring-ink-100 hover:text-brand-600 hover:ring-brand-400">
-                    {p.title}
-                    <Icon name="arrowRight" className="h-4 w-4 shrink-0 text-ink-300 group-hover:text-brand-500" />
-                  </Link>
-                </li>
-              ))}
+          <SectionHead index={idx()} kicker="How it works" title="Simple from first call to clean space" invert />
+          <div className="mt-14">
+            <ProcessSteps invert />
+          </div>
+        </div>
+      </section>
+
+      <Faq items={defaultFaq} index={idx()} />
+
+      <section className="border-t border-line bg-paper py-16 sm:py-20">
+        <div className="container-x">
+          <SectionHead kicker="More services" title="Other ways we can help" />
+          <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {others.map((s) => (
+              <li key={s.path}>
+                <Link href={s.path} className="group panel flex h-full flex-col p-6 transition hover:border-ink-900">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-600 transition-colors group-hover:bg-brand-500 group-hover:text-white">
+                    <Icon name={s.icon} className="h-5 w-5" />
+                  </span>
+                  <span className="mt-5 font-display text-lg leading-snug font-bold text-ink-900" style={{ fontStretch: '106%' }}>
+                    {s.title}
+                  </span>
+                  <span className="mt-2 line-clamp-2 flex-1 text-sm text-ink-500">{s.short}</span>
+                  <Icon name="arrowRight" className="mt-5 h-5 w-5 text-ink-400 transition-all group-hover:translate-x-1 group-hover:text-brand-500" />
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </section>
 
-      <Faq items={defaultFaq} />
       <QuoteSection title={`Get a free ${page.title.toLowerCase()} quote`} defaultService={serviceOption(page.title)} />
     </>
   );

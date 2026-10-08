@@ -111,6 +111,7 @@ app/
   sitemap.ts, robots.ts, not-found.tsx, icon.png, apple-icon.png
 components/                     Header, Footer, QuoteForm, sections, page templates
 lib/content.ts                  Content access and helpers
+lib/catalog.ts                  Service summaries, "what we remove" items and process steps (from site copy)
 lib/seo.ts                      Metadata and JSON-LD builders
 proxy.ts                        ?p= / ?page_id= redirects
 scripts/                        extract, media download, route validation

@@ -80,6 +80,55 @@ const paths: Record<string, React.ReactNode> = {
     </>
   ),
   sparkle: <path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" />,
+  arrowUpRight: <path d="M7 17 17 7M8 7h9v9" />,
+  plus: <path d="M12 5v14M5 12h14" />,
+  hardhat: (
+    <>
+      <path d="M2 18h20M4 18v-3a8 8 0 0 1 16 0v3" />
+      <path d="M10 7V5a2 2 0 0 1 4 0v2M9 10v4M15 10v4" />
+    </>
+  ),
+  home: (
+    <>
+      <path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z" />
+    </>
+  ),
+  sofa: (
+    <>
+      <path d="M4 11V8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v3" />
+      <path d="M2 14a2 2 0 0 1 4 0v1h12v-1a2 2 0 0 1 4 0v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zM5 20v1.5M19 20v1.5" />
+    </>
+  ),
+  fridge: (
+    <>
+      <rect x="5" y="2" width="14" height="20" rx="2" />
+      <path d="M5 10h14M9 5v2M9 13v3" />
+    </>
+  ),
+  monitor: (
+    <>
+      <rect x="2" y="3" width="20" height="14" rx="2" />
+      <path d="M8 21h8M12 17v4" />
+    </>
+  ),
+  brick: (
+    <>
+      <rect x="2" y="5" width="20" height="14" rx="1" />
+      <path d="M2 12h20M8 5v7M16 5v7M12 12v7" />
+    </>
+  ),
+  box: (
+    <>
+      <path d="M21 8 12 3 3 8v8l9 5 9-5z" />
+      <path d="m3 8 9 5 9-5M12 13v8" />
+    </>
+  ),
+  recycle: (
+    <>
+      <path d="M7 19H4.8a1.8 1.8 0 0 1-1.6-2.7L7 9.5M11 19h8.2a1.8 1.8 0 0 0 1.6-2.7l-1.2-2.1" />
+      <path d="m14 16-3 3 3 3M8.3 13.6 7 9.5l-4.1 1.1M9.3 5.6l1.1-1.9a1.8 1.8 0 0 1 3.1 0l3.9 6.8M13.4 9.8l4.1 1 1-4.1" />
+    </>
+  ),
   briefcase: (
     <>
       <rect x="2" y="7" width="20" height="14" rx="2" />
