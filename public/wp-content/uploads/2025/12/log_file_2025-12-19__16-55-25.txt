@@ -1,0 +1,21 @@
+
+---Downloaded files---
+The import files for: Logisitic Multipage were successfully downloaded!
+Initial max execution time = 360
+Files info:
+Site URL = https://shanancargotransports.com
+Data file = /home/u410869863/domains/shanancargotransports.com/public_html/wp-content/uploads/2025/12/demo-content-import-file_2025-12-19__16-55-25.xml
+Widget file = not defined!
+Customizer file = /home/u410869863/domains/shanancargotransports.com/public_html/wp-content/uploads/2025/12/demo-customizer-import-file_2025-12-19__16-55-25.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

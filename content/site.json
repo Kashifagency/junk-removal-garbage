@@ -1,0 +1,55 @@
+{
+  "url": "https://junkremovalgarbage.com",
+  "name": "Shanan Junk Removal",
+  "legalName": "Shanan Cargo Transport LLC",
+  "wpTitle": "junkremovalgarbage",
+  "phone": "+971 55 103 1255",
+  "phoneE164": "+971551031255",
+  "whatsapp": "971551031255",
+  "email": "shanancargotransportsofficial@gmail.com",
+  "address": {
+    "street": "Al Quoz 4",
+    "locality": "Dubai",
+    "country": "AE"
+  },
+  "logo": {
+    "src": "/wp-content/uploads/2025/12/logo-1.png",
+    "alt": "Shanan Junk Removal logo",
+    "width": 1320,
+    "height": 1000
+  },
+  "defaultFaq": [
+    {
+      "q": "What junk removal services do you offer in Dubai?",
+      "a": "We offer complete waste removal solutions including construction waste cleanup, household junk removal, furniture and appliance disposal, commercial cleanouts, yard waste removal, and e-waste recycling. We serve both residential and commercial clients across all Dubai areas."
+    },
+    {
+      "q": "Which areas in Dubai do you cover for junk removal?",
+      "a": "We serve all Dubai neighborhoods including Jumeirah Bay Island, Dubai Marina, JVC, Arabian Ranches, The Meadows, Palm Jumeirah, Downtown Dubai, Al Quoz, and surrounding communities. Contact us to confirm service in your specific area."
+    },
+    {
+      "q": "How quickly can you provide junk removal services?",
+      "a": "For urgent requirements, we offer same-day junk removal in Dubai. For scheduled collections, we recommend booking 24-48 hours in advance. Our fast response team ensures timely pickup across Dubai."
+    },
+    {
+      "q": "What items can you remove from my property?",
+      "a": "We remove almost everything: furniture, appliances, electronics, construction debris, yard waste, general clutter, and bulky items. We do not handle hazardous materials, chemicals, or medical waste as per Dubai regulations."
+    },
+    {
+      "q": "How do you determine pricing for junk removal?",
+      "a": "We provide transparent, upfront pricing based on the volume of items, type of materials, and job complexity. You'll receive a clear quote before we begin any work, with no hidden fees."
+    },
+    {
+      "q": "Do you recycle or donate items whenever possible?",
+      "a": "Yes! We practice eco-friendly disposal by recycling materials like metal, wood, and electronics, and donating usable furniture and appliances to local charities whenever possible."
+    },
+    {
+      "q": "Do I need to be present during the removal?",
+      "a": "Not necessarily. We can work with your schedule. Many clients provide access instructions or keys to building management. Our insured team works professionally whether you're present or not."
+    },
+    {
+      "q": "How do I get a free estimate for junk removal?",
+      "a": "You can get a free estimate by calling +971 55 103 1255, sending a WhatsApp message, or filling out the contact form on our website. We'll assess your needs and provide a fair quote."
+    }
+  ]
+}

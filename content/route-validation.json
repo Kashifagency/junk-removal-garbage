@@ -1,0 +1,462 @@
+{
+  "checkedAt": "2026-10-08T11:39:06.374Z",
+  "base": "http://localhost:3000",
+  "total": 62,
+  "pages": 24,
+  "posts": 38,
+  "failing": [],
+  "brokenInternalLinks": [],
+  "missingFromSitemap": [],
+  "extraChecks": [
+    "OK  /this-page-does-not-exist/ -> 404",
+    "OK  /services/not-a-service/ -> 404",
+    "OK  /blog/page/5/ -> 404",
+    "OK  /blog/page/2/ -> 200",
+    "OK  /blogs/page/4/ -> 200",
+    "OK  /about-us -> 308 /about-us/",
+    "OK  /contact-us/ -> 308 /contact/",
+    "OK  /dubai-waste-collection-services-reliable-solutions-for-homes-businesses/ -> 308 /dubai-waste-collection-services/",
+    "OK  /?p=6757 -> 308 /commercial-junk-removal/",
+    "OK  /sitemap.xml -> 200",
+    "OK  /robots.txt -> 200",
+    "OK  /feed/ -> 200",
+    "OK  /category/junk-removal-in-dubai/ -> 200",
+    "OK  /wp-content/uploads/2025/12/logo-1.png -> 200"
+  ],
+  "results": [
+    {
+      "type": "page",
+      "path": "/",
+      "title": "Junk Removal Dubai | Same-Day Waste &amp; Furniture Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/services/",
+      "title": "Junk Removal &amp; Waste Management Services in Dubai",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/about-us/",
+      "title": "About Shanan Junk Removal | Waste Solutions in Dubai",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/careers/",
+      "title": "Careers at Shanan Junk Removal Dubai",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/faq/",
+      "title": "Junk Removal FAQ | Common Questions Answered – Dubai",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/contact/",
+      "title": "Contact Us | Free Junk Removal Quote in Dubai",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/blog/",
+      "title": "Junk Removal Blog | Tips &amp; Guides for Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/blogs/",
+      "title": "Blogs | Junk Removal &amp; Waste Management Articles – Dubai",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/junk-removal-jumeirah-bay-island/",
+      "title": "Junk Removal Jumeirah Bay Island | Villa Cleanouts",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/dubai-marina/",
+      "title": "Junk Removal Dubai Marina | Apartment &amp; Tower Cleanouts",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/jumeirah-village-circle/",
+      "title": "Junk Removal JVC | Jumeirah Village Circle Waste Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/arabian-ranches/",
+      "title": "Junk Removal Arabian Ranches | Villa Waste Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/palm-jumeirah/",
+      "title": "Junk Removal Palm Jumeirah | Villa &amp; Apartment Cleanouts",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/downtown-dubai/",
+      "title": "Junk Removal Downtown Dubai &amp; Business Bay | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/al-barsha/",
+      "title": "Junk Removal Al Barsha | Homes &amp; Businesses | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/al-quoz/",
+      "title": "Construction Waste Removal Al Quoz | Industrial Junk",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/al-sufouh/",
+      "title": "Junk Removal Al Sufouh &amp; Umm Suqeim | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/the-meadows-springs/",
+      "title": "Junk Removal The Meadows &amp; Springs | Villa Cleanouts",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/service-areas/",
+      "title": "Junk Removal Service Areas Across Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/junk-removal-dubai-fast-affordable-service/",
+      "title": "Junk Removal Dubai - Fast &amp; Affordable Service",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/same-day-junk-removal-services-dubai-quick-cleanup/",
+      "title": "Same-Day Junk Removal Services Dubai: Quick Cleanup",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/garbage-pickup-dubai-same-day-service/",
+      "title": "Garbage Pickup Dubai - Same Day Service | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/construction-waste-removal-dubai-best-price-fast-service/",
+      "title": "Construction Waste Removal Dubai - Best Price &amp; Fast Service",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/furniture-disposal-dubai-sofa-bed-removal-service/",
+      "title": "Furniture Disposal Dubai - Sofa &amp; Bed Removal Service",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/house-cleanout-dubai-complete-home-clearing-service/",
+      "title": "House Cleanout Dubai - Complete Home Clearing Service",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/office-cleanout-dubai-complete-commercial-clearing-service/",
+      "title": "Office Cleanout Dubai - Complete Commercial Clearing Service",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/construction-removal-service-in-dubai-2026/",
+      "title": "Construction Removal Service in Dubai 2026 | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/professional-junk-removal-service-dubai/",
+      "title": "Professional Junk Removal Service Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/same-day-junk-removal-dubai-fast-emergency-service/",
+      "title": "Junk Removal Dubai - Fast Emergency Service | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/take-my-junk-dubai-complete-removal-service/",
+      "title": "Take My Junk Dubai - Complete Removal Service",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/house-cleanout-dubai-complete-junk-removal-service/",
+      "title": "House Cleanout Dubai - Complete Junk Removal Service",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/",
+      "title": "Junk Removal Services in Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/junk-removal-garbage-services-in-dubai-2026/",
+      "title": "Junk Removal Garbage Services in Dubai 2026 | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/junk-removal-service-in-dubai/",
+      "title": "Junk Removal Service in Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/services/construction-waste-removal/",
+      "title": "Construction Waste Removal Dubai | Debris &amp; Rubble",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/services/household-junk-removal/",
+      "title": "Household Junk Removal Dubai | Home Cleanouts",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/services/commercial-waste-management/",
+      "title": "Commercial Waste Management Dubai | Business Waste",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/services/furniture-appliance-disposal/",
+      "title": "Furniture &amp; Appliance Disposal Dubai | Sofa, Bed, Fridge",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "page",
+      "path": "/services/yard-garden-waste-cleanup/",
+      "title": "Garden Waste Removal Dubai | Yard Cleanup Service",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/junk-removal-near-me-dubai/",
+      "title": "Junk Removal Near Me in Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/cleaning-services-dubai/",
+      "title": "Cleaning Services Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/waste-management-near-me-dubai/",
+      "title": "Waste Management Near Me in Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/furniture-removal-dubai/",
+      "title": "Furniture Removal Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/junk-removal-garbage-in-dubai-affordable-reliable-service/",
+      "title": "Junk Removal Garbage in Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/residential-junk-removal-dubai/",
+      "title": "Residential Junk Removal Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/cheap-junk-removal-dubai/",
+      "title": "Cheap Junk Removal Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/dubai-waste-collection-services/",
+      "title": "Dubai Waste Collection Services | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/construction-waste-removal-dubai/",
+      "title": "Construction Waste Removal Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/furniture-removal-services-dubai/",
+      "title": "Furniture Removal Services Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/appliance-removal-services-dubai/",
+      "title": "Appliance Removal Services Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/old-furniture-removal-dubai/",
+      "title": "Old Furniture Removal Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/bed-and-mattress-removal-dubai/",
+      "title": "Bed and Mattress Removal Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/washing-machine-removal-dubai/",
+      "title": "Washing Machine Removal Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/garbage-pickup-dubai/",
+      "title": "Garbage Pickup Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/office-junk-removal-dubai/",
+      "title": "Office Junk Removal Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/warehouse-waste-removal-dubai/",
+      "title": "Warehouse Waste Removal Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/commercial-junk-removal-dubai/",
+      "title": "Commercial Junk Removal Dubai | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/office-furniture-removal-dubai/",
+      "title": "Office Furniture Removal Dubai – Fast &amp; Professional Service",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/furniture-removal-dubai-2/",
+      "title": "Need furniture removal Dubai? | Shanan Junk Removal",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/garden-waste-removal-dubai/",
+      "title": "Garden Waste Removal Dubai – Fast &amp; Eco-Friendly",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/professional-junk-removal/",
+      "title": "Professional Junk Removal Dubai | What to Expect",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "type": "post",
+      "path": "/commercial-junk-removal/",
+      "title": "Commercial Junk Removal Dubai | Business Collection",
+      "status": 200,
+      "issues": []
+    }
+  ]
+}

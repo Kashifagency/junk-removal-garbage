@@ -1,0 +1,163 @@
+import pagesData from '@/content/pages.json';
+import postsData from '@/content/posts.json';
+import siteData from '@/content/site.json';
+import navData from '@/content/navigation.json';
+import termsData from '@/content/terms.json';
+import pageSeo from '@/content/page-seo.json';
+
+export type ImageRef = { src: string; alt: string; width?: number; height?: number };
+export type FaqItem = { q: string; a: string };
+
+export type Block =
+  | { type: 'hero'; eyebrow: string; title: string; text: string; image: ImageRef | null }
+  | { type: 'heading'; eyebrow?: string; title: string; text?: string }
+  | { type: 'text'; html: string }
+  | { type: 'image'; image: ImageRef | null }
+  | { type: 'card'; title: string; text: string; image: ImageRef | null; href?: string | null }
+  | { type: 'feature'; icon: string; title: string; text: string }
+  | { type: 'list'; items: string[] }
+  | { type: 'faq'; items: FaqItem[] }
+  | { type: 'areas'; title: string; subtitle: string; columns: { title: string; items: string[] }[] }
+  | { type: 'html'; html: string }
+  | { type: 'map'; address: string }
+  | { type: 'contactForm' }
+  | { type: 'postsGrid' }
+  | { type: 'omitted'; reason: string }
+  | { type: 'button'; text: string; href: string | null }
+  | { type: 'banner'; image: ImageRef | null };
+
+export type Section = { blocks: Block[] };
+
+type Seo = { title: string; description: string; ogTitle?: string; ogDescription?: string; keywords?: string[] };
+
+export type Page = {
+  id: string;
+  type: 'page';
+  path: string;
+  slug: string;
+  parentId: string;
+  title: string;
+  rawTitle: string;
+  date: string;
+  modified: string;
+  seo: Seo;
+  featuredImage: ImageRef | null;
+  sections: Section[];
+};
+
+export type Term = { slug: string; name: string };
+
+export type Post = {
+  id: string;
+  type: 'post';
+  path: string;
+  slug: string;
+  title: string;
+  date: string;
+  modified: string;
+  seo: Seo;
+  featuredImage: ImageRef | null;
+  categories: Term[];
+  tags: Term[];
+  excerpt: string;
+  html: string;
+  wordCount: number;
+};
+
+export type NavItem = { label: string; href: string; children: { label: string; href: string }[] };
+
+export const pages = pagesData as unknown as Page[];
+export const posts = postsData as unknown as Post[]; // newest first
+export const site = {
+  ...siteData,
+  url: (process.env.NEXT_PUBLIC_SITE_URL || siteData.url).replace(/\/$/, ''),
+};
+export const navigation = navData as { primary: NavItem[]; footer: NavItem[] };
+export const terms = termsData as { categories: Record<string, string>; tags: Record<string, string> };
+export const defaultFaq = site.defaultFaq as FaqItem[];
+
+/** WordPress "posts per page" (default 10) — /blog/page/2/ … match the live site. */
+export const POSTS_PER_PAGE = 10;
+
+const seoOverrides = pageSeo as unknown as Record<string, { title: string; description: string }>;
+
+export const getPageByPath = (path: string) => pages.find((p) => p.path === path);
+export const getPostBySlug = (slug: string) => posts.find((p) => p.slug === slug);
+
+export const SERVICE_PAGE_PARENT = '25';
+export const servicePages = pages.filter((p) => p.parentId === SERVICE_PAGE_PARENT);
+
+// Location pages: order taken from the "Service Areas" submenu.
+export const areaPages: Page[] = (navigation.primary.find((n) => n.href === '/service-areas/')?.children ?? [])
+  .map((c) => getPageByPath(c.href))
+  .filter((p): p is Page => !!p)
+  .reverse();
+
+export const isAreaPage = (p: Page) => areaPages.some((a) => a.id === p.id);
+
+/** Human name for a location page, e.g. "Dubai Marina", "The Meadows & Springs". */
+export const areaName = (p: Page) =>
+  p.title.replace(/^Junk Removal\s+/i, '').replace(' / ', ' & ');
+
+export function pageSeoFor(path: string, fallback: { title: string; description: string }) {
+  return seoOverrides[path] ?? fallback;
+}
+
+// Posts without an AIOSEO title: use the part of the post title before its first separator.
+function shortTitle(t: string) {
+  if (t.length <= 60) return t;
+  const m = t.match(/^(.{12,}?)(?:\s[–|-]\s|:\s|\?\s)/);
+  let s = m ? m[1] + (t[m[1].length] === '?' ? '?' : '') : t;
+  if (s.length > 60) s = s.slice(0, 57).replace(/\s+\S*$/, '') + '…';
+  return s;
+}
+
+export function postSeo(post: Post) {
+  const title = post.seo.title || shortTitle(post.title);
+  const description = post.seo.description || post.excerpt.replace(/…$/, '').slice(0, 155).replace(/\s+\S*$/, '') + '…';
+  return { title, description };
+}
+
+export const allBlocks = (p: Page) => p.sections.flatMap((s) => s.blocks);
+export const firstBlock = <T extends Block['type']>(p: Page, type: T) =>
+  allBlocks(p).find((b) => b.type === type) as Extract<Block, { type: T }> | undefined;
+
+export function paginate<T>(list: T[], page: number, perPage = POSTS_PER_PAGE) {
+  const totalPages = Math.max(1, Math.ceil(list.length / perPage));
+  return { items: list.slice((page - 1) * perPage, page * perPage), totalPages, page };
+}
+
+export const categoriesInUse = () => {
+  const map = new Map<string, Term>();
+  posts.forEach((p) => p.categories.forEach((c) => map.set(c.slug, c)));
+  return [...map.values()];
+};
+export const tagsInUse = () => {
+  const map = new Map<string, Term>();
+  posts.forEach((p) => p.tags.forEach((t) => map.set(t.slug, t)));
+  return [...map.values()];
+};
+
+export const categoryData = (slug: string) => {
+  const term = categoriesInUse().find((c) => c.slug === slug);
+  return term ? { term, list: posts.filter((p) => p.categories.some((c) => c.slug === slug)) } : null;
+};
+
+export const relatedPosts = (post: Post, n = 3) => {
+  const tagSet = new Set(post.tags.map((t) => t.slug));
+  return posts
+    .filter((p) => p.id !== post.id)
+    .map((p) => ({ p, score: p.tags.filter((t) => tagSet.has(t.slug)).length }))
+    .sort((a, b) => b.score - a.score || b.p.date.localeCompare(a.p.date))
+    .slice(0, n)
+    .map((x) => x.p);
+};
+
+export const telHref = `tel:${site.phoneE164}`;
+export const whatsappHref = (text = 'Hi, I would like a quote for junk removal in Dubai.') =>
+  `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(text)}`;
+
+export const absoluteUrl = (path: string) => `${site.url}${path}`;
+
+export const formatDate = (iso: string) =>
+  new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Dubai' });

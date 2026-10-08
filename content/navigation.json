@@ -1,0 +1,128 @@
+{
+  "primary": [
+    {
+      "label": "Home",
+      "href": "/",
+      "children": []
+    },
+    {
+      "label": "About us",
+      "href": "/about-us/",
+      "children": []
+    },
+    {
+      "label": "Blogs",
+      "href": "/blogs/",
+      "children": []
+    },
+    {
+      "label": "Contact",
+      "href": "/contact/",
+      "children": []
+    },
+    {
+      "label": "FAQ",
+      "href": "/faq/",
+      "children": []
+    },
+    {
+      "label": "Our Services",
+      "href": "/services/",
+      "children": [
+        {
+          "label": "Commercial Waste Management",
+          "href": "/services/commercial-waste-management/"
+        },
+        {
+          "label": "Construction Waste Removal",
+          "href": "/services/construction-waste-removal/"
+        },
+        {
+          "label": "Furniture & Appliance Disposal",
+          "href": "/services/furniture-appliance-disposal/"
+        },
+        {
+          "label": "Household Junk Removal",
+          "href": "/services/household-junk-removal/"
+        },
+        {
+          "label": "Yard & Garden Waste Cleanup",
+          "href": "/services/yard-garden-waste-cleanup/"
+        }
+      ]
+    },
+    {
+      "label": "Service Areas",
+      "href": "/service-areas/",
+      "children": [
+        {
+          "label": "Al Sufouh",
+          "href": "/al-sufouh/"
+        },
+        {
+          "label": "The Meadows / Springs",
+          "href": "/the-meadows-springs/"
+        },
+        {
+          "label": "Al Quoz",
+          "href": "/al-quoz/"
+        },
+        {
+          "label": "Al Barsha",
+          "href": "/al-barsha/"
+        },
+        {
+          "label": "Downtown Dubai",
+          "href": "/downtown-dubai/"
+        },
+        {
+          "label": "Palm Jumeirah",
+          "href": "/palm-jumeirah/"
+        },
+        {
+          "label": "Arabian Ranches",
+          "href": "/arabian-ranches/"
+        },
+        {
+          "label": "Jumeirah Village Circle",
+          "href": "/jumeirah-village-circle/"
+        },
+        {
+          "label": "Dubai Marina",
+          "href": "/dubai-marina/"
+        },
+        {
+          "label": "Junk Removal Jumeirah Bay Island",
+          "href": "/junk-removal-jumeirah-bay-island/"
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "label": "Home",
+      "href": "/",
+      "children": []
+    },
+    {
+      "label": "About us",
+      "href": "/about-us/",
+      "children": []
+    },
+    {
+      "label": "Careers",
+      "href": "/careers/",
+      "children": []
+    },
+    {
+      "label": "Blog",
+      "href": "/blog/",
+      "children": []
+    },
+    {
+      "label": "Contact",
+      "href": "/contact/",
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,3975 @@
+[
+  {
+    "id": "23",
+    "type": "page",
+    "path": "/",
+    "slug": "home",
+    "parentId": "0",
+    "title": "Home",
+    "rawTitle": "Home",
+    "template": "elementor_header_footer",
+    "date": "2025-10-05T06:38:27Z",
+    "modified": "2026-01-30T19:02:15Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": {
+      "src": "/wp-content/uploads/2025/12/cargo-transports-e1766232854263.webp",
+      "alt": "Junk Removal Garbage",
+      "width": 1344,
+      "height": 363
+    },
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "hero",
+            "eyebrow": "Household Junk | Construction Waste | Furniture Removal | Same-Day Service with professional junk removal service in Dubai.",
+            "title": "Professional Junk Removal & Waste Management Service in Dubai",
+            "text": "Call: +971 55 103 1255. Fast, insured junk removal service in Dubai and cleanup solutions for all Dubai homes and businesses.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1344,
+              "height": 768
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Our Services",
+            "title": "Complete Junk Removal & Waste Management Services in Dubai",
+            "text": ""
+          },
+          {
+            "type": "card",
+            "title": "Construction Waste Removal",
+            "text": "Professional cleanup for construction sites, renovations, and demolition projects across Dubai. Our expert waste management service handles concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal following Dubai regulations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/ruins-russian-s-war-ukraine-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": "/services/construction-waste-removal/"
+          },
+          {
+            "type": "card",
+            "title": "Household Junk Removal",
+            "text": "Complete home cleanout services for apartments, villas, and residences in Dubai. We provide professional garbage removal Dubai, taking care of furniture, appliances, electronics, and general clutter from properties in Arabian Ranches, The Meadows, Palm Jumeirah, and all Dubai communities. Same-day service is available for urgent cleanouts.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1780
+            },
+            "href": "/services/household-junk-removal/"
+          },
+          {
+            "type": "card",
+            "title": "Commercial Waste Management",
+            "text": "Business cleanout solutions for offices, retail spaces, restaurants, and warehouses. Our expert team provides reliable Dubai waste collection, working around your schedule to remove office furniture, equipment, packaging waste, and commercial debris from Downtown Dubai, Business Bay, Al Quoz, and other commercial areas.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/black-bags-trash-garbage-bin-daytime-wecompress.com_-scaled.webp",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": "/services/commercial-waste-management/"
+          },
+          {
+            "type": "card",
+            "title": "Furniture & Appliance Disposal",
+            "text": "Safe removal and disposal of bulky items throughout Dubai. We offer professional waste removal services, handling sofas, beds, cabinets, refrigerators, washing machines, and other large items from homes and businesses. Eco-friendly disposal with recycling whenever possible.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/vertical-shot-young-delivery-men-moving-objects-out-car-scaled.webp",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 1707,
+              "height": 2560
+            },
+            "href": "/services/furniture-appliance-disposal/"
+          },
+          {
+            "type": "card",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": "Green waste removal for villas, gardens, and outdoor spaces in Dubai. Our reliable junk removal near me service clears branches, leaves, soil, grass clippings, and other organic debris from properties in Emirates Hills, Al Barari, Jumeirah Golf Estates, and garden communities.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "YARD & GARDEN WASTE CLEANUP",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": "/services/yard-garden-waste-cleanup/"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Why Choose Us",
+            "title": "Your Reliable Junk Removal Partner in Dubai",
+            "text": ""
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://junkremovalgarbage.com/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Same-Day Service Available",
+            "text": "We understand that junk can't wait. That's why we offer same-day or next-day junk removal Dubai services and reliable rubbish removal Dubai solutions for urgent cleanouts across Dubai, from Jumeirah Bay Island to Arabian Ranches."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Transparent Pricing Guarantee",
+            "text": "We understand that junk can't wait. That's why we offer same-day or next-day junk removal Dubai services and reliable rubbish removal Dubai solutions, backed by professional garbage removal service waste management in Dubai, for urgent cleanouts across Dubai, from Jumeirah Bay Island to Arabian Ranches."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Eco-Friendly Disposal",
+            "text": "We prioritize environmentally responsible waste management as part of our junk removal Dubai services. We recycle and donate whenever possible, reducing landfill waste from Dubai homes and construction sites."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Fully Insured & Professional",
+            "text": "Your property is protected with our comprehensive insurance coverage. Our trained crew provides a professional junk removal service in Dubai, handling all items with care—whether it's delicate furniture or heavy construction debris."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Residential & Commercial Services",
+            "text": "From apartment cleanouts in Dubai Marina to construction site cleanup in JVC, we provide reliable waste management service for both homeowners and businesses throughout Dubai's diverse communities."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Customer Satisfaction Focus",
+            "text": "Your complete satisfaction is our goal. We provide responsive communication, reliable scheduling, and quality service that Dubai residents and businesses trust as a leading garbage collection company in Dubai."
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Testimonials",
+            "title": "What Our Clients Say",
+            "text": ""
+          },
+          {
+            "type": "omitted",
+            "reason": "testimonials"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "FAQ",
+            "title": "Frequently Asked Questions About Junk Removal in Dubai",
+            "text": ""
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "q": "What junk removal services do you offer in Dubai?",
+                "a": "We offer complete waste removal solutions including construction waste cleanup, household junk removal, furniture and appliance disposal, commercial cleanouts, yard waste removal, and e-waste recycling. We serve both residential and commercial clients across all Dubai areas."
+              },
+              {
+                "q": "Which areas in Dubai do you cover for junk removal?",
+                "a": "We serve all Dubai neighborhoods including Jumeirah Bay Island, Dubai Marina, JVC, Arabian Ranches, The Meadows, Palm Jumeirah, Downtown Dubai, Al Quoz, and surrounding communities. Contact us to confirm service in your specific area."
+              },
+              {
+                "q": "How quickly can you provide junk removal services?",
+                "a": "For urgent requirements, we offer same-day junk removal in Dubai. For scheduled collections, we recommend booking 24-48 hours in advance. Our fast response team ensures timely pickup across Dubai."
+              },
+              {
+                "q": "What items can you remove from my property?",
+                "a": "We remove almost everything: furniture, appliances, electronics, construction debris, yard waste, general clutter, and bulky items. We do not handle hazardous materials, chemicals, or medical waste as per Dubai regulations."
+              },
+              {
+                "q": "How do you determine pricing for junk removal?",
+                "a": "We provide transparent, upfront pricing based on the volume of items, type of materials, and job complexity. You'll receive a clear quote before we begin any work, with no hidden fees."
+              },
+              {
+                "q": "Do you recycle or donate items whenever possible?",
+                "a": "Yes! We practice eco-friendly disposal by recycling materials like metal, wood, and electronics, and donating usable furniture and appliances to local charities whenever possible."
+              },
+              {
+                "q": "Do I need to be present during the removal?",
+                "a": "Not necessarily. We can work with your schedule. Many clients provide access instructions or keys to building management. Our insured team works professionally whether you're present or not."
+              },
+              {
+                "q": "How do I get a free estimate for junk removal?",
+                "a": "You can get a free estimate by calling +971 55 103 1255, sending a WhatsApp message, or filling out the contact form on our website. We'll assess your needs and provide a fair quote."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/cargo-transports-e1766232854263.webp",
+              "alt": "Junk Removal Garbage",
+              "width": 1344,
+              "height": 363
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "title": "Contact us"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "contactForm"
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2026/01/Red-Grey-Job-Vacancy-contraction-worker-Instagram-Post.png",
+              "alt": "",
+              "width": 1080,
+              "height": 1080
+            }
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Household Junk | Construction Waste | Furniture Removal | Same-Day Service with professional junk removal service in Dubai. PROFESSIONAL JUNK REMOVAL & WASTE MANAGEMENT SERVICE IN DUBAI Call: +971 55 103 1255. Fast, insured junk removal service in Dubai and cleanup solutions for all Dubai homes and businesses. Call: +971 55 103 1255 Our Services COMPLETE JUNK REMOVAL & WASTE MANAGEMENT SERVICES IN"
+  },
+  {
+    "id": "25",
+    "type": "page",
+    "path": "/services/",
+    "slug": "services",
+    "parentId": "0",
+    "title": "Our Services",
+    "rawTitle": "Our Services",
+    "template": "default",
+    "date": "2025-10-05T06:38:41Z",
+    "modified": "2026-01-23T15:34:29Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "banner",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/cargo-transports-e1766232854263.webp",
+              "alt": "Junk Removal Garbage",
+              "width": 1344,
+              "height": 363
+            }
+          },
+          {
+            "type": "heading",
+            "title": "Our Services"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Our Services",
+            "title": "Complete Junk Removal & Waste Management Services in Dubai",
+            "text": ""
+          },
+          {
+            "type": "card",
+            "title": "Construction Waste Removal",
+            "text": "Professional cleanup for construction sites, renovations, and demolition projects across Dubai. We handle concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal following Dubai regulations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/ruins-russian-s-war-ukraine-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": "/services/construction-waste-removal/"
+          },
+          {
+            "type": "card",
+            "title": "Household Junk Removal",
+            "text": "Complete home cleanout services for apartments, villas, and residences in Dubai. We remove furniture, appliances, electronics, and general clutter from properties in Arabian Ranches, The Meadows, Palm Jumeirah, and all Dubai communities. Same-day service available for urgent cleanouts.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1780
+            },
+            "href": "/services/household-junk-removal/"
+          },
+          {
+            "type": "card",
+            "title": "Commercial Waste Management",
+            "text": "Business cleanout solutions for offices, retail spaces, restaurants, and warehouses. We work around your schedule to remove office furniture, equipment, packaging waste, and commercial debris from Downtown Dubai, Business Bay, Al Quoz, and other commercial areas.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/black-bags-trash-garbage-bin-daytime-wecompress.com_-scaled.webp",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": "/services/commercial-waste-management/"
+          },
+          {
+            "type": "card",
+            "title": "Furniture & Appliance Disposal",
+            "text": "Safe removal and disposal of bulky items throughout Dubai. We handle sofas, beds, cabinets, refrigerators, washing machines, and other large items from homes and businesses. Eco-friendly disposal with recycling whenever possible.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/vertical-shot-young-delivery-men-moving-objects-out-car-scaled.webp",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 1707,
+              "height": 2560
+            },
+            "href": "/services/furniture-appliance-disposal/"
+          },
+          {
+            "type": "card",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": "Green waste removal for villas, gardens, and outdoor spaces in Dubai. We clear branches, leaves, soil, grass clippings, and other organic debris from properties in Emirates Hills, Al Barari, Jumeirah Golf Estates, and garden communities.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "YARD & GARDEN WASTE CLEANUP",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": "/services/yard-garden-waste-cleanup/"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Testimonials",
+            "title": "What Our Clients Say",
+            "text": ""
+          },
+          {
+            "type": "omitted",
+            "reason": "testimonials"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "FAQ",
+            "title": "Frequently Asked Questions About Junk Removal in Dubai",
+            "text": ""
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "q": "What junk removal services do you offer in Dubai?",
+                "a": "We offer complete waste removal solutions including construction waste cleanup, household junk removal, furniture and appliance disposal, commercial cleanouts, yard waste removal, and e-waste recycling. We serve both residential and commercial clients across all Dubai areas."
+              },
+              {
+                "q": "Which areas in Dubai do you cover for junk removal?",
+                "a": "We serve all Dubai neighborhoods including Jumeirah Bay Island, Dubai Marina, JVC, Arabian Ranches, The Meadows, Palm Jumeirah, Downtown Dubai, Al Quoz, and surrounding communities. Contact us to confirm service in your specific area."
+              },
+              {
+                "q": "How quickly can you provide junk removal services?",
+                "a": "For urgent requirements, we offer same-day junk removal in Dubai. For scheduled collections, we recommend booking 24-48 hours in advance. Our fast response team ensures timely pickup across Dubai."
+              },
+              {
+                "q": "What items can you remove from my property?",
+                "a": "We remove almost everything: furniture, appliances, electronics, construction debris, yard waste, general clutter, and bulky items. We do not handle hazardous materials, chemicals, or medical waste as per Dubai regulations."
+              },
+              {
+                "q": "How do you determine pricing for junk removal?",
+                "a": "We provide transparent, upfront pricing based on the volume of items, type of materials, and job complexity. You'll receive a clear quote before we begin any work, with no hidden fees."
+              },
+              {
+                "q": "Do you recycle or donate items whenever possible?",
+                "a": "Yes! We practice eco-friendly disposal by recycling materials like metal, wood, and electronics, and donating usable furniture and appliances to local charities whenever possible."
+              },
+              {
+                "q": "Do I need to be present during the removal?",
+                "a": "Not necessarily. We can work with your schedule. Many clients provide access instructions or keys to building management. Our insured team works professionally whether you're present or not."
+              },
+              {
+                "q": "How do I get a free estimate for junk removal?",
+                "a": "You can get a free estimate by calling +971 55 103 1255, sending a WhatsApp message, or filling out the contact form on our website. We'll assess your needs and provide a fair quote."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "title": "Contact us"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "contactForm"
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2026/01/Red-Grey-Job-Vacancy-contraction-worker-Instagram-Post.png",
+              "alt": "",
+              "width": 1080,
+              "height": 1080
+            }
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Home Our Services Our Services COMPLETE JUNK REMOVAL & WASTE MANAGEMENT SERVICES IN DUBAI CONSTRUCTION WASTE REMOVALProfessional cleanup for construction sites, renovations, and demolition projects across Dubai. We handle concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal fo"
+  },
+  {
+    "id": "31",
+    "type": "page",
+    "path": "/about-us/",
+    "slug": "about-us",
+    "parentId": "0",
+    "title": "About us",
+    "rawTitle": "About us",
+    "template": "elementor_header_footer",
+    "date": "2025-10-05T06:39:34Z",
+    "modified": "2026-01-03T19:20:13Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "banner",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/cargo-transports-e1766232854263.webp",
+              "alt": "Junk Removal Garbage",
+              "width": 1344,
+              "height": 363
+            }
+          },
+          {
+            "type": "heading",
+            "title": "About us"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1344,
+              "height": 768
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_phow16phow16phow-e1766229856594.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1024,
+              "height": 858
+            }
+          },
+          {
+            "type": "heading",
+            "eyebrow": "About Us",
+            "title": "Shanan Junk Removal: Your Reliable Waste Solution Partner in Dubai",
+            "text": ""
+          },
+          {
+            "type": "text",
+            "html": "<p>Welcome to Shanan Junk Removal, a trusted waste management company serving Dubai's diverse communities. With extensive experience in Dubai's residential and commercial sectors, we specialize in providing reliable junk removal, construction waste cleanup, and furniture disposal services across all Dubai areas including <strong>Jumeirah Bay Island, Dubai Marina, JVC, Arabian Ranches, and Al Quoz</strong>. From household cleanouts and renovation debris to commercial waste and bulky item removal, our mission is simple – efficient, affordable, and environmentally responsible waste solutions that meet Dubai's dynamic needs. We are committed to excellence in every cleanup project.</p>"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Our Services",
+            "title": "Complete Junk Removal & Waste Management Services in Dubai",
+            "text": ""
+          },
+          {
+            "type": "card",
+            "title": "Construction Waste Removal",
+            "text": "Professional cleanup for construction sites, renovations, and demolition projects across Dubai. We handle concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal following Dubai regulations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/ruins-russian-s-war-ukraine-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Household Junk Removal",
+            "text": "Complete home cleanout services for apartments, villas, and residences in Dubai. We remove furniture, appliances, electronics, and general clutter from properties in Arabian Ranches, The Meadows, Palm Jumeirah, and all Dubai communities. Same-day service available for urgent cleanouts.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1780
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Commercial Waste Management",
+            "text": "Business cleanout solutions for offices, retail spaces, restaurants, and warehouses. We work around your schedule to remove office furniture, equipment, packaging waste, and commercial debris from Downtown Dubai, Business Bay, Al Quoz, and other commercial areas.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/black-bags-trash-garbage-bin-daytime-wecompress.com_-scaled.webp",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Furniture & Appliance Disposal",
+            "text": "Safe removal and disposal of bulky items throughout Dubai. We handle sofas, beds, cabinets, refrigerators, washing machines, and other large items from homes and businesses. Eco-friendly disposal with recycling whenever possible.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/vertical-shot-young-delivery-men-moving-objects-out-car-scaled.webp",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 1707,
+              "height": 2560
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": "Green waste removal for villas, gardens, and outdoor spaces in Dubai. We clear branches, leaves, soil, grass clippings, and other organic debris from properties in Emirates Hills, Al Barari, Jumeirah Golf Estates, and garden communities.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "YARD & GARDEN WASTE CLEANUP",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          }
+        ]
+      }
+    ],
+    "fallbackText": "About us Home About Us Shanan Junk Removal: Your Reliable Waste Solution Partner in Dubai Welcome to Shanan Junk Removal, a trusted waste management company serving Dubai's diverse communities. With extensive experience in Dubai's residential and commercial sectors, we specialize in providing reliable junk removal, construction waste cleanup, and furniture disposal services across all Dubai areas "
+  },
+  {
+    "id": "37",
+    "type": "page",
+    "path": "/careers/",
+    "slug": "careers",
+    "parentId": "0",
+    "title": "Careers",
+    "rawTitle": "Careers",
+    "template": "elementor_header_footer",
+    "date": "2025-10-05T06:40:05Z",
+    "modified": "2025-10-05T06:40:05Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "banner",
+            "image": {
+              "src": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/3-2.webp",
+              "alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "title": "Freight Handling Specialist"
+          },
+          {
+            "type": "text",
+            "html": "<p>Join our ground team to load, secure, and manage cargo shipments at distribution hubs.</p>"
+          },
+          {
+            "type": "button",
+            "text": "On-site",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Full-time",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Apply Now",
+            "href": "#"
+          },
+          {
+            "type": "heading",
+            "title": "Logistics Planning Analyst"
+          },
+          {
+            "type": "text",
+            "html": "<p>Create efficient transport routes and ensure shipments meet delivery requirements.</p>"
+          },
+          {
+            "type": "button",
+            "text": "Remote",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Part-time",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Apply Now",
+            "href": "#"
+          },
+          {
+            "type": "heading",
+            "title": "Cargo Sales Executive"
+          },
+          {
+            "type": "text",
+            "html": "<p>Help businesses ship globally by promoting freight services through strategic sales efforts.</p>"
+          },
+          {
+            "type": "button",
+            "text": "Remote",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Commision + Base",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Apply Now",
+            "href": "#"
+          },
+          {
+            "type": "heading",
+            "title": "Fleet Operations Manager"
+          },
+          {
+            "type": "text",
+            "html": "<p>Oversee transport teams and manage daily operations to ensure on-time deliveries.</p>"
+          },
+          {
+            "type": "button",
+            "text": "On-site",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Full-time",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Apply Now",
+            "href": "#"
+          },
+          {
+            "type": "heading",
+            "title": "Customer Support Specialist"
+          },
+          {
+            "type": "text",
+            "html": "<p>Assist clients with inquiries about shipments, tracking updates, and delivery schedules.</p>"
+          },
+          {
+            "type": "button",
+            "text": "Remote",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Part-time",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Apply Now",
+            "href": "#"
+          },
+          {
+            "type": "heading",
+            "title": "Project Manager – Logistics"
+          },
+          {
+            "type": "text",
+            "html": "<p>Coordinate shipping timelines, allocate transport resources, and manage client updates.</p>"
+          },
+          {
+            "type": "button",
+            "text": "Hybrid",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Full-time",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Apply Now",
+            "href": "#"
+          },
+          {
+            "type": "heading",
+            "title": "Marketing Coordinator – Freight"
+          },
+          {
+            "type": "text",
+            "html": "<p>Develop and execute campaigns to boost awareness of our logistics and cargo services.</p>"
+          },
+          {
+            "type": "button",
+            "text": "Remote",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Contract",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Apply Now",
+            "href": "#"
+          },
+          {
+            "type": "heading",
+            "title": "Logistics Systems Engineer"
+          },
+          {
+            "type": "text",
+            "html": "<p>Design, evaluate, and troubleshoot cargo tracking systems for reliable operations.</p>"
+          },
+          {
+            "type": "button",
+            "text": "On-site",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Full-time",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Apply Now",
+            "href": "#"
+          },
+          {
+            "type": "heading",
+            "title": "Compliance & Documentation Specialist"
+          },
+          {
+            "type": "text",
+            "html": "<p>Manage customs paperwork and ensure shipments follow international trade regulations.</p>"
+          },
+          {
+            "type": "button",
+            "text": "Hybrid",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Full-time",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Apply Now",
+            "href": "#"
+          },
+          {
+            "type": "heading",
+            "title": "Warehouse & Logistics Coordinator"
+          },
+          {
+            "type": "text",
+            "html": "<p>Ensure timely cargo distribution and manage inventory across warehouses and depots.</p>"
+          },
+          {
+            "type": "button",
+            "text": "On-site",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Full-time",
+            "href": null
+          },
+          {
+            "type": "button",
+            "text": "Apply Now",
+            "href": "#"
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Careers Home Freight Handling Specialist Join our ground team to load, secure, and manage cargo shipments at distribution hubs. On-site Full-time Apply Now Logistics Planning Analyst Create efficient transport routes and ensure shipments meet delivery requirements. Remote Part-time Apply Now Cargo Sales Executive Help businesses ship globally by promoting freight services through strategic sales e"
+  },
+  {
+    "id": "43",
+    "type": "page",
+    "path": "/faq/",
+    "slug": "faq",
+    "parentId": "0",
+    "title": "FAQ",
+    "rawTitle": "FAQ",
+    "template": "elementor_header_footer",
+    "date": "2025-10-05T06:46:44Z",
+    "modified": "2025-12-20T15:46:38Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "banner",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_phow16phow16phow-e1766229856594.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1024,
+              "height": 858
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "faq",
+            "items": [
+              {
+                "q": "What junk removal services do you offer in Dubai?",
+                "a": "We offer complete waste removal solutions including construction waste cleanup, household junk removal, furniture and appliance disposal, commercial cleanouts, yard waste removal, and e-waste recycling. We serve both residential and commercial clients across all Dubai areas."
+              },
+              {
+                "q": "Which areas in Dubai do you cover for junk removal?",
+                "a": "We serve all Dubai neighborhoods including Jumeirah Bay Island, Dubai Marina, JVC, Arabian Ranches, The Meadows, Palm Jumeirah, Downtown Dubai, Al Quoz, and surrounding communities. Contact us to confirm service in your specific area."
+              },
+              {
+                "q": "How quickly can you provide junk removal services?",
+                "a": "For urgent requirements, we offer same-day junk removal in Dubai. For scheduled collections, we recommend booking 24-48 hours in advance. Our fast response team ensures timely pickup across Dubai."
+              },
+              {
+                "q": "What items can you remove from my property?",
+                "a": "We remove almost everything: furniture, appliances, electronics, construction debris, yard waste, general clutter, and bulky items. We do not handle hazardous materials, chemicals, or medical waste as per Dubai regulations."
+              },
+              {
+                "q": "How do you determine pricing for junk removal?",
+                "a": "We provide transparent, upfront pricing based on the volume of items, type of materials, and job complexity. You'll receive a clear quote before we begin any work, with no hidden fees."
+              },
+              {
+                "q": "Do you recycle or donate items whenever possible?",
+                "a": "Yes! We practice eco-friendly disposal by recycling materials like metal, wood, and electronics, and donating usable furniture and appliances to local charities whenever possible."
+              },
+              {
+                "q": "Do I need to be present during the removal?",
+                "a": "Not necessarily. We can work with your schedule. Many clients provide access instructions or keys to building management. Our insured team works professionally whether you're present or not."
+              },
+              {
+                "q": "How do I get a free estimate for junk removal?",
+                "a": "You can get a free estimate by calling +971 55 103 1255, sending a WhatsApp message, or filling out the contact form on our website. We'll assess your needs and provide a fair quote."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "fallbackText": "FAQ Home Shipping & DeliveryShipping & Delivery.elementor-759 .elementor-element.elementor-element-7564126{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-759 .el"
+  },
+  {
+    "id": "47",
+    "type": "page",
+    "path": "/contact/",
+    "slug": "contact",
+    "parentId": "0",
+    "title": "Contact",
+    "rawTitle": "Contact",
+    "template": "elementor_header_footer",
+    "date": "2025-10-05T06:47:07Z",
+    "modified": "2026-01-11T16:26:47Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "banner",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/cargo-transports-e1766232854263.webp",
+              "alt": "Junk Removal Garbage",
+              "width": 1344,
+              "height": 363
+            }
+          },
+          {
+            "type": "heading",
+            "title": "contact"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Contact Us Now",
+            "title": "Contact Shanan Junk Removal for Dubai Waste Services",
+            "text": "Get a Free Quote for Junk Removal, Construction Waste & Cleanup in Dubai"
+          },
+          {
+            "type": "text",
+            "html": "<p>Have questions about our junk removal services in Dubai? Need a quote for construction waste cleanup or furniture disposal? We're here to help! Contact Shanan Junk Removal today for reliable, professional waste solutions across all Dubai areas including <strong>Jumeirah Bay Island, Dubai Marina, JVC, Arabian Ranches, and Al Quoz</strong>. Our team is ready to assist you with fast response and efficient service for your home or business cleanup needs.</p>"
+          },
+          {
+            "type": "feature",
+            "icon": "fas fa-map-marker-alt",
+            "title": "Office Location",
+            "text": "Al Quoz 4, Dubai"
+          },
+          {
+            "type": "feature",
+            "icon": "fas fa-envelope",
+            "title": "",
+            "text": "shanancargotransportsofficial@gmail.com"
+          },
+          {
+            "type": "feature",
+            "icon": "fas fa-phone-alt",
+            "title": "Call Us Directly",
+            "text": "+971 55 103 1255"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "",
+            "title": "Contact Us",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "contactForm"
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2026/01/Red-Grey-Job-Vacancy-contraction-worker-Instagram-Post.png",
+              "alt": "",
+              "width": 1080,
+              "height": 1080
+            }
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Home contact Contact Us Now Contact Shanan Junk Removal for Dubai Waste Services Get a Free Quote for Junk Removal, Construction Waste & Cleanup in Dubai Have questions about our junk removal services in Dubai? Need a quote for construction waste cleanup or furniture disposal? We're here to help! Contact Shanan Junk Removal today for reliable, professional waste solutions across all Dubai areas in"
+  },
+  {
+    "id": "49",
+    "type": "page",
+    "path": "/blog/",
+    "slug": "blog",
+    "parentId": "0",
+    "title": "Blog",
+    "rawTitle": "Blog",
+    "template": "",
+    "date": "2025-10-05T06:47:14Z",
+    "modified": "2025-10-05T06:47:14Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [],
+    "fallbackText": ""
+  },
+  {
+    "id": "3778",
+    "type": "page",
+    "path": "/blogs/",
+    "slug": "blogs",
+    "parentId": "0",
+    "title": "Blogs",
+    "rawTitle": "Blogs",
+    "template": "elementor_header_footer",
+    "date": "2025-10-16T04:28:17Z",
+    "modified": "2026-01-03T19:22:24Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "title": "Blogs"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "postsGrid"
+          }
+        ]
+      }
+    ],
+    "fallbackText": "[easyhfe_template id='2192'] Blogs Garbage Pickup Dubai – Same Day Service Looking for reliable garbage pickup in Dubai? We offer same-day garbage collection service for homes, offices, and businesses across all... 03 Jan Same-Day Junk Removal Services Dubai: Quick Cleanup Need immediate junk removal in Dubai? Our same-day services offer quick cleanup for homes, offices & construction sites. Emerg"
+  },
+  {
+    "id": "6116",
+    "type": "page",
+    "path": "/junk-removal-jumeirah-bay-island/",
+    "slug": "junk-removal-jumeirah-bay-island",
+    "parentId": "0",
+    "title": "Junk Removal Jumeirah Bay Island",
+    "rawTitle": "JUNK REMOVAL JUMEIRAH BAY ISLAND",
+    "template": "default",
+    "date": "2025-12-21T14:47:41Z",
+    "modified": "2025-12-21T15:03:07Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "hero",
+            "eyebrow": "PROFESSIONAL JUNK REMOVAL & WASTE MANAGEMENT IN DUBAI",
+            "title": "Household & Construction Waste | Furniture Removal | Same-Day Service",
+            "text": "We provide fast and reliable junk removal, construction waste cleanup, and furniture disposal services throughout Dubai. We handle everything from household cleanouts and renovation debris to commercial waste and bulky item removal across all Dubai areas. Our team ensures safe, efficient, and eco-friendly disposal for homes and businesses.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1344,
+              "height": 768
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Our Services",
+            "title": "Complete Junk Removal & Waste Management Services in Dubai",
+            "text": ""
+          },
+          {
+            "type": "card",
+            "title": "Construction Waste Removal",
+            "text": "Professional cleanup for construction sites, renovations, and demolition projects across Dubai. We handle concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal following Dubai regulations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/ruins-russian-s-war-ukraine-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Household Junk Removal",
+            "text": "Complete home cleanout services for apartments, villas, and residences in Dubai. We remove furniture, appliances, electronics, and general clutter from properties in Arabian Ranches, The Meadows, Palm Jumeirah, and all Dubai communities. Same-day service available for urgent cleanouts.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1780
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Commercial Waste Management",
+            "text": "Business cleanout solutions for offices, retail spaces, restaurants, and warehouses. We work around your schedule to remove office furniture, equipment, packaging waste, and commercial debris from Downtown Dubai, Business Bay, Al Quoz, and other commercial areas.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/black-bags-trash-garbage-bin-daytime-wecompress.com_-scaled.webp",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Furniture & Appliance Disposal",
+            "text": "Safe removal and disposal of bulky items throughout Dubai. We handle sofas, beds, cabinets, refrigerators, washing machines, and other large items from homes and businesses. Eco-friendly disposal with recycling whenever possible.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/vertical-shot-young-delivery-men-moving-objects-out-car-scaled.webp",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 1707,
+              "height": 2560
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": "Green waste removal for villas, gardens, and outdoor spaces in Dubai. We clear branches, leaves, soil, grass clippings, and other organic debris from properties in Emirates Hills, Al Barari, Jumeirah Golf Estates, and garden communities.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "YARD & GARDEN WASTE CLEANUP",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Why Choose Us",
+            "title": "Your Reliable Junk Removal Partner in Dubai",
+            "text": ""
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://junkremovalgarbage.com/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Same-Day Service Available",
+            "text": "We understand that junk can't wait. That's why we offer same-day or next-day removal services for urgent cleanouts across Dubai, from Jumeirah Bay Island to Arabian Ranches."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Transparent Pricing Guarantee",
+            "text": "Clear, competitive pricing with no hidden fees for all our Dubai junk removal services. Get upfront quotes for construction waste, household junk, and furniture disposal before we start any work."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Eco-Friendly Disposal",
+            "text": "We prioritize environmentally responsible waste management. We recycle and donate whenever possible, reducing landfill waste from Dubai homes and construction sites."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Fully Insured & Professional",
+            "text": "Your property is protected with our comprehensive insurance coverage. Our trained crew handles all items with care, whether it's delicate furniture or heavy construction debris."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Residential & Commercial Services",
+            "text": "From apartment cleanouts in Dubai Marina to construction site cleanup in JVC, we serve both homeowners and businesses throughout Dubai's diverse communities."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Customer Satisfaction Focus",
+            "text": "Your complete satisfaction is our goal. We provide responsive communication, reliable scheduling, and quality service that Dubai residents and businesses trust."
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "areas",
+            "title": "Service Areas in Jumeirah Bay Island",
+            "subtitle": "We provide specialized junk removal services for luxury properties in Jumeirah Bay Island and surrounding premium communities",
+            "columns": [
+              {
+                "title": "Jumeirah Bay Island Services",
+                "items": [
+                  "Luxury Villa Cleanouts",
+                  "Private Beach Access Areas",
+                  "Waterfront Properties",
+                  "Gated Community Service",
+                  "Discreet Waste Removal"
+                ]
+              },
+              {
+                "title": "Nearby Premium Areas",
+                "items": [
+                  "Dubai Marina",
+                  "Palm Jumeirah",
+                  "Al Sufouh",
+                  "Jumeirah Beach Road",
+                  "Umm Suqeim"
+                ]
+              },
+              {
+                "title": "Specialized Services",
+                "items": [
+                  "24/7 Emergency Service",
+                  "Privacy Guaranteed",
+                  "Eco-Friendly Disposal",
+                  "Same-Day Availability",
+                  "Free On-Site Estimates"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "map",
+            "address": "Jumeirah Bay Island,Dubai"
+          }
+        ]
+      }
+    ],
+    "fallbackText": "PROFESSIONAL JUNK REMOVAL & WASTE MANAGEMENT IN DUBAI Household & Construction Waste | Furniture Removal | Same-Day Service We provide fast and reliable junk removal, construction waste cleanup, and furniture disposal services throughout Dubai. We handle everything from household cleanouts and renovation debris to commercial waste and bulky item removal across all Dubai areas. Our team ensures saf"
+  },
+  {
+    "id": "6134",
+    "type": "page",
+    "path": "/dubai-marina/",
+    "slug": "dubai-marina",
+    "parentId": "0",
+    "title": "Dubai Marina",
+    "rawTitle": "DUBAI MARINA",
+    "template": "default",
+    "date": "2025-12-21T15:05:52Z",
+    "modified": "2025-12-21T15:09:45Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "hero",
+            "eyebrow": "Apartment Junk Removal in Dubai Marina | Same-Day Service",
+            "title": "Professional Junk Removal for Towers & Apartments",
+            "text": "Specialized junk removal service for Dubai Marina towers and apartments. We handle elevator logistics, tower regulations, and efficient waste removal from high-rise buildings. Serving all Marina towers including Princess Tower, Marina Pinnacle, and Elite Residence.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1344,
+              "height": 768
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Our Services",
+            "title": "Complete Junk Removal & Waste Management Services in Dubai",
+            "text": ""
+          },
+          {
+            "type": "card",
+            "title": "Construction Waste Removal",
+            "text": "Professional cleanup for construction sites, renovations, and demolition projects across Dubai. We handle concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal following Dubai regulations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/ruins-russian-s-war-ukraine-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Household Junk Removal",
+            "text": "Complete home cleanout services for apartments, villas, and residences in Dubai. We remove furniture, appliances, electronics, and general clutter from properties in Arabian Ranches, The Meadows, Palm Jumeirah, and all Dubai communities. Same-day service available for urgent cleanouts.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1780
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Commercial Waste Management",
+            "text": "Business cleanout solutions for offices, retail spaces, restaurants, and warehouses. We work around your schedule to remove office furniture, equipment, packaging waste, and commercial debris from Downtown Dubai, Business Bay, Al Quoz, and other commercial areas.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/black-bags-trash-garbage-bin-daytime-wecompress.com_-scaled.webp",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Furniture & Appliance Disposal",
+            "text": "Safe removal and disposal of bulky items throughout Dubai. We handle sofas, beds, cabinets, refrigerators, washing machines, and other large items from homes and businesses. Eco-friendly disposal with recycling whenever possible.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/vertical-shot-young-delivery-men-moving-objects-out-car-scaled.webp",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 1707,
+              "height": 2560
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": "Green waste removal for villas, gardens, and outdoor spaces in Dubai. We clear branches, leaves, soil, grass clippings, and other organic debris from properties in Emirates Hills, Al Barari, Jumeirah Golf Estates, and garden communities.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "YARD & GARDEN WASTE CLEANUP",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Why Choose Us",
+            "title": "Your Reliable Junk Removal Partner in Dubai",
+            "text": ""
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://junkremovalgarbage.com/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Same-Day Service Available",
+            "text": "We understand that junk can't wait. That's why we offer same-day or next-day removal services for urgent cleanouts across Dubai, from Jumeirah Bay Island to Arabian Ranches."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Transparent Pricing Guarantee",
+            "text": "Clear, competitive pricing with no hidden fees for all our Dubai junk removal services. Get upfront quotes for construction waste, household junk, and furniture disposal before we start any work."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Eco-Friendly Disposal",
+            "text": "We prioritize environmentally responsible waste management. We recycle and donate whenever possible, reducing landfill waste from Dubai homes and construction sites."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Fully Insured & Professional",
+            "text": "Your property is protected with our comprehensive insurance coverage. Our trained crew handles all items with care, whether it's delicate furniture or heavy construction debris."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Residential & Commercial Services",
+            "text": "From apartment cleanouts in Dubai Marina to construction site cleanup in JVC, we serve both homeowners and businesses throughout Dubai's diverse communities."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Customer Satisfaction Focus",
+            "text": "Your complete satisfaction is our goal. We provide responsive communication, reliable scheduling, and quality service that Dubai residents and businesses trust."
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "map",
+            "address": "DUBAI MARINA"
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Apartment Junk Removal in Dubai Marina | Same-Day Service PROFESSIONAL JUNK REMOVAL FOR TOWERS & APARTMENTS Specialized junk removal service for Dubai Marina towers and apartments. We handle elevator logistics, tower regulations, and efficient waste removal from high-rise buildings. Serving all Marina towers including Princess Tower, Marina Pinnacle, and Elite Residence. Call: +971 55 103 1255 Our"
+  },
+  {
+    "id": "6149",
+    "type": "page",
+    "path": "/jumeirah-village-circle/",
+    "slug": "jumeirah-village-circle",
+    "parentId": "0",
+    "title": "Jumeirah Village Circle",
+    "rawTitle": "JUMEIRAH VILLAGE CIRCLE",
+    "template": "default",
+    "date": "2025-12-21T15:10:41Z",
+    "modified": "2025-12-21T15:14:12Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "hero",
+            "eyebrow": "Junk Removal in JVC Dubai | Fast & Affordable Service",
+            "title": "Professional Waste Removal for Jumeirah Village Circle",
+            "text": "Reliable junk removal service for JVC apartments, villas, and townhouses. We provide efficient waste pickup for residential communities in Jumeirah Village Circle with flexible timing and competitive pricing. Serving all clusters and communities across JVC.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1344,
+              "height": 768
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Our Services",
+            "title": "Complete Junk Removal & Waste Management Services in Dubai",
+            "text": ""
+          },
+          {
+            "type": "card",
+            "title": "Construction Waste Removal",
+            "text": "Professional cleanup for construction sites, renovations, and demolition projects across Dubai. We handle concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal following Dubai regulations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/ruins-russian-s-war-ukraine-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Household Junk Removal",
+            "text": "Complete home cleanout services for apartments, villas, and residences in Dubai. We remove furniture, appliances, electronics, and general clutter from properties in Arabian Ranches, The Meadows, Palm Jumeirah, and all Dubai communities. Same-day service available for urgent cleanouts.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1780
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Commercial Waste Management",
+            "text": "Business cleanout solutions for offices, retail spaces, restaurants, and warehouses. We work around your schedule to remove office furniture, equipment, packaging waste, and commercial debris from Downtown Dubai, Business Bay, Al Quoz, and other commercial areas.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/black-bags-trash-garbage-bin-daytime-wecompress.com_-scaled.webp",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Furniture & Appliance Disposal",
+            "text": "Safe removal and disposal of bulky items throughout Dubai. We handle sofas, beds, cabinets, refrigerators, washing machines, and other large items from homes and businesses. Eco-friendly disposal with recycling whenever possible.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/vertical-shot-young-delivery-men-moving-objects-out-car-scaled.webp",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 1707,
+              "height": 2560
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": "Green waste removal for villas, gardens, and outdoor spaces in Dubai. We clear branches, leaves, soil, grass clippings, and other organic debris from properties in Emirates Hills, Al Barari, Jumeirah Golf Estates, and garden communities.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "YARD & GARDEN WASTE CLEANUP",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Why Choose Us",
+            "title": "Your Reliable Junk Removal Partner in Dubai",
+            "text": ""
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://junkremovalgarbage.com/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Same-Day Service Available",
+            "text": "We understand that junk can't wait. That's why we offer same-day or next-day removal services for urgent cleanouts across Dubai, from Jumeirah Bay Island to Arabian Ranches."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Transparent Pricing Guarantee",
+            "text": "Clear, competitive pricing with no hidden fees for all our Dubai junk removal services. Get upfront quotes for construction waste, household junk, and furniture disposal before we start any work."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Eco-Friendly Disposal",
+            "text": "We prioritize environmentally responsible waste management. We recycle and donate whenever possible, reducing landfill waste from Dubai homes and construction sites."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Fully Insured & Professional",
+            "text": "Your property is protected with our comprehensive insurance coverage. Our trained crew handles all items with care, whether it's delicate furniture or heavy construction debris."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Residential & Commercial Services",
+            "text": "From apartment cleanouts in Dubai Marina to construction site cleanup in JVC, we serve both homeowners and businesses throughout Dubai's diverse communities."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Customer Satisfaction Focus",
+            "text": "Your complete satisfaction is our goal. We provide responsive communication, reliable scheduling, and quality service that Dubai residents and businesses trust."
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "map",
+            "address": "JUMEIRAH VILLAGE CIRCLE"
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Junk Removal in JVC Dubai | Fast & Affordable Service PROFESSIONAL WASTE REMOVAL FOR JUMEIRAH VILLAGE CIRCLE Reliable junk removal service for JVC apartments, villas, and townhouses. We provide efficient waste pickup for residential communities in Jumeirah Village Circle with flexible timing and competitive pricing. Serving all clusters and communities across JVC. Call: +971 55 103 1255 Our Servic"
+  },
+  {
+    "id": "6155",
+    "type": "page",
+    "path": "/arabian-ranches/",
+    "slug": "arabian-ranches",
+    "parentId": "0",
+    "title": "Arabian Ranches",
+    "rawTitle": "ARABIAN RANCHES",
+    "template": "default",
+    "date": "2025-12-21T15:19:51Z",
+    "modified": "2025-12-21T15:24:36Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "hero",
+            "eyebrow": "Junk Removal in Arabian Ranches | Villa & Community Service",
+            "title": "Specialized Waste Removal for Arabian Ranches Villas",
+            "text": "Premium junk removal service for Arabian Ranches villas and communities. We handle villa cleanouts, garden waste, and household junk removal with discretion and efficiency. Understanding community regulations and providing timely service.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1344,
+              "height": 768
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Our Services",
+            "title": "Complete Junk Removal & Waste Management Services in Dubai",
+            "text": ""
+          },
+          {
+            "type": "card",
+            "title": "Construction Waste Removal",
+            "text": "Professional cleanup for construction sites, renovations, and demolition projects across Dubai. We handle concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal following Dubai regulations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/ruins-russian-s-war-ukraine-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Household Junk Removal",
+            "text": "Complete home cleanout services for apartments, villas, and residences in Dubai. We remove furniture, appliances, electronics, and general clutter from properties in Arabian Ranches, The Meadows, Palm Jumeirah, and all Dubai communities. Same-day service available for urgent cleanouts.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1780
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Commercial Waste Management",
+            "text": "Business cleanout solutions for offices, retail spaces, restaurants, and warehouses. We work around your schedule to remove office furniture, equipment, packaging waste, and commercial debris from Downtown Dubai, Business Bay, Al Quoz, and other commercial areas.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/black-bags-trash-garbage-bin-daytime-wecompress.com_-scaled.webp",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Furniture & Appliance Disposal",
+            "text": "Safe removal and disposal of bulky items throughout Dubai. We handle sofas, beds, cabinets, refrigerators, washing machines, and other large items from homes and businesses. Eco-friendly disposal with recycling whenever possible.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/vertical-shot-young-delivery-men-moving-objects-out-car-scaled.webp",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 1707,
+              "height": 2560
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": "Green waste removal for villas, gardens, and outdoor spaces in Dubai. We clear branches, leaves, soil, grass clippings, and other organic debris from properties in Emirates Hills, Al Barari, Jumeirah Golf Estates, and garden communities.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "YARD & GARDEN WASTE CLEANUP",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Why Choose Us",
+            "title": "Your Reliable Junk Removal Partner in Dubai",
+            "text": ""
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://junkremovalgarbage.com/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Same-Day Service Available",
+            "text": "We understand that junk can't wait. That's why we offer same-day or next-day removal services for urgent cleanouts across Dubai, from Jumeirah Bay Island to Arabian Ranches."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Transparent Pricing Guarantee",
+            "text": "Clear, competitive pricing with no hidden fees for all our Dubai junk removal services. Get upfront quotes for construction waste, household junk, and furniture disposal before we start any work."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Eco-Friendly Disposal",
+            "text": "We prioritize environmentally responsible waste management. We recycle and donate whenever possible, reducing landfill waste from Dubai homes and construction sites."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Fully Insured & Professional",
+            "text": "Your property is protected with our comprehensive insurance coverage. Our trained crew handles all items with care, whether it's delicate furniture or heavy construction debris."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Residential & Commercial Services",
+            "text": "From apartment cleanouts in Dubai Marina to construction site cleanup in JVC, we serve both homeowners and businesses throughout Dubai's diverse communities."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Customer Satisfaction Focus",
+            "text": "Your complete satisfaction is our goal. We provide responsive communication, reliable scheduling, and quality service that Dubai residents and businesses trust."
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "map",
+            "address": "ARABIAN RANCHES"
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Junk Removal in Arabian Ranches | Villa & Community Service SPECIALIZED WASTE REMOVAL FOR ARABIAN RANCHES VILLAS Premium junk removal service for Arabian Ranches villas and communities. We handle villa cleanouts, garden waste, and household junk removal with discretion and efficiency. Understanding community regulations and providing timely service. Call: +971 55 103 1255 Our Services COMPLETE JUN"
+  },
+  {
+    "id": "6164",
+    "type": "page",
+    "path": "/palm-jumeirah/",
+    "slug": "palm-jumeirah",
+    "parentId": "0",
+    "title": "Palm Jumeirah",
+    "rawTitle": "PALM JUMEIRAH",
+    "template": "default",
+    "date": "2025-12-21T15:27:02Z",
+    "modified": "2025-12-21T15:29:38Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "hero",
+            "eyebrow": "Junk Removal in Palm Jumeirah | Luxury Property Service",
+            "title": "Premium Waste Management for Palm Jumeirah",
+            "text": "Exclusive junk removal service for Palm Jumeirah villas, apartments, and hotels. We provide discreet, efficient waste removal for luxury properties on The Palm. Specializing in beachfront properties and high-end residences.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1344,
+              "height": 768
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Our Services",
+            "title": "Complete Junk Removal & Waste Management Services in Dubai",
+            "text": ""
+          },
+          {
+            "type": "card",
+            "title": "Construction Waste Removal",
+            "text": "Professional cleanup for construction sites, renovations, and demolition projects across Dubai. We handle concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal following Dubai regulations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/ruins-russian-s-war-ukraine-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Household Junk Removal",
+            "text": "Complete home cleanout services for apartments, villas, and residences in Dubai. We remove furniture, appliances, electronics, and general clutter from properties in Arabian Ranches, The Meadows, Palm Jumeirah, and all Dubai communities. Same-day service available for urgent cleanouts.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1780
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Commercial Waste Management",
+            "text": "Business cleanout solutions for offices, retail spaces, restaurants, and warehouses. We work around your schedule to remove office furniture, equipment, packaging waste, and commercial debris from Downtown Dubai, Business Bay, Al Quoz, and other commercial areas.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/black-bags-trash-garbage-bin-daytime-wecompress.com_-scaled.webp",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Furniture & Appliance Disposal",
+            "text": "Safe removal and disposal of bulky items throughout Dubai. We handle sofas, beds, cabinets, refrigerators, washing machines, and other large items from homes and businesses. Eco-friendly disposal with recycling whenever possible.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/vertical-shot-young-delivery-men-moving-objects-out-car-scaled.webp",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 1707,
+              "height": 2560
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": "Green waste removal for villas, gardens, and outdoor spaces in Dubai. We clear branches, leaves, soil, grass clippings, and other organic debris from properties in Emirates Hills, Al Barari, Jumeirah Golf Estates, and garden communities.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "YARD & GARDEN WASTE CLEANUP",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Why Choose Us",
+            "title": "Your Reliable Junk Removal Partner in Dubai",
+            "text": ""
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://junkremovalgarbage.com/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Same-Day Service Available",
+            "text": "We understand that junk can't wait. That's why we offer same-day or next-day removal services for urgent cleanouts across Dubai, from Jumeirah Bay Island to Arabian Ranches."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Transparent Pricing Guarantee",
+            "text": "Clear, competitive pricing with no hidden fees for all our Dubai junk removal services. Get upfront quotes for construction waste, household junk, and furniture disposal before we start any work."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Eco-Friendly Disposal",
+            "text": "We prioritize environmentally responsible waste management. We recycle and donate whenever possible, reducing landfill waste from Dubai homes and construction sites."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Fully Insured & Professional",
+            "text": "Your property is protected with our comprehensive insurance coverage. Our trained crew handles all items with care, whether it's delicate furniture or heavy construction debris."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Residential & Commercial Services",
+            "text": "From apartment cleanouts in Dubai Marina to construction site cleanup in JVC, we serve both homeowners and businesses throughout Dubai's diverse communities."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Customer Satisfaction Focus",
+            "text": "Your complete satisfaction is our goal. We provide responsive communication, reliable scheduling, and quality service that Dubai residents and businesses trust."
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "map",
+            "address": "PALM JUMEIRAH"
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Junk Removal in Palm Jumeirah | Luxury Property Service PREMIUM WASTE MANAGEMENT FOR PALM JUMEIRAH Exclusive junk removal service for Palm Jumeirah villas, apartments, and hotels. We provide discreet, efficient waste removal for luxury properties on The Palm. Specializing in beachfront properties and high-end residences. Call: +971 55 103 1255 Our Services COMPLETE JUNK REMOVAL & WASTE MANAGEMENT "
+  },
+  {
+    "id": "6173",
+    "type": "page",
+    "path": "/downtown-dubai/",
+    "slug": "downtown-dubai",
+    "parentId": "0",
+    "title": "Downtown Dubai",
+    "rawTitle": "DOWNTOWN DUBAI",
+    "template": "default",
+    "date": "2025-12-21T15:34:03Z",
+    "modified": "2025-12-21T15:37:52Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "hero",
+            "eyebrow": "Downtown Dubai Junk Removal | Business Bay Office Cleanouts",
+            "title": "Commercial & Residential Waste Management in City Center",
+            "text": "Professional junk removal service for Downtown Dubai and Business Bay offices, hotels, and residences. We specialize in commercial waste removal, office cleanouts, and residential junk pickup in the heart of Dubai. Serving Burj Khalifa area, Dubai Mall, and all Business Bay towers with efficient, regulated waste disposal.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1344,
+              "height": 768
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Our Services",
+            "title": "Complete Junk Removal & Waste Management Services in Dubai",
+            "text": ""
+          },
+          {
+            "type": "card",
+            "title": "Construction Waste Removal",
+            "text": "Professional cleanup for construction sites, renovations, and demolition projects across Dubai. We handle concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal following Dubai regulations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/ruins-russian-s-war-ukraine-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Household Junk Removal",
+            "text": "Complete home cleanout services for apartments, villas, and residences in Dubai. We remove furniture, appliances, electronics, and general clutter from properties in Arabian Ranches, The Meadows, Palm Jumeirah, and all Dubai communities. Same-day service available for urgent cleanouts.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1780
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Commercial Waste Management",
+            "text": "Business cleanout solutions for offices, retail spaces, restaurants, and warehouses. We work around your schedule to remove office furniture, equipment, packaging waste, and commercial debris from Downtown Dubai, Business Bay, Al Quoz, and other commercial areas.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/black-bags-trash-garbage-bin-daytime-wecompress.com_-scaled.webp",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Furniture & Appliance Disposal",
+            "text": "Safe removal and disposal of bulky items throughout Dubai. We handle sofas, beds, cabinets, refrigerators, washing machines, and other large items from homes and businesses. Eco-friendly disposal with recycling whenever possible.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/vertical-shot-young-delivery-men-moving-objects-out-car-scaled.webp",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 1707,
+              "height": 2560
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": "Green waste removal for villas, gardens, and outdoor spaces in Dubai. We clear branches, leaves, soil, grass clippings, and other organic debris from properties in Emirates Hills, Al Barari, Jumeirah Golf Estates, and garden communities.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "YARD & GARDEN WASTE CLEANUP",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Why Choose Us",
+            "title": "Your Reliable Junk Removal Partner in Dubai",
+            "text": ""
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://junkremovalgarbage.com/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Same-Day Service Available",
+            "text": "We understand that junk can't wait. That's why we offer same-day or next-day removal services for urgent cleanouts across Dubai, from Jumeirah Bay Island to Arabian Ranches."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Transparent Pricing Guarantee",
+            "text": "Clear, competitive pricing with no hidden fees for all our Dubai junk removal services. Get upfront quotes for construction waste, household junk, and furniture disposal before we start any work."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Eco-Friendly Disposal",
+            "text": "We prioritize environmentally responsible waste management. We recycle and donate whenever possible, reducing landfill waste from Dubai homes and construction sites."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Fully Insured & Professional",
+            "text": "Your property is protected with our comprehensive insurance coverage. Our trained crew handles all items with care, whether it's delicate furniture or heavy construction debris."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Residential & Commercial Services",
+            "text": "From apartment cleanouts in Dubai Marina to construction site cleanup in JVC, we serve both homeowners and businesses throughout Dubai's diverse communities."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Customer Satisfaction Focus",
+            "text": "Your complete satisfaction is our goal. We provide responsive communication, reliable scheduling, and quality service that Dubai residents and businesses trust."
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "map",
+            "address": "DOWNTOWN DUBAI"
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Downtown Dubai Junk Removal | Business Bay Office Cleanouts COMMERCIAL & RESIDENTIAL WASTE MANAGEMENT IN CITY CENTER Professional junk removal service for Downtown Dubai and Business Bay offices, hotels, and residences. We specialize in commercial waste removal, office cleanouts, and residential junk pickup in the heart of Dubai. Serving Burj Khalifa area, Dubai Mall, and all Business Bay towers w"
+  },
+  {
+    "id": "6179",
+    "type": "page",
+    "path": "/al-barsha/",
+    "slug": "al-barsha",
+    "parentId": "0",
+    "title": "Al Barsha",
+    "rawTitle": "AL BARSHA",
+    "template": "default",
+    "date": "2025-12-21T15:39:01Z",
+    "modified": "2025-12-21T15:44:05Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "hero",
+            "eyebrow": "Junk Removal in Al Barsha | Mall of Emirates Area Service",
+            "title": "Affordable Waste Pickup for Al Barsha Homes & Businesses",
+            "text": "Reliable junk removal service for Al Barsha apartments, villas, and commercial spaces. We provide timely waste pickup near Mall of the Emirates, covering Al Barsha 1, 2, and 3. Efficient service for household cleanouts, moving waste, and business disposal needs.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1344,
+              "height": 768
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Our Services",
+            "title": "Complete Junk Removal & Waste Management Services in Dubai",
+            "text": ""
+          },
+          {
+            "type": "card",
+            "title": "Construction Waste Removal",
+            "text": "Professional cleanup for construction sites, renovations, and demolition projects across Dubai. We handle concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal following Dubai regulations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/ruins-russian-s-war-ukraine-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Household Junk Removal",
+            "text": "Complete home cleanout services for apartments, villas, and residences in Dubai. We remove furniture, appliances, electronics, and general clutter from properties in Arabian Ranches, The Meadows, Palm Jumeirah, and all Dubai communities. Same-day service available for urgent cleanouts.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1780
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Commercial Waste Management",
+            "text": "Business cleanout solutions for offices, retail spaces, restaurants, and warehouses. We work around your schedule to remove office furniture, equipment, packaging waste, and commercial debris from Downtown Dubai, Business Bay, Al Quoz, and other commercial areas.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/black-bags-trash-garbage-bin-daytime-wecompress.com_-scaled.webp",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Furniture & Appliance Disposal",
+            "text": "Safe removal and disposal of bulky items throughout Dubai. We handle sofas, beds, cabinets, refrigerators, washing machines, and other large items from homes and businesses. Eco-friendly disposal with recycling whenever possible.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/vertical-shot-young-delivery-men-moving-objects-out-car-scaled.webp",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 1707,
+              "height": 2560
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": "Green waste removal for villas, gardens, and outdoor spaces in Dubai. We clear branches, leaves, soil, grass clippings, and other organic debris from properties in Emirates Hills, Al Barari, Jumeirah Golf Estates, and garden communities.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "YARD & GARDEN WASTE CLEANUP",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Why Choose Us",
+            "title": "Your Reliable Junk Removal Partner in Dubai",
+            "text": ""
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://junkremovalgarbage.com/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Same-Day Service Available",
+            "text": "We understand that junk can't wait. That's why we offer same-day or next-day removal services for urgent cleanouts across Dubai, from Jumeirah Bay Island to Arabian Ranches."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Transparent Pricing Guarantee",
+            "text": "Clear, competitive pricing with no hidden fees for all our Dubai junk removal services. Get upfront quotes for construction waste, household junk, and furniture disposal before we start any work."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Eco-Friendly Disposal",
+            "text": "We prioritize environmentally responsible waste management. We recycle and donate whenever possible, reducing landfill waste from Dubai homes and construction sites."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Fully Insured & Professional",
+            "text": "Your property is protected with our comprehensive insurance coverage. Our trained crew handles all items with care, whether it's delicate furniture or heavy construction debris."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Residential & Commercial Services",
+            "text": "From apartment cleanouts in Dubai Marina to construction site cleanup in JVC, we serve both homeowners and businesses throughout Dubai's diverse communities."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Customer Satisfaction Focus",
+            "text": "Your complete satisfaction is our goal. We provide responsive communication, reliable scheduling, and quality service that Dubai residents and businesses trust."
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "map",
+            "address": "AL BARSHA"
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Junk Removal in Al Barsha | Mall of Emirates Area Service AFFORDABLE WASTE PICKUP FOR AL BARSHA HOMES & BUSINESSES Reliable junk removal service for Al Barsha apartments, villas, and commercial spaces. We provide timely waste pickup near Mall of the Emirates, covering Al Barsha 1, 2, and 3. Efficient service for household cleanouts, moving waste, and business disposal needs. Call: +971 55 103 1255"
+  },
+  {
+    "id": "6191",
+    "type": "page",
+    "path": "/al-quoz/",
+    "slug": "al-quoz",
+    "parentId": "0",
+    "title": "Al Quoz",
+    "rawTitle": "AL QUOZ",
+    "template": "default",
+    "date": "2025-12-21T15:46:30Z",
+    "modified": "2025-12-21T15:50:29Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "hero",
+            "eyebrow": "Construction Waste Removal in Al Quoz | Industrial Junk Cleanup",
+            "title": "Industrial & Construction Waste Management Specialists",
+            "text": "Specialized construction and industrial waste removal service for Al Quoz warehouses, workshops, and businesses. We handle construction debris, industrial waste, warehouse cleanouts, and bulk material disposal. Serving Al Quoz 1, 2, 3, and 4 with heavy-duty equipment and timely service.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1344,
+              "height": 768
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Our Services",
+            "title": "Complete Junk Removal & Waste Management Services in Dubai",
+            "text": ""
+          },
+          {
+            "type": "card",
+            "title": "Construction Waste Removal",
+            "text": "Professional cleanup for construction sites, renovations, and demolition projects across Dubai. We handle concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal following Dubai regulations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/ruins-russian-s-war-ukraine-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Household Junk Removal",
+            "text": "Complete home cleanout services for apartments, villas, and residences in Dubai. We remove furniture, appliances, electronics, and general clutter from properties in Arabian Ranches, The Meadows, Palm Jumeirah, and all Dubai communities. Same-day service available for urgent cleanouts.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1780
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Commercial Waste Management",
+            "text": "Business cleanout solutions for offices, retail spaces, restaurants, and warehouses. We work around your schedule to remove office furniture, equipment, packaging waste, and commercial debris from Downtown Dubai, Business Bay, Al Quoz, and other commercial areas.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/black-bags-trash-garbage-bin-daytime-wecompress.com_-scaled.webp",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Furniture & Appliance Disposal",
+            "text": "Safe removal and disposal of bulky items throughout Dubai. We handle sofas, beds, cabinets, refrigerators, washing machines, and other large items from homes and businesses. Eco-friendly disposal with recycling whenever possible.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/vertical-shot-young-delivery-men-moving-objects-out-car-scaled.webp",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 1707,
+              "height": 2560
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": "Green waste removal for villas, gardens, and outdoor spaces in Dubai. We clear branches, leaves, soil, grass clippings, and other organic debris from properties in Emirates Hills, Al Barari, Jumeirah Golf Estates, and garden communities.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "YARD & GARDEN WASTE CLEANUP",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Why Choose Us",
+            "title": "Your Reliable Junk Removal Partner in Dubai",
+            "text": ""
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://junkremovalgarbage.com/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Same-Day Service Available",
+            "text": "We understand that junk can't wait. That's why we offer same-day or next-day removal services for urgent cleanouts across Dubai, from Jumeirah Bay Island to Arabian Ranches."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Transparent Pricing Guarantee",
+            "text": "Clear, competitive pricing with no hidden fees for all our Dubai junk removal services. Get upfront quotes for construction waste, household junk, and furniture disposal before we start any work."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Eco-Friendly Disposal",
+            "text": "We prioritize environmentally responsible waste management. We recycle and donate whenever possible, reducing landfill waste from Dubai homes and construction sites."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Fully Insured & Professional",
+            "text": "Your property is protected with our comprehensive insurance coverage. Our trained crew handles all items with care, whether it's delicate furniture or heavy construction debris."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Residential & Commercial Services",
+            "text": "From apartment cleanouts in Dubai Marina to construction site cleanup in JVC, we serve both homeowners and businesses throughout Dubai's diverse communities."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Customer Satisfaction Focus",
+            "text": "Your complete satisfaction is our goal. We provide responsive communication, reliable scheduling, and quality service that Dubai residents and businesses trust."
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "map",
+            "address": "AL QUOZ"
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Construction Waste Removal in Al Quoz | Industrial Junk Cleanup INDUSTRIAL & CONSTRUCTION WASTE MANAGEMENT SPECIALISTS Specialized construction and industrial waste removal service for Al Quoz warehouses, workshops, and businesses. We handle construction debris, industrial waste, warehouse cleanouts, and bulk material disposal. Serving Al Quoz 1, 2, 3, and 4 with heavy-duty equipment and timely se"
+  },
+  {
+    "id": "6200",
+    "type": "page",
+    "path": "/al-sufouh/",
+    "slug": "al-sufouh",
+    "parentId": "0",
+    "title": "Al Sufouh",
+    "rawTitle": "AL SUFOUH",
+    "template": "default",
+    "date": "2025-12-21T15:51:54Z",
+    "modified": "2025-12-21T15:56:18Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "hero",
+            "eyebrow": "Junk Removal in Umm Suqeim & Al Sufouh | Beach Area Service",
+            "title": "Coastal Property Waste Management Near Jumeirah",
+            "text": "Professional junk removal service for Umm Suqeim and Al Sufouh beachfront properties and villas. We handle waste removal for coastal homes, hotels, and businesses near Jumeirah Beach. Specializing in discreet service for premium beach area locations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1344,
+              "height": 768
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Our Services",
+            "title": "Complete Junk Removal & Waste Management Services in Dubai",
+            "text": ""
+          },
+          {
+            "type": "card",
+            "title": "Construction Waste Removal",
+            "text": "Professional cleanup for construction sites, renovations, and demolition projects across Dubai. We handle concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal following Dubai regulations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/ruins-russian-s-war-ukraine-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Household Junk Removal",
+            "text": "Complete home cleanout services for apartments, villas, and residences in Dubai. We remove furniture, appliances, electronics, and general clutter from properties in Arabian Ranches, The Meadows, Palm Jumeirah, and all Dubai communities. Same-day service available for urgent cleanouts.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1780
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Commercial Waste Management",
+            "text": "Business cleanout solutions for offices, retail spaces, restaurants, and warehouses. We work around your schedule to remove office furniture, equipment, packaging waste, and commercial debris from Downtown Dubai, Business Bay, Al Quoz, and other commercial areas.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/black-bags-trash-garbage-bin-daytime-wecompress.com_-scaled.webp",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Furniture & Appliance Disposal",
+            "text": "Safe removal and disposal of bulky items throughout Dubai. We handle sofas, beds, cabinets, refrigerators, washing machines, and other large items from homes and businesses. Eco-friendly disposal with recycling whenever possible.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/vertical-shot-young-delivery-men-moving-objects-out-car-scaled.webp",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 1707,
+              "height": 2560
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": "Green waste removal for villas, gardens, and outdoor spaces in Dubai. We clear branches, leaves, soil, grass clippings, and other organic debris from properties in Emirates Hills, Al Barari, Jumeirah Golf Estates, and garden communities.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "YARD & GARDEN WASTE CLEANUP",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Why Choose Us",
+            "title": "Your Reliable Junk Removal Partner in Dubai",
+            "text": ""
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://junkremovalgarbage.com/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Same-Day Service Available",
+            "text": "We understand that junk can't wait. That's why we offer same-day or next-day removal services for urgent cleanouts across Dubai, from Jumeirah Bay Island to Arabian Ranches."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Transparent Pricing Guarantee",
+            "text": "Clear, competitive pricing with no hidden fees for all our Dubai junk removal services. Get upfront quotes for construction waste, household junk, and furniture disposal before we start any work."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Eco-Friendly Disposal",
+            "text": "We prioritize environmentally responsible waste management. We recycle and donate whenever possible, reducing landfill waste from Dubai homes and construction sites."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Fully Insured & Professional",
+            "text": "Your property is protected with our comprehensive insurance coverage. Our trained crew handles all items with care, whether it's delicate furniture or heavy construction debris."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Residential & Commercial Services",
+            "text": "From apartment cleanouts in Dubai Marina to construction site cleanup in JVC, we serve both homeowners and businesses throughout Dubai's diverse communities."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Customer Satisfaction Focus",
+            "text": "Your complete satisfaction is our goal. We provide responsive communication, reliable scheduling, and quality service that Dubai residents and businesses trust."
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "map",
+            "address": "AL SUFOUH"
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Junk Removal in Umm Suqeim & Al Sufouh | Beach Area Service COASTAL PROPERTY WASTE MANAGEMENT NEAR JUMEIRAH Professional junk removal service for Umm Suqeim and Al Sufouh beachfront properties and villas. We handle waste removal for coastal homes, hotels, and businesses near Jumeirah Beach. Specializing in discreet service for premium beach area locations. Call: +971 55 103 1255 Our Services COMPL"
+  },
+  {
+    "id": "6209",
+    "type": "page",
+    "path": "/the-meadows-springs/",
+    "slug": "the-meadows-springs",
+    "parentId": "0",
+    "title": "The Meadows / Springs",
+    "rawTitle": "THE MEADOWS / SPRINGS",
+    "template": "default",
+    "date": "2025-12-21T15:57:04Z",
+    "modified": "2025-12-21T16:04:44Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "hero",
+            "eyebrow": "Villa Junk Removal in The Meadows & Springs Communities",
+            "title": "Family Community Waste Removal Service",
+            "text": "Dedicated junk removal service for The Meadows, Springs, and Emirates Living communities. We provide family-friendly waste pickup for villas and townhouses, understanding community regulations and timing requirements. Specializing in garden waste, household cleanouts, and community cleanup projects.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp",
+              "alt": "Cargo in Dubai",
+              "width": 1344,
+              "height": 768
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Our Services",
+            "title": "Complete Junk Removal & Waste Management Services in Dubai",
+            "text": ""
+          },
+          {
+            "type": "card",
+            "title": "Construction Waste Removal",
+            "text": "Professional cleanup for construction sites, renovations, and demolition projects across Dubai. We handle concrete, wood, drywall, tiles, and all building materials from sites in Jumeirah Bay Island, Dubai Marina, JVC, and all Dubai areas. Our team ensures safe, efficient disposal following Dubai regulations.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/ruins-russian-s-war-ukraine-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Household Junk Removal",
+            "text": "Complete home cleanout services for apartments, villas, and residences in Dubai. We remove furniture, appliances, electronics, and general clutter from properties in Arabian Ranches, The Meadows, Palm Jumeirah, and all Dubai communities. Same-day service available for urgent cleanouts.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1780
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Commercial Waste Management",
+            "text": "Business cleanout solutions for offices, retail spaces, restaurants, and warehouses. We work around your schedule to remove office furniture, equipment, packaging waste, and commercial debris from Downtown Dubai, Business Bay, Al Quoz, and other commercial areas.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/black-bags-trash-garbage-bin-daytime-wecompress.com_-scaled.webp",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Furniture & Appliance Disposal",
+            "text": "Safe removal and disposal of bulky items throughout Dubai. We handle sofas, beds, cabinets, refrigerators, washing machines, and other large items from homes and businesses. Eco-friendly disposal with recycling whenever possible.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/vertical-shot-young-delivery-men-moving-objects-out-car-scaled.webp",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 1707,
+              "height": 2560
+            },
+            "href": null
+          },
+          {
+            "type": "card",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": "Green waste removal for villas, gardens, and outdoor spaces in Dubai. We clear branches, leaves, soil, grass clippings, and other organic debris from properties in Emirates Hills, Al Barari, Jumeirah Golf Estates, and garden communities.",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "YARD & GARDEN WASTE CLEANUP",
+              "width": 2560,
+              "height": 1707
+            },
+            "href": null
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Why Choose Us",
+            "title": "Your Reliable Junk Removal Partner in Dubai",
+            "text": ""
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://junkremovalgarbage.com/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Same-Day Service Available",
+            "text": "We understand that junk can't wait. That's why we offer same-day or next-day removal services for urgent cleanouts across Dubai, from Jumeirah Bay Island to Arabian Ranches."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Transparent Pricing Guarantee",
+            "text": "Clear, competitive pricing with no hidden fees for all our Dubai junk removal services. Get upfront quotes for construction waste, household junk, and furniture disposal before we start any work."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Eco-Friendly Disposal",
+            "text": "We prioritize environmentally responsible waste management. We recycle and donate whenever possible, reducing landfill waste from Dubai homes and construction sites."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Fully Insured & Professional",
+            "text": "Your property is protected with our comprehensive insurance coverage. Our trained crew handles all items with care, whether it's delicate furniture or heavy construction debris."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Residential & Commercial Services",
+            "text": "From apartment cleanouts in Dubai Marina to construction site cleanup in JVC, we serve both homeowners and businesses throughout Dubai's diverse communities."
+          },
+          {
+            "type": "feature",
+            "icon": {
+              "url": "https://reactheme.com/products/wordpress/logixpress/wp-content/uploads/2025/10/check.svg",
+              "id": 587
+            },
+            "title": "Customer Satisfaction Focus",
+            "text": "Your complete satisfaction is our goal. We provide responsive communication, reliable scheduling, and quality service that Dubai residents and businesses trust."
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "map",
+            "address": "THE MEADOWS Dubai"
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Villa Junk Removal in The Meadows & Springs Communities FAMILY COMMUNITY WASTE REMOVAL SERVICE Dedicated junk removal service for The Meadows, Springs, and Emirates Living communities. We provide family-friendly waste pickup for villas and townhouses, understanding community regulations and timing requirements. Specializing in garden waste, household cleanouts, and community cleanup projects. Call"
+  },
+  {
+    "id": "6295",
+    "type": "page",
+    "path": "/service-areas/",
+    "slug": "service-areas",
+    "parentId": "0",
+    "title": "Service Areas",
+    "rawTitle": "Service Areas",
+    "template": "",
+    "date": "2025-12-29T16:12:51Z",
+    "modified": "2025-12-29T16:13:09Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [],
+    "fallbackText": ""
+  },
+  {
+    "id": "6517",
+    "type": "page",
+    "path": "/services/construction-waste-removal/",
+    "slug": "construction-waste-removal",
+    "parentId": "25",
+    "title": "Construction Waste Removal",
+    "rawTitle": "CONSTRUCTION WASTE REMOVAL",
+    "template": "elementor_header_footer",
+    "date": "2026-01-15T19:37:33Z",
+    "modified": "2026-01-23T15:24:18Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "banner",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/cargo-transports-e1766232854263.webp",
+              "alt": "Junk Removal Garbage",
+              "width": 1344,
+              "height": 363
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2026/01/Modern-Commercial-Warehouse-Operations.png",
+              "alt": "",
+              "width": 1200,
+              "height": 849
+            }
+          },
+          {
+            "type": "heading",
+            "eyebrow": "About Us",
+            "title": "Fast, Reliable & Eco-Friendly Construction Waste Removal Services",
+            "text": ""
+          },
+          {
+            "type": "text",
+            "html": "<p>Looking for professional <strong>construction waste removal in Dubai</strong>? We provide efficient, safe, and cost-effective solutions to remove all types of construction and demolition waste. From small renovation projects to large construction sites, our expert team ensures timely pickup, proper disposal, and full compliance with Dubai waste management regulations.</p>"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "",
+            "title": "Professional Construction Waste Removal Services",
+            "text": ""
+          },
+          {
+            "type": "text",
+            "html": "<p>Construction projects generate heavy and hazardous waste that needs expert handling. Our <strong>construction waste removal services</strong> are designed to keep your site clean, safe, and productive. We handle debris removal efficiently so you can focus on completing your project without delays.</p>"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Concrete, bricks, and rubble",
+              "Wood, metal, and scrap materials",
+              "Tiles, plaster, and drywall",
+              "Renovation and demolition waste",
+              "Packaging and leftover construction materials"
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "",
+            "title": "Why Choose Our Construction Waste Removal?",
+            "text": ""
+          },
+          {
+            "type": "list",
+            "items": [
+              "Fast response & 24/7 availability",
+              "Affordable & transparent pricing",
+              "Licensed and experienced professionals",
+              "Safe handling of heavy construction debris",
+              "Eco-friendly disposal & recycling"
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Testimonials",
+            "title": "What Our Clients Say",
+            "text": ""
+          },
+          {
+            "type": "omitted",
+            "reason": "testimonials"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "FAQ",
+            "title": "Frequently Asked Questions About Junk Removal in Dubai",
+            "text": ""
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "q": "What junk removal services do you offer in Dubai?",
+                "a": "We offer complete waste removal solutions including construction waste cleanup, household junk removal, furniture and appliance disposal, commercial cleanouts, yard waste removal, and e-waste recycling. We serve both residential and commercial clients across all Dubai areas."
+              },
+              {
+                "q": "Which areas in Dubai do you cover for junk removal?",
+                "a": "We serve all Dubai neighborhoods including Jumeirah Bay Island, Dubai Marina, JVC, Arabian Ranches, The Meadows, Palm Jumeirah, Downtown Dubai, Al Quoz, and surrounding communities. Contact us to confirm service in your specific area."
+              },
+              {
+                "q": "How quickly can you provide junk removal services?",
+                "a": "For urgent requirements, we offer same-day junk removal in Dubai. For scheduled collections, we recommend booking 24-48 hours in advance. Our fast response team ensures timely pickup across Dubai."
+              },
+              {
+                "q": "What items can you remove from my property?",
+                "a": "We remove almost everything: furniture, appliances, electronics, construction debris, yard waste, general clutter, and bulky items. We do not handle hazardous materials, chemicals, or medical waste as per Dubai regulations."
+              },
+              {
+                "q": "How do you determine pricing for junk removal?",
+                "a": "We provide transparent, upfront pricing based on the volume of items, type of materials, and job complexity. You'll receive a clear quote before we begin any work, with no hidden fees."
+              },
+              {
+                "q": "Do you recycle or donate items whenever possible?",
+                "a": "Yes! We practice eco-friendly disposal by recycling materials like metal, wood, and electronics, and donating usable furniture and appliances to local charities whenever possible."
+              },
+              {
+                "q": "Do I need to be present during the removal?",
+                "a": "Not necessarily. We can work with your schedule. Many clients provide access instructions or keys to building management. Our insured team works professionally whether you're present or not."
+              },
+              {
+                "q": "How do I get a free estimate for junk removal?",
+                "a": "You can get a free estimate by calling +971 55 103 1255, sending a WhatsApp message, or filling out the contact form on our website. We'll assess your needs and provide a fair quote."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "title": "Contact us"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "contactForm"
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2026/01/Red-Grey-Job-Vacancy-contraction-worker-Instagram-Post.png",
+              "alt": "",
+              "width": 1080,
+              "height": 1080
+            }
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Home About Us Fast, Reliable & Eco-Friendly Construction Waste Removal Services Looking for professional construction waste removal in Dubai? We provide efficient, safe, and cost-effective solutions to remove all types of construction and demolition waste. From small renovation projects to large construction sites, our expert team ensures timely pickup, proper disposal, and full compliance with Du"
+  },
+  {
+    "id": "6584",
+    "type": "page",
+    "path": "/services/household-junk-removal/",
+    "slug": "household-junk-removal",
+    "parentId": "25",
+    "title": "Household Junk Removal",
+    "rawTitle": "HOUSEHOLD JUNK REMOVAL",
+    "template": "elementor_header_footer",
+    "date": "2026-01-23T13:47:22Z",
+    "modified": "2026-01-23T15:25:33Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "banner",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/cargo-transports-e1766232854263.webp",
+              "alt": "Junk Removal Garbage",
+              "width": 1344,
+              "height": 363
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/close-up-gardener-holding-vegetable-crate-near-car-2-scaled.webp",
+              "alt": "Junk Removal Dubai - Fast & Affordable Service",
+              "width": 2560,
+              "height": 1920
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2026/01/young-couple-moving-new-home-unpacking-carboard-boxes-almost-done-moving-scaled.jpg",
+              "alt": "HOUSEHOLD JUNK REMOVAL",
+              "width": 2560,
+              "height": 1707
+            }
+          },
+          {
+            "type": "heading",
+            "eyebrow": "About Us",
+            "title": "Fast, Reliable & Eco-Friendly Household Junk Removal",
+            "text": ""
+          },
+          {
+            "type": "text",
+            "html": "<p>We specialize in removing all types of residential junk from apartments, villas, and townhouses in communities including <strong>Arabian Ranches, Palm Jumeirah, Dubai Marina, Jumeirah Village Circle (JVC), The Meadows, Downtown Dubai</strong>, and everywhere in between. Our team arrives on time, works efficiently, and ensures your property is left clean and clutter-free.</p>"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "",
+            "title": "What We Remove:",
+            "text": ""
+          },
+          {
+            "type": "text",
+            "html": "<p>Getting rid of unwanted items has never been easier. Our simple, transparent process is designed for your convenience from start to finish.</p>"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Old Furniture: Sofas, beds, tables, cabinets, wardrobes",
+              "Household Appliances: Refrigerators, washing machines, ovens, AC units",
+              "Electronics & E-Waste: TVs, computers, printers, cables",
+              "General Clutter: Toys, garden waste, carpets, mattresses, boxes",
+              "Renovation Debris: From small home upgrades and DIY projects"
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "",
+            "title": "Why Choose Our Household Junk Removal Service?",
+            "text": ""
+          },
+          {
+            "type": "list",
+            "items": [
+              "Fast & Reliable Service",
+              "Transparent, All-Inclusive Pricing",
+              "Eco-Friendly & Responsible",
+              "Licensed, Insured & Professional",
+              "Serving All of Dubai",
+              "Customer-First Approach"
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Testimonials",
+            "title": "What Our Clients Say",
+            "text": ""
+          },
+          {
+            "type": "omitted",
+            "reason": "testimonials"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "FAQ",
+            "title": "Frequently Asked Questions About Junk Removal in Dubai",
+            "text": ""
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "q": "What junk removal services do you offer in Dubai?",
+                "a": "We offer complete waste removal solutions including construction waste cleanup, household junk removal, furniture and appliance disposal, commercial cleanouts, yard waste removal, and e-waste recycling. We serve both residential and commercial clients across all Dubai areas."
+              },
+              {
+                "q": "Which areas in Dubai do you cover for junk removal?",
+                "a": "We serve all Dubai neighborhoods including Jumeirah Bay Island, Dubai Marina, JVC, Arabian Ranches, The Meadows, Palm Jumeirah, Downtown Dubai, Al Quoz, and surrounding communities. Contact us to confirm service in your specific area."
+              },
+              {
+                "q": "How quickly can you provide junk removal services?",
+                "a": "For urgent requirements, we offer same-day junk removal in Dubai. For scheduled collections, we recommend booking 24-48 hours in advance. Our fast response team ensures timely pickup across Dubai."
+              },
+              {
+                "q": "What items can you remove from my property?",
+                "a": "We remove almost everything: furniture, appliances, electronics, construction debris, yard waste, general clutter, and bulky items. We do not handle hazardous materials, chemicals, or medical waste as per Dubai regulations."
+              },
+              {
+                "q": "How do you determine pricing for junk removal?",
+                "a": "We provide transparent, upfront pricing based on the volume of items, type of materials, and job complexity. You'll receive a clear quote before we begin any work, with no hidden fees."
+              },
+              {
+                "q": "Do you recycle or donate items whenever possible?",
+                "a": "Yes! We practice eco-friendly disposal by recycling materials like metal, wood, and electronics, and donating usable furniture and appliances to local charities whenever possible."
+              },
+              {
+                "q": "Do I need to be present during the removal?",
+                "a": "Not necessarily. We can work with your schedule. Many clients provide access instructions or keys to building management. Our insured team works professionally whether you're present or not."
+              },
+              {
+                "q": "How do I get a free estimate for junk removal?",
+                "a": "You can get a free estimate by calling +971 55 103 1255, sending a WhatsApp message, or filling out the contact form on our website. We'll assess your needs and provide a fair quote."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "title": "Contact us"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "contactForm"
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2026/01/Red-Grey-Job-Vacancy-contraction-worker-Instagram-Post.png",
+              "alt": "",
+              "width": 1080,
+              "height": 1080
+            }
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Home About Us Fast, Reliable & Eco-Friendly HOUSEHOLD JUNK REMOVAL We specialize in removing all types of residential junk from apartments, villas, and townhouses in communities including Arabian Ranches, Palm Jumeirah, Dubai Marina, Jumeirah Village Circle (JVC), The Meadows, Downtown Dubai, and everywhere in between. Our team arrives on time, works efficiently, and ensures your property is left "
+  },
+  {
+    "id": "6600",
+    "type": "page",
+    "path": "/services/commercial-waste-management/",
+    "slug": "commercial-waste-management",
+    "parentId": "25",
+    "title": "Commercial Waste Management",
+    "rawTitle": "COMMERCIAL WASTE MANAGEMENT",
+    "template": "elementor_header_footer",
+    "date": "2026-01-23T13:56:02Z",
+    "modified": "2026-01-23T15:18:19Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "banner",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/cargo-transports-e1766232854263.webp",
+              "alt": "Junk Removal Garbage",
+              "width": 1344,
+              "height": 363
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2026/01/Chaotic-Art-Studio-Scene.png",
+              "alt": "Residential Junk Removal Dubai",
+              "width": 1200,
+              "height": 673
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "COMMERCIAL WASTE MANAGEMENT",
+              "width": 2560,
+              "height": 1780
+            }
+          },
+          {
+            "type": "heading",
+            "eyebrow": "About Us",
+            "title": "Fast, Reliable & Eco-Friendly Commercial Waste Management",
+            "text": ""
+          },
+          {
+            "type": "text",
+            "html": "<p>Efficient waste management is key to a clean, compliant, and productive business. Our <strong>commercial waste management services in Dubai</strong> are designed to meet the unique needs of offices, retail spaces, restaurants, warehouses, and businesses across the emirate. Whether you require scheduled pickups, bulk removal, or specialized disposal solutions, we provide reliable and scalable services to keep your operations running smoothly.</p>"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "",
+            "title": "What We Handle:",
+            "text": ""
+          },
+          {
+            "type": "text",
+            "html": "<p>We simplify commercial waste removal with a structured, hassle-free process designed for businesses like yours.</p>"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Office & Retail Waste",
+              "Restaurant & Hospitality Waste",
+              "Warehouse & Logistics Waste",
+              "General Commercial Debris",
+              "End-of-Lease & Fit-Out Cleanouts"
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "",
+            "title": "Why Choose Our Commercial Waste Management",
+            "text": ""
+          },
+          {
+            "type": "list",
+            "items": [
+              "Fast response & 24/7 availability",
+              "Affordable & transparent pricing",
+              "Licensed and experienced professionals",
+              "Safe handling of heavy waste debris",
+              "Eco-friendly disposal & recycling"
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Testimonials",
+            "title": "What Our Clients Say",
+            "text": ""
+          },
+          {
+            "type": "omitted",
+            "reason": "testimonials"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "FAQ",
+            "title": "Frequently Asked Questions About Junk Removal in Dubai",
+            "text": ""
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "q": "What junk removal services do you offer in Dubai?",
+                "a": "We offer complete waste removal solutions including construction waste cleanup, household junk removal, furniture and appliance disposal, commercial cleanouts, yard waste removal, and e-waste recycling. We serve both residential and commercial clients across all Dubai areas."
+              },
+              {
+                "q": "Which areas in Dubai do you cover for junk removal?",
+                "a": "We serve all Dubai neighborhoods including Jumeirah Bay Island, Dubai Marina, JVC, Arabian Ranches, The Meadows, Palm Jumeirah, Downtown Dubai, Al Quoz, and surrounding communities. Contact us to confirm service in your specific area."
+              },
+              {
+                "q": "How quickly can you provide junk removal services?",
+                "a": "For urgent requirements, we offer same-day junk removal in Dubai. For scheduled collections, we recommend booking 24-48 hours in advance. Our fast response team ensures timely pickup across Dubai."
+              },
+              {
+                "q": "What items can you remove from my property?",
+                "a": "We remove almost everything: furniture, appliances, electronics, construction debris, yard waste, general clutter, and bulky items. We do not handle hazardous materials, chemicals, or medical waste as per Dubai regulations."
+              },
+              {
+                "q": "How do you determine pricing for junk removal?",
+                "a": "We provide transparent, upfront pricing based on the volume of items, type of materials, and job complexity. You'll receive a clear quote before we begin any work, with no hidden fees."
+              },
+              {
+                "q": "Do you recycle or donate items whenever possible?",
+                "a": "Yes! We practice eco-friendly disposal by recycling materials like metal, wood, and electronics, and donating usable furniture and appliances to local charities whenever possible."
+              },
+              {
+                "q": "Do I need to be present during the removal?",
+                "a": "Not necessarily. We can work with your schedule. Many clients provide access instructions or keys to building management. Our insured team works professionally whether you're present or not."
+              },
+              {
+                "q": "How do I get a free estimate for junk removal?",
+                "a": "You can get a free estimate by calling +971 55 103 1255, sending a WhatsApp message, or filling out the contact form on our website. We'll assess your needs and provide a fair quote."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "title": "Contact us"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "contactForm"
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2026/01/Red-Grey-Job-Vacancy-contraction-worker-Instagram-Post.png",
+              "alt": "",
+              "width": 1080,
+              "height": 1080
+            }
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Home About Us Fast, Reliable & Eco-Friendly COMMERCIAL WASTE MANAGEMENT Efficient waste management is key to a clean, compliant, and productive business. Our commercial waste management services in Dubai are designed to meet the unique needs of offices, retail spaces, restaurants, warehouses, and businesses across the emirate. Whether you require scheduled pickups, bulk removal, or specialized dis"
+  },
+  {
+    "id": "6608",
+    "type": "page",
+    "path": "/services/furniture-appliance-disposal/",
+    "slug": "furniture-appliance-disposal",
+    "parentId": "25",
+    "title": "Furniture & Appliance Disposal",
+    "rawTitle": "FURNITURE & APPLIANCE DISPOSAL",
+    "template": "elementor_header_footer",
+    "date": "2026-01-23T14:02:34Z",
+    "modified": "2026-01-23T15:25:07Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "banner",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/cargo-transports-e1766232854263.webp",
+              "alt": "Junk Removal Garbage",
+              "width": 1344,
+              "height": 363
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/scene-with-miscellaneous-items-being-sold-yard-sale-bargains-wecompress.com_-scaled.jpg",
+              "alt": "FURNITURE & APPLIANCE DISPOSAL",
+              "width": 2560,
+              "height": 1780
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2026/01/Modern-Commercial-Warehouse-Operations.png",
+              "alt": "",
+              "width": 1200,
+              "height": 849
+            }
+          },
+          {
+            "type": "heading",
+            "eyebrow": "About Us",
+            "title": "Fast, Reliable & Eco-Friendly Furniture & Appliance Disposal",
+            "text": ""
+          },
+          {
+            "type": "text",
+            "html": "<p>We serve homes and businesses across Dubai, from apartments in <strong>Dubai Marina</strong> and villas in <strong>Arabian Ranches</strong> to offices in <strong>Business Bay</strong> and retail spaces in <strong>Mirdif</strong>. No matter the item’s size, weight, or condition, our team is equipped to remove it safely without damaging your property.</p>"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "",
+            "title": "Professional Furniture & Appliance Disposal",
+            "text": ""
+          },
+          {
+            "type": "text",
+            "html": "<p>We’ve designed our furniture and appliance removal process to be as straightforward as possible—because your time matters.</p>"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Furniture Disposal: Sofas, beds, mattresses, dining tables, cabinets, office desks, chairs, and bookshelves",
+              "Appliance Disposal: Refrigerators, washing machines, dryers, ovens, stoves, water heaters, and air conditioners",
+              "Large Electronics: Old TVs, home theater systems, and bulky computer equipment",
+              "Outdoor & Miscellaneous: Garden furniture, BBQs, treadmills, and large children’s playsets"
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "",
+            "title": "Why Choose Our Furniture & Appliance Disposal",
+            "text": ""
+          },
+          {
+            "type": "list",
+            "items": [
+              "Fast response & 24/7 availability",
+              "Affordable & transparent pricing",
+              "Licensed and experienced professionals",
+              "Safe handling of heavy, bulky items",
+              "Eco-friendly disposal & recycling"
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Testimonials",
+            "title": "What Our Clients Say",
+            "text": ""
+          },
+          {
+            "type": "omitted",
+            "reason": "testimonials"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "FAQ",
+            "title": "Frequently Asked Questions About Junk Removal in Dubai",
+            "text": ""
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "q": "What junk removal services do you offer in Dubai?",
+                "a": "We offer complete waste removal solutions including construction waste cleanup, household junk removal, furniture and appliance disposal, commercial cleanouts, yard waste removal, and e-waste recycling. We serve both residential and commercial clients across all Dubai areas."
+              },
+              {
+                "q": "Which areas in Dubai do you cover for junk removal?",
+                "a": "We serve all Dubai neighborhoods including Jumeirah Bay Island, Dubai Marina, JVC, Arabian Ranches, The Meadows, Palm Jumeirah, Downtown Dubai, Al Quoz, and surrounding communities. Contact us to confirm service in your specific area."
+              },
+              {
+                "q": "How quickly can you provide junk removal services?",
+                "a": "For urgent requirements, we offer same-day junk removal in Dubai. For scheduled collections, we recommend booking 24-48 hours in advance. Our fast response team ensures timely pickup across Dubai."
+              },
+              {
+                "q": "What items can you remove from my property?",
+                "a": "We remove almost everything: furniture, appliances, electronics, construction debris, yard waste, general clutter, and bulky items. We do not handle hazardous materials, chemicals, or medical waste as per Dubai regulations."
+              },
+              {
+                "q": "How do you determine pricing for junk removal?",
+                "a": "We provide transparent, upfront pricing based on the volume of items, type of materials, and job complexity. You'll receive a clear quote before we begin any work, with no hidden fees."
+              },
+              {
+                "q": "Do you recycle or donate items whenever possible?",
+                "a": "Yes! We practice eco-friendly disposal by recycling materials like metal, wood, and electronics, and donating usable furniture and appliances to local charities whenever possible."
+              },
+              {
+                "q": "Do I need to be present during the removal?",
+                "a": "Not necessarily. We can work with your schedule. Many clients provide access instructions or keys to building management. Our insured team works professionally whether you're present or not."
+              },
+              {
+                "q": "How do I get a free estimate for junk removal?",
+                "a": "You can get a free estimate by calling +971 55 103 1255, sending a WhatsApp message, or filling out the contact form on our website. We'll assess your needs and provide a fair quote."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "title": "Contact us"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "contactForm"
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2026/01/Red-Grey-Job-Vacancy-contraction-worker-Instagram-Post.png",
+              "alt": "",
+              "width": 1080,
+              "height": 1080
+            }
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Home About Us Fast, Reliable & Eco-Friendly FURNITURE & APPLIANCE DISPOSAL We serve homes and businesses across Dubai, from apartments in Dubai Marina and villas in Arabian Ranches to offices in Business Bay and retail spaces in Mirdif. No matter the item’s size, weight, or condition, our team is equipped to remove it safely without damaging your property. Professional Construction FURNITURE & APP"
+  },
+  {
+    "id": "6628",
+    "type": "page",
+    "path": "/services/yard-garden-waste-cleanup/",
+    "slug": "yard-garden-waste-cleanup",
+    "parentId": "25",
+    "title": "Yard & Garden Waste Cleanup",
+    "rawTitle": "YARD & GARDEN WASTE CLEANUP",
+    "template": "elementor_header_footer",
+    "date": "2026-01-23T14:52:07Z",
+    "modified": "2026-01-23T15:25:49Z",
+    "seo": {
+      "title": "",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "keywords": []
+    },
+    "featuredImage": null,
+    "sections": [
+      {
+        "blocks": [
+          {
+            "type": "banner",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/cargo-transports-e1766232854263.webp",
+              "alt": "Junk Removal Garbage",
+              "width": 1344,
+              "height": 363
+            }
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2025/12/high-angle-house-interior-with-clutter-1-wecompress.com_-scaled.webp",
+              "alt": "CONSTRUCTION WASTE REMOVAL",
+              "width": 2560,
+              "height": 1707
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2026/01/Modern-Commercial-Warehouse-Operations.png",
+              "alt": "",
+              "width": 1200,
+              "height": 849
+            }
+          },
+          {
+            "type": "heading",
+            "eyebrow": "About Us",
+            "title": "Fast, Reliable & Eco-Friendly Yard & Garden Waste Cleanup",
+            "text": ""
+          },
+          {
+            "type": "text",
+            "html": "<p>We serve residential villas, compounds, townhouses, and commercial properties across Dubai’s communities, including <strong>Arabian Ranches, The Meadows, Emirates Hills, Jumeirah, Mirdif, Al Barsha, and Dubai Hills Estate</strong>. From palm fronds and dry leaves to bulky branches and full garden clear-outs, no job is too big or too messy.</p>"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "",
+            "title": "Yard & Garden Waste Cleanup",
+            "text": ""
+          },
+          {
+            "type": "text",
+            "html": "<p>We make yard cleanup simple, organized, and stress-free—in just a few easy steps.</p>"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Schedule Your Free On-Site Assessment",
+              "We Arrive & Clear Everything",
+              "Responsible Recycling & Disposal",
+              "Final Touches & Satisfaction Check"
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "",
+            "title": "Why Choose Our Yard & Garden Waste Cleanup Service?",
+            "text": ""
+          },
+          {
+            "type": "list",
+            "items": [
+              "Fast response & 24/7 availability",
+              "Affordable & transparent pricing",
+              "Licensed and experienced professionals",
+              "Specialized Garden Waste Handling",
+              "Eco-friendly disposal & recycling"
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "Testimonials",
+            "title": "What Our Clients Say",
+            "text": ""
+          },
+          {
+            "type": "omitted",
+            "reason": "testimonials"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "eyebrow": "FAQ",
+            "title": "Frequently Asked Questions About Junk Removal in Dubai",
+            "text": ""
+          },
+          {
+            "type": "faq",
+            "items": [
+              {
+                "q": "What junk removal services do you offer in Dubai?",
+                "a": "We offer complete waste removal solutions including construction waste cleanup, household junk removal, furniture and appliance disposal, commercial cleanouts, yard waste removal, and e-waste recycling. We serve both residential and commercial clients across all Dubai areas."
+              },
+              {
+                "q": "Which areas in Dubai do you cover for junk removal?",
+                "a": "We serve all Dubai neighborhoods including Jumeirah Bay Island, Dubai Marina, JVC, Arabian Ranches, The Meadows, Palm Jumeirah, Downtown Dubai, Al Quoz, and surrounding communities. Contact us to confirm service in your specific area."
+              },
+              {
+                "q": "How quickly can you provide junk removal services?",
+                "a": "For urgent requirements, we offer same-day junk removal in Dubai. For scheduled collections, we recommend booking 24-48 hours in advance. Our fast response team ensures timely pickup across Dubai."
+              },
+              {
+                "q": "What items can you remove from my property?",
+                "a": "We remove almost everything: furniture, appliances, electronics, construction debris, yard waste, general clutter, and bulky items. We do not handle hazardous materials, chemicals, or medical waste as per Dubai regulations."
+              },
+              {
+                "q": "How do you determine pricing for junk removal?",
+                "a": "We provide transparent, upfront pricing based on the volume of items, type of materials, and job complexity. You'll receive a clear quote before we begin any work, with no hidden fees."
+              },
+              {
+                "q": "Do you recycle or donate items whenever possible?",
+                "a": "Yes! We practice eco-friendly disposal by recycling materials like metal, wood, and electronics, and donating usable furniture and appliances to local charities whenever possible."
+              },
+              {
+                "q": "Do I need to be present during the removal?",
+                "a": "Not necessarily. We can work with your schedule. Many clients provide access instructions or keys to building management. Our insured team works professionally whether you're present or not."
+              },
+              {
+                "q": "How do I get a free estimate for junk removal?",
+                "a": "You can get a free estimate by calling +971 55 103 1255, sending a WhatsApp message, or filling out the contact form on our website. We'll assess your needs and provide a fair quote."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "heading",
+            "title": "Contact us"
+          }
+        ]
+      },
+      {
+        "blocks": [
+          {
+            "type": "contactForm"
+          },
+          {
+            "type": "image",
+            "image": {
+              "src": "/wp-content/uploads/2026/01/Red-Grey-Job-Vacancy-contraction-worker-Instagram-Post.png",
+              "alt": "",
+              "width": 1080,
+              "height": 1080
+            }
+          }
+        ]
+      }
+    ],
+    "fallbackText": "Home About Us Fast, Reliable & Eco-Friendly YARD & GARDEN WASTE CLEANUP We serve residential villas, compounds, townhouses, and commercial properties across Dubai’s communities, including Arabian Ranches, The Meadows, Emirates Hills, Jumeirah, Mirdif, Al Barsha, and Dubai Hills Estate. From palm fronds and dry leaves to bulky branches and full garden clear-outs, no job is too big or too messy. YAR"
+  }
+]

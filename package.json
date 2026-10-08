@@ -1,0 +1,33 @@
+{
+  "name": "junkremovalgarbage-website",
+  "version": "1.0.0",
+  "description": "Next.js rebuild of junkremovalgarbage.com",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "extract": "node scripts/extract.mjs",
+    "media:download": "node scripts/download-media.mjs",
+    "validate:routes": "node scripts/validate-routes.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "dependencies": {
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "fast-xml-parser": "^4.5.0",
+    "postcss": "^8.5.29",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20.9"
+  }
+}
