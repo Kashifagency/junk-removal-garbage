@@ -17,6 +17,7 @@ Every article, page, directory listing and social post must follow these rules. 
   - fully insured, licensed and professional
   - residential and commercial
   - all Dubai areas
+  - trade licence covers construction and demolition waste collection and transport (owner confirmed 10 Oct 2026)
 
   Anything new ("30-minute response", "24/7", "cheapest in Dubai", "certificate of disposal") needs written confirmation from the owner before it's published.
 - **Prices:** do not publish figures unless the owner approves them in writing. Explain the factors that change the price instead, and use "send a photo on WhatsApp for an exact price".

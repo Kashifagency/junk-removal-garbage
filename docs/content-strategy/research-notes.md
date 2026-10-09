@@ -36,6 +36,7 @@ Method: web search and page review. Searches were **not** run from a Dubai locat
 
 ## 4. Construction and demolition waste
 - **On-site sorting:** DM Circular 12-10-1 (2023) requires C&D waste to be sorted on site. https://dmpmedia.dm.gov.ae/uploads/2024/12/12-10-1.pdf
+  - **Verified 10 Oct 2026 (English technical translation):** dated 7 June 2023, addressed to engineering consultants and construction and demolition contractors. Requirements: a barriered area or separate containers per material (concrete, rebar, wood, tiles, plastics), with materials not mixed in transport. On demolition sites, separate concrete and rebar and remove doors, windows, aluminium, cables and metal sections first. Contractors keep records of quantities sorted and transported, using forms on the Dubai Building Permit and Control System. The consultant supervises compliance.
 - **Licence activity:** DM Circular 6/2015 requires C&D haulers to hold a specific DM activity on their trade licence. https://www.dm.gov.ae/wp-content/uploads/2022/01/CIRCULAR-6-2015خدمات-جمع-ونقل-مخلفات-البناء-والهدم.pdf
   - **Owner action:** confirm whether the business licence includes this activity. If it does, it's a strong trust claim for the construction page.
 - **Disposal fees:** set by Executive Council Resolution No. 58 of 2017.

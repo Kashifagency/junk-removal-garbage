@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-09T12:32:37.007Z",
+  "checkedAt": "2026-10-09T14:27:21.600Z",
   "base": "http://localhost:3000",
   "total": 62,
   "pages": 24,
@@ -12,7 +12,8 @@
     "OK  /services/not-a-service/ -> 404",
     "OK  /blog/page/5/ -> 404",
     "OK  /blog/page/2/ -> 200",
-    "OK  /blogs/page/4/ -> 200",
+    "OK  /blogs/page/2/ -> 200",
+    "OK  /blogs/page/99/ -> 404",
     "OK  /about-us -> 308 /about-us/",
     "OK  /contact-us/ -> 308 /contact/",
     "OK  /dubai-waste-collection-services-reliable-solutions-for-homes-businesses/ -> 308 /dubai-waste-collection-services/",
@@ -160,8 +161,8 @@
     {
       "type": "post",
       "path": "/junk-removal-dubai-fast-affordable-service/",
-      "title": "Junk Removal Dubai - Fast &amp; Affordable Service",
-      "status": 200,
+      "title": "(merged → /junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -181,8 +182,8 @@
     {
       "type": "post",
       "path": "/construction-waste-removal-dubai-best-price-fast-service/",
-      "title": "Construction Waste Removal Dubai - Best Price &amp; Fast Service",
-      "status": 200,
+      "title": "(merged → /services/construction-waste-removal/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -209,15 +210,15 @@
     {
       "type": "post",
       "path": "/construction-removal-service-in-dubai-2026/",
-      "title": "Construction Removal Service in Dubai 2026",
-      "status": 200,
+      "title": "(merged → /services/construction-waste-removal/)",
+      "status": 308,
       "issues": []
     },
     {
       "type": "post",
       "path": "/professional-junk-removal-service-dubai/",
-      "title": "Professional Junk Removal Service Dubai",
-      "status": 200,
+      "title": "(merged → /professional-junk-removal/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -230,8 +231,8 @@
     {
       "type": "post",
       "path": "/take-my-junk-dubai-complete-removal-service/",
-      "title": "Take My Junk Dubai - Complete Removal Service",
-      "status": 200,
+      "title": "(merged → /junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -244,22 +245,22 @@
     {
       "type": "post",
       "path": "/junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/",
-      "title": "Junk Removal Services in Dubai | Shanan Junk Removal",
+      "title": "Junk Removal Services Dubai | Homes &amp; Businesses Guide",
       "status": 200,
       "issues": []
     },
     {
       "type": "post",
       "path": "/junk-removal-garbage-services-in-dubai-2026/",
-      "title": "Junk Removal Garbage Services in Dubai 2026",
-      "status": 200,
+      "title": "(merged → /junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/)",
+      "status": 308,
       "issues": []
     },
     {
       "type": "post",
       "path": "/junk-removal-service-in-dubai/",
-      "title": "Junk Removal Service in Dubai | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -300,8 +301,8 @@
     {
       "type": "post",
       "path": "/junk-removal-near-me-dubai/",
-      "title": "Junk Removal Near Me in Dubai | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -328,8 +329,8 @@
     {
       "type": "post",
       "path": "/junk-removal-garbage-in-dubai-affordable-reliable-service/",
-      "title": "Junk Removal Garbage in Dubai | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -356,8 +357,8 @@
     {
       "type": "post",
       "path": "/construction-waste-removal-dubai/",
-      "title": "Construction Waste Removal Dubai | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /services/construction-waste-removal/)",
+      "status": 308,
       "issues": []
     },
     {

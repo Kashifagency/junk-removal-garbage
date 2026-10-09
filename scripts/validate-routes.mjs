@@ -80,7 +80,8 @@ await expect('/this-page-does-not-exist/', 404);
 await expect('/services/not-a-service/', 404);
 await expect('/blog/page/5/', 404);
 await expect('/blog/page/2/', 200);
-await expect('/blogs/page/4/', 200);
+await expect('/blogs/page/2/', 200); // legacy archive pagination; page count shrinks as legacy posts merge
+await expect('/blogs/page/99/', 404);
 await expect('/about-us', 308, '/about-us/');
 await expect('/contact-us/', 308, '/contact/');
 await expect('/dubai-waste-collection-services-reliable-solutions-for-homes-businesses/', 308, '/dubai-waste-collection-services/');
