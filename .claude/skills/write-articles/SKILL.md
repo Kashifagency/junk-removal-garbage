@@ -31,6 +31,24 @@ Read these in full before writing:
 - If fewer than N `todo` rows exist, first add new rows. Use keyword-roadmap.md (P2, then P3) and, if available, Search Console queries with impressions, applying the one-keyword-per-URL rule. Never add a row whose keyword is already owned by another URL.
 - Tell the user which rows you're writing before you start.
 
+## 2b. Process the article images first
+The owner generates images in Antigravity from the prompts made by `/article-image-prompts` and saves them in the workspace inbox `../article-images/` (outside the repo).
+1. From `website/`, run `node scripts/process-article-images.mjs`. It:
+   - converts every `<slug>.png|jpg|webp` to `public/images/blog/<slug>.webp` (1600×1000, ≤ 250 KB)
+   - converts every `<slug>-2.*` to `public/images/blog/<slug>-2.webp` (1200×800)
+   - deletes the source images, and deletes the prompts file once its required images are done
+
+   It prints a JSON report: `processed`, `missing`, `failed`, `deletedPrompts`.
+2. Look at each converted image (Read the WebP file) and check that it:
+   - matches the article topic
+   - has no visible text, logos or watermarks
+   - has no distorted people or hands
+
+   If one is unusable, don't use it. Delete it and list it as needing regeneration in your report.
+3. If `lowRes: true`, use the image but mention it in the report.
+4. If a required featured image is missing or fails, fall back to the row's "Suggested image" and list it under "images still needed". The owner can add it later and you can swap it in.
+5. If the inbox has no prompts file and no images for these rows, carry on with the suggested images, and remind the user that `/article-image-prompts` comes first next time.
+
 ## 3. For each row
 
 **a. Gather source material**
@@ -47,7 +65,7 @@ Read these in full before writing:
 
 Frontmatter to include:
 - `title`, `seoTitle` (60 characters or less), `description` (140–160 characters), `date` (today), `topic`, `primaryKeyword`, `tags`
-- `image` / `imageAlt` (the row's suggested image, or a better relevant file in `public/wp-content/uploads/` or `public/images/blog/`)
+- `image` / `imageAlt`: use `/images/blog/<slug>.webp` if step 2b produced it. Otherwise use the row's suggested image (or a better relevant file in `public/wp-content/uploads/`). The alt text describes what's actually in the image and includes the primary keyword naturally.
 - `service`, `areas`
 - `summary` (3–5 bullets) and `faq` (3–6 real questions, 40–80 word answers)
 - **`replaces: true`** for `replace` rows
@@ -59,6 +77,7 @@ Body requirements:
 - Primary keyword in the H1, the first 100 words, at least one H2 and the image alt text. Variants used naturally, never stuffed.
 - Question-style H2s that answer in the first 1–2 sentences. H3s only under H2s. No H1 in the body.
 - Dubai-specific practical detail: service lifts, building management, parking and loading, community rules, tenancy handovers, summer heat.
+- If `/images/blog/<slug>-2.webp` exists, place it after the first or second H2 section as `![<descriptive alt text>](/images/blog/<slug>-2.webp)`. It's optimised and lazy-loaded automatically.
 - Internal links:
   - the money page (descriptive anchor text)
   - 1–2 area pages
@@ -90,12 +109,14 @@ From `website/`:
 - Update `docs/content-strategy/article-queue.md`:
   - set each row's status to `written` (or `review`)
   - add a log line: date, rows written, anything the owner must check
+- New images in `public/images/blog/` are part of the commit (`git add -A`).
 - Commit locally from `website/` with a message like `Add articles: <slug1>, <slug2>, <slug3>`, ending with the attribution trailer configured for this session.
 - **Do not push.** Pushing deploys to the live site, so wait until the user says "push".
 
 ## 6. Report to the user (short)
 For each article:
 - title and URL
+- image used (new WebP or fallback), plus any images still needed or to regenerate
 - primary keyword
 - body word count
 - redirects added

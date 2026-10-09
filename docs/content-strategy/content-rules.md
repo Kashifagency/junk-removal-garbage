@@ -42,7 +42,10 @@ Every article, page and Google Business Profile post must follow these rules. If
 - [ ] **External links:** only to authoritative sources (dm.gov.ae, dlp.dubai.gov.ae, major UAE news). These open in a new tab automatically.
 - [ ] **FAQ:** 3–6 real questions with 40–80 word answers (frontmatter `faq`). This becomes FAQ schema.
 - [ ] **Key takeaways:** 3–5 bullets (frontmatter `summary`).
-- [ ] **Image:** real photos preferred (truck, crew, actual jobs). WebP, 1600×1000, under 250 KB, with descriptive alt text. AI images: the hero photo of the truck is fine, but no fake "customer" photos.
+- [ ] **Image:** real job photos are best whenever available. Otherwise use AI images generated from the `/article-image-prompts` house style (photorealistic, Dubai setting, no text or logos, faces not the focus).
+  - Converted automatically to WebP: featured 1600×1000, in-article 1200×800, each 250 KB or less.
+  - Alt text describes what's actually in the image.
+  - AI images are illustrative only. Never present one as a specific real customer's job.
 - [ ] **CTA:** the template adds a mid-article contact prompt plus the end form. The last paragraph must also tell the reader what to do next (call or WhatsApp 055 103 1255, or fill in the form).
 - [ ] **No "quote" wording, no donation claims, no unapproved numbers.**
 - [ ] Spell-checked. All links work. Preview looks right on mobile.

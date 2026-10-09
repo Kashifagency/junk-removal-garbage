@@ -9,6 +9,7 @@
     "extract": "node scripts/extract.mjs",
     "media:download": "node scripts/download-media.mjs",
     "validate:routes": "node scripts/validate-routes.mjs",
+    "images:process": "node scripts/process-article-images.mjs",
     "typecheck": "tsc --noEmit"
   },
   "type": "module",

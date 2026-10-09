@@ -30,12 +30,13 @@ The copy-paste article template is in [`content/articles/_template.md`](../../co
 
 ## Daily routine with Claude
 
-Say **"write the next three articles following the md files please"** (or run `/write-articles`). Claude then:
-1. Takes the next three `todo` rows from article-queue.md.
-2. Verifies facts and writes each article following these docs, including the replace and merge redirects.
-3. Builds, checks all URLs, updates the queue and commits locally.
-
-Say **"push"** to publish.
+1. **`/article-image-prompts`.** Claude picks the next three articles and writes `article-images/YYYY-MM-DD-prompts.txt` in the workspace folder, with one image prompt per image and the exact filename to save it as.
+2. **Generate the images in Antigravity** and save them in `article-images/` with those filenames.
+3. **`/write-articles`** (or say "write the next three articles following the md files please"). Claude then:
+   - converts the images to WebP (`npm run images:process`) and deletes the source images and prompts file
+   - writes the articles following these docs, using the new images and including the replace and merge redirects
+   - builds the site, checks all URLs, updates the queue and commits locally
+4. Say **"push"** to publish.
 
 ## Publishing workflow (for writers)
 
