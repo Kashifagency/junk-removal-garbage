@@ -4,7 +4,7 @@ import { Icon, WhatsAppIcon } from '@/components/Icon';
 import { FeatureList, PostCard, ServiceIndex, blocksOf } from '@/components/sections';
 import { AreaMarquee, CallButtons, Faq, ItemsGrid, JsonLd, ProcessSteps, PromiseStrip, QuoteSection, SectionHead } from '@/components/ui';
 import { services } from '@/lib/catalog';
-import { areaName, areaPages, defaultFaq, getPageByPath, pageSeoFor, posts, site, telHref, whatsappHref } from '@/lib/content';
+import { areaName, areaPages, featuredAreaPages, defaultFaq, getPageByPath, pageSeoFor, posts, site, telHref, whatsappHref } from '@/lib/content';
 import { buildMetadata, faqLd, graph } from '@/lib/seo';
 
 const home = getPageByPath('/')!;
@@ -169,9 +169,19 @@ export default function HomePage() {
       {/* ---------------------------------------------------------- areas */}
       <section className="py-16 sm:py-24">
         <div className="container-x grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
-          <SectionHead index="05" kicker="Service areas" title="Across Dubai’s communities" text="From Dubai Marina towers to Arabian Ranches villas. Don’t see your area? We cover all of Dubai." />
+          <SectionHead
+            index="05"
+            kicker="Service areas"
+            title="Across Dubai’s communities"
+            text={`${areaPages.length} area guides, from Dubai Marina towers to Arabian Ranches villas. Don’t see your area? We cover all of Dubai.`}
+            action={
+              <Link href="/service-areas/" className="link-arrow">
+                All {areaPages.length} areas <Icon name="arrowRight" className="h-4 w-4" />
+              </Link>
+            }
+          />
           <ul className="grid border-t border-ink-900 sm:grid-cols-2 sm:gap-x-10">
-            {areaPages.map((p, i) => (
+            {featuredAreaPages.map((p, i) => (
               <li key={p.id} className="border-b border-line">
                 <Link href={p.path} className="group flex items-center gap-4 py-4">
                   <span className="text-xs font-semibold text-ink-500 tabular-nums">{String(i + 1).padStart(2, '0')}</span>

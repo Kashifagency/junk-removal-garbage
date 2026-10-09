@@ -14,7 +14,7 @@
 | [content-rules.md](content-rules.md) | Non-negotiable rules: voice, facts, claims, on-page SEO checklist | Every writer, every article |
 | [content-structure.md](content-structure.md) | Article blueprints by type, required sections, word counts, frontmatter, internal links | Writers |
 | [content-audit.md](content-audit.md) | The 38 existing posts: keep, refresh, merge or redirect | SEO lead / developer |
-| [local-seo-playbook.md](local-seo-playbook.md) | Google Business Profile, citations, reviews, tracking | Owner + SEO lead |
+| [local-seo-playbook.md](local-seo-playbook.md) | Local SEO without Google Business Profile: on-site signals, directories, outreach, testimonials, tracking | Owner + SEO lead |
 | [research-notes.md](research-notes.md) | Market research with sources: competitors, regulations, pricing signals, seasonality | Reference |
 
 The copy-paste article template is in [`content/articles/_template.md`](../../content/articles/_template.md).
@@ -22,7 +22,7 @@ The copy-paste article template is in [`content/articles/_template.md`](../../co
 ## Strategy in one page
 
 1. **Money pages first.** Leads come from people searching to *hire* (e.g. "junk removal dubai", "sofa disposal dubai", "construction waste removal dubai", "junk removal jvc"). Every piece of content exists either to rank for one of those, or to push authority and visitors to the page that does.
-2. **Google Business Profile is the fastest lead channel.** The Map Pack shows above organic results for "near me" and "[service] dubai" searches. Google Local Services Ads are **not available in the UAE**, so it's the Map Pack, organic results and Google Ads. Optimise and post weekly from week 1.
+2. **No Google Business Profile, so pages must rank.** The business doesn't use Google Business Profile, so it won't appear in the Maps "map pack". The 43 unique area pages, the service pages and the articles carry organic visibility. Directories and outreach add trust, and Google Ads is the optional fast bridge. Google Local Services Ads aren't available in the UAE.
 3. **Fix the existing blog before adding to it.** 36 of 38 posts are thin and about a dozen compete for the same keyword. Merging them into a few strong pages (with 301 redirects) concentrates their authority. See `content-audit.md`.
 4. **Win where competitors are weak.** Competitors are mostly small exact-match-domain sites with no real area pages, empty blogs and no Arabic. We already have 10 area pages and a proper blog system, so we deepen them and publish item pages they don't have.
 5. **Convert every visit.** Every article ends with call, WhatsApp and the contact form, and has a contact prompt mid-article (built into the template). Track every click.

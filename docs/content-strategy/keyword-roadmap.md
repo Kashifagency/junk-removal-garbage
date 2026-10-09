@@ -15,7 +15,7 @@ Rule: **one URL owns each primary keyword.** Supporting articles target related 
 | Primary keyword | Secondary / variants | Intent | Demand (est.) | Owner URL | Priority |
 |---|---|---|---|---|---|
 | junk removal dubai | junk removal company dubai, junk collection dubai, junk pickup dubai | T/L | High | `/` (home) | P1 |
-| junk removal near me | junk removal near me dubai | T/L | High | `/` + GBP | P1 |
+| junk removal near me | junk removal near me dubai | T/L | High | `/` + area pages (no Google Business Profile; consider Google Ads) | P1 |
 | household junk removal dubai | house junk removal, home junk removal dubai | T | Low–Med | `/services/household-junk-removal/` | P1 |
 | furniture removal dubai | furniture disposal dubai, old furniture disposal dubai, used furniture pickup dubai | T | High | `/services/furniture-appliance-disposal/` | P1 |
 | construction waste removal dubai | debris removal dubai, building waste disposal dubai, renovation waste removal dubai | T | Medium | `/services/construction-waste-removal/` | P1 |
@@ -49,24 +49,57 @@ Use the Markdown article system with the **"money article"** blueprint (content-
 | warehouse clearance dubai | warehouse waste removal dubai | T | Low | refresh `/warehouse-waste-removal-dubai/` | P2 |
 | shop / restaurant clearance dubai | restaurant equipment removal dubai | T | Low | section in the office clearance page | P3 |
 
-### D. Area pages (we have 10; competitors have almost none)
+### D. Area pages: 43 pages, one per area (the main lead engine without Google Business Profile)
 
-Pattern: **"junk removal [area]"** plus **"furniture disposal [area]"**. Each is low volume alone, but converts strongly and is easy to win.
+Pattern: **"junk removal [area]"**, plus variants like "furniture disposal [area]" and "rubbish removal [area]". Each area is owned by exactly **one** URL, and no other page may target it. Content lives in `content/local-content.json` (the original 10) and `content/area-pages.json` (the 33 added on 9 Oct 2026). The list and regions are in `content/area-list.json`.
 
-| Area page (owner) | Keywords |
+| Area page (owner) | Primary keyword |
 |---|---|
-| `/dubai-marina/` | junk removal dubai marina, furniture disposal dubai marina, junk removal jbr (mention JBR nearby) |
-| `/jumeirah-village-circle/` | junk removal jvc, furniture removal jvc, junk removal jumeirah village circle |
-| `/palm-jumeirah/` | junk removal palm jumeirah, furniture removal palm jumeirah |
-| `/downtown-dubai/` | junk removal downtown dubai, junk removal business bay, office clearance business bay |
+| `/dubai-marina/` | junk removal dubai marina, furniture disposal dubai marina |
+| `/jumeirah-village-circle/` | junk removal jvc, junk removal jumeirah village circle |
+| `/palm-jumeirah/` | junk removal palm jumeirah |
+| `/downtown-dubai/` | junk removal downtown dubai (Business Bay now has its own page) |
 | `/al-barsha/` | junk removal al barsha |
 | `/al-quoz/` | junk removal al quoz, construction waste removal al quoz |
-| `/arabian-ranches/` | junk removal arabian ranches, garden waste removal arabian ranches |
+| `/arabian-ranches/` | junk removal arabian ranches |
 | `/the-meadows-springs/` | junk removal the meadows, junk removal the springs |
-| `/al-sufouh/` | junk removal umm suqeim, junk removal al sufouh |
+| `/al-sufouh/` | junk removal al sufouh, junk removal umm suqeim |
 | `/junk-removal-jumeirah-bay-island/` | junk removal jumeirah bay island |
+| `/junk-removal-business-bay/` | junk removal business bay |
+| `/junk-removal-difc/` | junk removal difc |
+| `/junk-removal-dubai-creek-harbour/` | junk removal dubai creek harbour |
+| `/junk-removal-al-jaddaf/` | junk removal al jaddaf |
+| `/junk-removal-mbr-city/` | junk removal mohammed bin rashid city, junk removal meydan |
+| `/junk-removal-jlt/` | junk removal jumeirah lake towers, junk removal jlt |
+| `/junk-removal-jbr/` | junk removal jumeirah beach residence, junk removal jbr |
+| `/junk-removal-the-greens/` | junk removal the greens & the views |
+| `/junk-removal-barsha-heights/` | junk removal barsha heights, junk removal tecom |
+| `/junk-removal-jumeirah/` | junk removal jumeirah |
+| `/junk-removal-deira/` | junk removal deira |
+| `/junk-removal-bur-dubai/` | junk removal bur dubai |
+| `/junk-removal-al-karama/` | junk removal al karama |
+| `/junk-removal-dubai-hills-estate/` | junk removal dubai hills estate |
+| `/junk-removal-emirates-hills/` | junk removal emirates hills |
+| `/junk-removal-damac-hills/` | junk removal damac hills |
+| `/junk-removal-mudon/` | junk removal mudon |
+| `/junk-removal-al-furjan/` | junk removal al furjan |
+| `/junk-removal-jvt/` | junk removal jumeirah village triangle, junk removal jvt |
+| `/junk-removal-motor-city/` | junk removal motor city |
+| `/junk-removal-dubai-sports-city/` | junk removal dubai sports city |
+| `/junk-removal-arjan/` | junk removal arjan |
+| `/junk-removal-town-square/` | junk removal town square |
+| `/junk-removal-discovery-gardens/` | junk removal discovery gardens |
+| `/junk-removal-mirdif/` | junk removal mirdif |
+| `/junk-removal-al-qusais/` | junk removal al qusais |
+| `/junk-removal-al-nahda/` | junk removal al nahda |
+| `/junk-removal-al-warqa/` | junk removal al warqa |
+| `/junk-removal-international-city/` | junk removal international city |
+| `/junk-removal-dubai-silicon-oasis/` | junk removal dubai silicon oasis |
+| `/junk-removal-jebel-ali/` | junk removal jebel ali |
+| `/junk-removal-dubai-investments-park/` | junk removal dubai investments park, junk removal dip |
+| `/junk-removal-dubai-south/` | junk removal dubai south |
 
-**P3 new areas** (only after the 10 have unique content): JLT, JBR, Dubai Hills, DAMAC Hills, Business Bay (standalone), Mirdif. Each needs genuinely local copy covering access, building types and parking. Never use templates where only the name changes.
+**Adding more areas:** only add an area where Search Console shows demand, and only with genuinely unique local content (content-rules.md §2b). Use `node scripts/merge-area-drafts.mjs` to check overlap; aim for 5% or less of shared phrases.
 
 ### E. Cost and commercial-investigation terms
 

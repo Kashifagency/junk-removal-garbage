@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { services } from '@/lib/catalog';
-import { areaName, areaPages, navigation, site, telHref, whatsappHref } from '@/lib/content';
+import { areaName, areaPages, featuredAreaPages, navigation, site, telHref, whatsappHref } from '@/lib/content';
 import { Logo } from './Header';
 import { Icon, WhatsAppIcon } from './Icon';
 
@@ -73,13 +73,18 @@ export function Footer() {
           <nav aria-label="Areas">
             <h2 className={col}>Areas</h2>
             <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-[0.95rem] sm:grid-cols-1">
-              {areaPages.map((p) => (
+              {featuredAreaPages.map((p) => (
                 <li key={p.id}>
                   <Link href={p.path} className="hover:text-white">
                     {areaName(p)}
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link href="/service-areas/" className="font-semibold text-brand-400 hover:text-white">
+                  All {areaPages.length} areas →
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>

@@ -19,7 +19,7 @@
 |---|---|---|---|---|
 | G1 | `/cheap-junk-removal-dubai/` | 338 | REFRESH | Owner of "cheap / affordable junk removal dubai". Rewrite honestly (price factors, no "cheapest" claims). |
 | G1 | `/junk-removal-garbage-in-dubai-affordable-reliable-service/` | 676 | 301 → /junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/ | Generic duplicate of "junk removal dubai". |
-| G1 | `/junk-removal-near-me-dubai/` | 407 | 301 → /junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/ | Generic duplicate. "near me" is won by GBP + home. |
+| G1 | `/junk-removal-near-me-dubai/` | 407 | 301 → /junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/ | Generic duplicate. "near me" is targeted by the home and area pages. |
 | G1 | `/junk-removal-service-in-dubai/` | 386 | 301 → /junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/ | Generic duplicate. |
 | G1 | `/junk-removal-garbage-services-in-dubai-2026/` | 588 | 301 → /junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/ | Generic duplicate, and the year in the URL dates it. |
 | G1 | `/junk-removal-services-in-dubai-a-complete-guide-for-homes-businesses/` | 566 | REFRESH (hub) | Becomes THE complete guide to junk removal in Dubai (2,000+ words). Supports the homepage, links to all services. Absorbs 6 generic posts. |

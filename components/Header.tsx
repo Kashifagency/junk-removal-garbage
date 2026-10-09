@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { services } from '@/lib/catalog';
-import { areaName, areaPages, navigation, site, telHref, whatsappHref } from '@/lib/content';
+import { areaName, areaPages, featuredAreaPages, navigation, site, telHref, whatsappHref } from '@/lib/content';
 import { Icon } from './Icon';
 import { MobileNav } from './MobileNav';
 
@@ -11,7 +11,12 @@ const LABELS: Record<string, string> = { '/': 'Home', '/services/': 'Services', 
 export const primaryNav = [...navigation.primary]
   .sort((a, b) => ORDER.indexOf(a.href) - ORDER.indexOf(b.href))
   // "Blog" links to the canonical /blog/ (the legacy /blogs/ page duplicates it).
-  .map((n) => ({ ...n, label: LABELS[n.href] ?? n.label, href: n.href === '/blogs/' ? '/blog/' : n.href }));
+  .map((n) => ({
+    ...n,
+    label: LABELS[n.href] ?? n.label,
+    href: n.href === '/blogs/' ? '/blog/' : n.href,
+    children: n.href === '/service-areas/' ? [...n.children, { label: `All ${areaPages.length} areas →`, href: '/service-areas/' }] : n.children,
+  }));
 
 export function Logo({ invert = false, compact = false }: { invert?: boolean; compact?: boolean }) {
   return (
@@ -99,7 +104,7 @@ export function Header() {
                   <MegaPanel width="w-[34rem]">
                     <p className="kicker px-3 pt-2 pb-3">Areas we cover</p>
                     <ul className="grid grid-cols-2 gap-1">
-                      {areaPages.map((p) => (
+                      {featuredAreaPages.map((p) => (
                         <li key={p.id}>
                           <Link href={p.path} className="flex items-center gap-2.5 rounded-lg px-3 py-2.5 text-[0.9rem] text-ink-700 transition-colors hover:bg-paper hover:text-ink-900">
                             <Icon name="pin" className="h-4 w-4 text-brand-500" />
@@ -109,7 +114,7 @@ export function Header() {
                       ))}
                     </ul>
                     <Link href="/service-areas/" className="mt-2 flex items-center justify-between rounded-lg bg-paper px-4 py-3 text-sm font-semibold text-ink-900">
-                      All of Dubai — see every area <Icon name="arrowRight" className="h-4 w-4" />
+                      See all {areaPages.length} areas we cover <Icon name="arrowRight" className="h-4 w-4" />
                     </Link>
                   </MegaPanel>
                 )}

@@ -1,6 +1,6 @@
 # Content rules
 
-Every article, page and Google Business Profile post must follow these rules. If a rule and a "quick win" conflict, the rule wins.
+Every article, page, directory listing and social post must follow these rules. If a rule and a "quick win" conflict, the rule wins.
 
 ## 1. Purpose
 - **Every piece of content must earn a lead or push authority to a page that does.** Before writing, name the money page it supports (see keyword-roadmap.md). If there isn't one, don't write it.

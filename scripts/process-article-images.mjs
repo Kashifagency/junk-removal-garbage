@@ -7,6 +7,8 @@
 // File naming in the inbox:
 //   <slug>.<png|jpg|jpeg|webp>     → public/images/blog/<slug>.webp      (featured, 1600×1000 crop)
 //   <slug>-2.<png|jpg|jpeg|webp>   → public/images/blog/<slug>-2.webp    (in-article, 1200×800 crop)
+//   area-<key>.<png|jpg|jpeg|webp> → public/images/areas/<key>.webp      (area page photo, 1600×1000 crop)
+//                                     key = area page slug without "junk-removal-", e.g. area-business-bay.png
 // Prompts files (*-prompts.txt) are deleted once every image they list has been processed.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -18,6 +20,7 @@ const INBOX = path.resolve(ROOT, args.find((a) => !a.startsWith('--')) ?? '../ar
 const KEEP = args.includes('--keep');
 const onlySlugs = (args.find((a) => a.startsWith('--slugs=')) ?? '').replace('--slugs=', '').split(',').filter(Boolean);
 const OUT = path.join(ROOT, 'public', 'images', 'blog');
+const OUT_AREAS = path.join(ROOT, 'public', 'images', 'areas');
 const MAX_BYTES = 250 * 1024;
 
 if (!fs.existsSync(INBOX)) {
@@ -25,6 +28,7 @@ if (!fs.existsSync(INBOX)) {
   process.exit(0);
 }
 fs.mkdirSync(OUT, { recursive: true });
+fs.mkdirSync(OUT_AREAS, { recursive: true });
 
 const IMAGE_RE = /^([a-z0-9-]+?)(-2)?\.(png|jpe?g|webp)$/i;
 const files = fs.readdirSync(INBOX).filter((f) => IMAGE_RE.test(f));
@@ -46,15 +50,16 @@ for (const file of files) {
   const [, slug, second] = file.match(IMAGE_RE);
   const base = slug.toLowerCase();
   if (onlySlugs.length && !onlySlugs.includes(base)) continue;
-  const name = `${base}${second ? '-2' : ''}.webp`;
+  const isArea = base.startsWith('area-') && !second;
+  const name = isArea ? `${base.replace(/^area-/, '')}.webp` : `${base}${second ? '-2' : ''}.webp`;
   const [w, h] = second ? [1200, 800] : [1600, 1000];
   const src = path.join(INBOX, file);
   try {
     const meta = await sharp(src).metadata();
-    const { bytes, quality } = await encode(src, path.join(OUT, name), w, h);
+    const { bytes, quality } = await encode(src, path.join(isArea ? OUT_AREAS : OUT, name), w, h);
     processed.push({
       source: file,
-      output: `/images/blog/${name}`,
+      output: `/images/${isArea ? 'areas' : 'blog'}/${name}`,
       size: `${w}x${h}`,
       kb: Math.round(bytes / 1024),
       quality,

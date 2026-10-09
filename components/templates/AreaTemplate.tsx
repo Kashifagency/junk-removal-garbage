@@ -4,7 +4,7 @@ import { Icon } from '@/components/Icon';
 import { AreasBlock, MapEmbed, PostGrid, blocksOf } from '@/components/sections';
 import { Breadcrumbs, CallButtons, Faq, JsonLd, PromiseStrip, QuoteSection, SectionHead } from '@/components/ui';
 import { services } from '@/lib/catalog';
-import { areaName, areaPages, defaultFaq, guidesFor, localContentFor, type Page } from '@/lib/content';
+import { areaImageFor, areaName, areaPages, defaultFaq, guidesFor, localContentFor, nearbyAreas, type Page } from '@/lib/content';
 import { breadcrumbLd, faqLd, graph, serviceLd } from '@/lib/seo';
 
 export function AreaTemplate({ page, description }: { page: Page; description: string }) {
@@ -17,6 +17,9 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
   const faq = local?.faq?.length ? local.faq : defaultFaq;
   const features = blocksOf(page, 'feature');
   const guides = guidesFor({ area: page.path });
+  const nearby = nearbyAreas(page, 8);
+  // Antigravity photo for this area if available, otherwise the page's original hero image.
+  const heroImage = areaImageFor(page) ?? hero?.image ?? null;
   const trail = [
     { name: 'Home', path: '/' },
     { name: 'Service Areas', path: '/service-areas/' },
@@ -46,9 +49,9 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
               {hero?.text && <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-600">{hero.text}</p>}
               <CallButtons className="mt-8" />
             </div>
-            {hero?.image && (
+            {heroImage && (
               <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
-                <Image src={hero.image.src} alt={`Junk removal truck serving ${name}, Dubai`} fill loading="eager" fetchPriority="high" sizes="(min-width:1024px) 40vw, 100vw" className="object-cover object-[65%_center]" />
+                <Image src={heroImage.src} alt={`Junk removal truck serving ${name}, Dubai`} fill loading="eager" fetchPriority="high" sizes="(min-width:1024px) 40vw, 100vw" className="object-cover object-[65%_center]" />
                 <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-ink-900 shadow">
                   <Icon name="pin" className="h-4 w-4 text-brand-600" /> {name}, Dubai
                 </span>
@@ -97,7 +100,16 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
               </div>
               <div className="rounded-(--radius-card) bg-ink-900 p-7 text-white">
                 <h3 className="text-lg font-bold !text-white">Also serving nearby</h3>
-                <p className="mt-2 text-sm text-ink-300">{local.nearby.join(' · ')}</p>
+                <ul className="mt-3 flex flex-wrap gap-x-3 gap-y-1.5 text-sm">
+                  {nearby.slice(0, 4).map((p) => (
+                    <li key={p.id}>
+                      <Link href={p.path} className="text-ink-300 underline decoration-ink-600 underline-offset-4 hover:text-white">
+                        {areaName(p)}
+                      </Link>
+                    </li>
+                  ))}
+                  {local.nearby.length > 0 && <li className="text-ink-400">· {local.nearby.join(' · ')}</li>}
+                </ul>
                 <a href="#contact-form" className="btn-primary mt-5 w-full">
                   Contact us about {name} <Icon name="arrowRight" className="h-4 w-4" />
                 </a>
@@ -157,11 +169,9 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
             <div className="mt-10">{map && <MapEmbed address={`${map.address.replace(/,?\s*Dubai$/i, '')}, Dubai`} title={`Map of ${name}, Dubai`} />}</div>
           </div>
           <div>
-            <h2 className="kicker mt-2">Other areas we cover</h2>
+            <h2 className="kicker mt-2">Nearby areas we cover</h2>
             <ul className="mt-6 border-t border-ink-900">
-              {areaPages
-                .filter((p) => p.id !== page.id)
-                .map((p) => (
+              {nearby.map((p) => (
                   <li key={p.id} className="border-b border-line">
                     <Link href={p.path} className="group flex items-center justify-between py-3.5">
                       <span className="font-display text-lg font-bold text-ink-900 group-hover:text-brand-700" style={{ fontStretch: '106%' }}>
@@ -172,6 +182,9 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
                   </li>
                 ))}
             </ul>
+            <Link href="/service-areas/" className="link-arrow mt-6">
+              All {areaPages.length} areas <Icon name="arrowRight" className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>

@@ -106,7 +106,7 @@ Unique copy for the money pages lives in two JSON files. Edit them directly; the
 ## 4b. Further upgrades (developer edits)
 Service and area pages are the main money pages and are edited in code (`content/pages.json` via the extractor, or in the page templates). Planned upgrades (lead-plan weeks 3–4):
 - **Service pages:** a unique FAQ per service, a "what we take / don't take" list, a "how pricing works" section, real job photos, and links to their 2–3 best articles.
-- **Area pages:** a unique local paragraph and FAQ per area, links to related articles, and embedded GBP reviews only when they're real.
+- **Area pages:** a unique local guide and FAQ per area (done for all 43), links to related articles (done via "Guides"), and real testimonials once there are enough.
 
 ## 5. Internal linking model
 

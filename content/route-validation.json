@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-09T10:37:59.216Z",
+  "checkedAt": "2026-10-09T11:02:22.265Z",
   "base": "http://localhost:3000",
   "total": 62,
   "pages": 24,
@@ -118,7 +118,7 @@
     {
       "type": "page",
       "path": "/downtown-dubai/",
-      "title": "Junk Removal Downtown Dubai &amp; Business Bay",
+      "title": "Junk Removal Downtown Dubai | Apartments &amp; Offices",
       "status": 200,
       "issues": []
     },

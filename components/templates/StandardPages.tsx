@@ -5,7 +5,7 @@ import { QuoteForm } from '@/components/QuoteForm';
 import { FeatureList, MapEmbed, ServiceIndex, SplitIntro, blocksOf, sectionHas } from '@/components/sections';
 import { CallButtons, Faq, ItemsGrid, JsonLd, PageHeader, ProcessSteps, PromiseStrip, QuoteSection, SectionHead } from '@/components/ui';
 import { services } from '@/lib/catalog';
-import { areaName, areaPages, defaultFaq, site, telHref, whatsappHref, type Page } from '@/lib/content';
+import { areaImageFor, areaName, areaPages, areaRegionOf, areaRegions, defaultFaq, site, telHref, whatsappHref, type Page } from '@/lib/content';
 import { breadcrumbLd, faqLd, graph } from '@/lib/seo';
 
 const crumbs = (page: Page, name = page.title) => [
@@ -217,42 +217,53 @@ function PageHeaderLite({ trail }: { trail: { name: string; path: string }[] }) 
 /* ------------------------------------------------------------------ Service areas */
 export function ServiceAreasTemplate({ page, description }: { page: Page; description: string }) {
   const trail = crumbs(page);
+  const groups = areaRegions.map((r) => ({ ...r, areas: areaPages.filter((p) => areaRegionOf(p) === r.id) })).filter((g) => g.areas.length);
   return (
     <>
       <JsonLd data={graph(breadcrumbLd(trail))} />
-      <PageHeader title="Junk removal across Dubai" kicker="Service areas" intro={description} trail={trail}>
+      <PageHeader title={`Junk removal in ${areaPages.length} Dubai areas`} kicker="Service areas" intro={description} trail={trail}>
         <div className="mt-8 border-t border-line pt-7">
           <PromiseStrip />
         </div>
       </PageHeader>
       <section className="py-16 sm:py-24">
         <div className="container-x">
-          <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {areaPages.map((p, i) => {
-              const hero = blocksOf(p, 'hero')[0];
-              return (
-                <li key={p.id}>
-                  <Link href={p.path} className="group panel flex h-full flex-col overflow-hidden transition hover:border-ink-900">
-                    <div className="relative aspect-[16/9] overflow-hidden bg-ink-900">
-                      {hero?.image && (
-                        <Image src={hero.image.src} alt="" fill sizes="(min-width:1024px) 30vw, (min-width:640px) 50vw, 100vw" className="object-cover opacity-70 transition-transform duration-700 group-hover:scale-105" />
-                      )}
-                      <span className="absolute top-4 left-4 font-display text-sm font-bold text-white/80 tabular-nums">{String(i + 1).padStart(2, '0')}</span>
-                      <h2 className="absolute bottom-4 left-4 right-4 font-display text-2xl leading-tight font-extrabold !text-white" style={{ fontStretch: '110%' }}>
-                        {areaName(p)}
-                      </h2>
-                    </div>
-                    <div className="flex flex-1 flex-col p-6">
-                      {hero && <p className="line-clamp-3 flex-1 text-[0.95rem] leading-relaxed text-ink-500">{hero.text}</p>}
-                      <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-ink-900 group-hover:text-brand-600">
-                        Junk removal in {areaName(p)} <Icon name="arrowRight" className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </span>
-                    </div>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+          <nav aria-label="Jump to region" className="flex flex-wrap gap-2">
+            {groups.map((g) => (
+              <a key={g.id} href={`#region-${g.id}`} className="inline-flex min-h-10 items-center gap-2 rounded-full border border-ink-200 bg-white px-4 text-sm font-medium text-ink-700 hover:border-ink-900">
+                {g.name} <span className="text-ink-500">{g.areas.length}</span>
+              </a>
+            ))}
+          </nav>
+          {groups.map((g) => (
+            <div key={g.id} id={`region-${g.id}`} className="mt-14 scroll-mt-28">
+              <h2 className="display-md">{g.name}</h2>
+              <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {g.areas.map((p) => {
+                  const hero = blocksOf(p, 'hero')[0];
+                  const img = areaImageFor(p) ?? hero?.image;
+                  return (
+                    <li key={p.id}>
+                      <Link href={p.path} className="group panel flex h-full overflow-hidden transition hover:border-ink-900">
+                        <span className="relative w-28 shrink-0 overflow-hidden bg-ink-900 sm:w-32">
+                          {img && <Image src={img.src} alt="" fill sizes="128px" className="object-cover opacity-90 transition-transform duration-700 group-hover:scale-105" />}
+                        </span>
+                        <span className="flex flex-1 flex-col p-5">
+                          <span className="font-display text-lg leading-tight font-bold text-ink-900 group-hover:text-brand-700" style={{ fontStretch: '106%' }}>
+                            {areaName(p)}
+                          </span>
+                          {hero?.eyebrow && <span className="mt-1.5 line-clamp-2 text-sm text-ink-500">{hero.title || hero.eyebrow}</span>}
+                          <span className="mt-auto inline-flex items-center gap-1.5 pt-3 text-sm font-semibold text-ink-900 group-hover:text-brand-700">
+                            Junk removal in {areaName(p)} <Icon name="arrowRight" className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                          </span>
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
           <div className="mt-12 flex flex-col items-start justify-between gap-6 rounded-(--radius-card) bg-paper p-7 sm:flex-row sm:items-center sm:p-9">
             <p className="max-w-xl font-display text-xl font-bold text-ink-900" style={{ fontStretch: '106%' }}>
               Don’t see your community? We serve all Dubai neighborhoods — contact us to confirm.

@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import pagesData from '@/content/pages.json';
 import postsData from '@/content/posts.json';
 import siteData from '@/content/site.json';
@@ -79,7 +81,62 @@ export type Post = {
 
 export type NavItem = { label: string; href: string; children: { label: string; href: string }[] };
 
-export const pages = pagesData as unknown as Page[];
+const wpPages = pagesData as unknown as Page[];
+
+// ---------------------------------------------------------------- area pages (10 legacy + new data-driven pages)
+import areaListData from '@/content/area-list.json';
+import areaPagesData from '@/content/area-pages.json';
+
+export type AreaContent = {
+  slug: string;
+  seoTitle: string;
+  description: string;
+  eyebrow: string;
+  tagline: string;
+  intro: string;
+  heading: string;
+  paragraphs: string[];
+  tips: string[];
+  jobs: string[];
+  faq: FaqItem[];
+  imageAlt: string;
+  imagePrompt?: string;
+};
+type AreaListItem = { slug: string; name: string; region: string; map: string; nearby: string[] };
+const areaList = areaListData as unknown as { regions: { id: string; name: string }[]; legacyRegions: Record<string, string>; areas: AreaListItem[] };
+const areaContent = areaPagesData as unknown as Record<string, AreaContent>;
+export const areaRegions = areaList.regions;
+const trimSlashes = (p: string) => p.replace(/^\/+|\/+$/g, '');
+
+// Shared "why choose us" feature blocks (titles shown compactly on area pages).
+const sharedFeatures = (wpPages.find((p) => p.path === '/dubai-marina/')?.sections.flatMap((s) => s.blocks) ?? []).filter((b) => b.type === 'feature');
+const FALLBACK_AREA_IMAGE: ImageRef = { src: '/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp', alt: '', width: 1344, height: 768 };
+
+const newAreaPages: Page[] = areaList.areas
+  .filter((a) => areaContent[a.slug])
+  .map((a) => {
+    const c = areaContent[a.slug];
+    return {
+      id: `area-${a.slug}`,
+      type: 'page',
+      path: `/${a.slug}/`,
+      slug: a.slug,
+      parentId: '0',
+      title: `Junk Removal ${a.name}`,
+      rawTitle: `Junk Removal ${a.name}`,
+      date: '2026-10-09T00:00:00Z',
+      modified: '2026-10-09T00:00:00Z',
+      seo: { title: c.seoTitle, description: c.description },
+      featuredImage: null,
+      sections: [
+        { blocks: [{ type: 'hero', eyebrow: c.eyebrow, title: c.tagline, text: c.intro, image: { ...FALLBACK_AREA_IMAGE, alt: c.imageAlt } }] },
+        { blocks: sharedFeatures },
+        { blocks: [{ type: 'map', address: a.map }] },
+      ],
+    } satisfies Page;
+  });
+
+export const pages: Page[] = [...wpPages, ...newAreaPages];
 // Legacy posts that were merged (redirected) or replaced in place by a Markdown article drop out of the blog.
 const plan = redirectPlan();
 const legacyPosts = (postsData as unknown as Omit<Post, 'topic'>[])
@@ -87,7 +144,7 @@ const legacyPosts = (postsData as unknown as Omit<Post, 'topic'>[])
   .map((p) => ({ ...p, source: 'wordpress' as const, topic: classifyTopic(p.title).slug }));
 const legacySlugs = new Set((postsData as unknown as Post[]).map((p) => p.slug));
 
-const RESERVED = new Set([...(pagesData as unknown as Page[]).map((p) => p.path), ...legacyPosts.map((p) => p.path), '/blog/', '/blogs/', '/feed/', '/category/', '/tag/']);
+const RESERVED = new Set([...pages.map((p) => p.path), ...legacyPosts.map((p) => p.path), '/blog/', '/blogs/', '/feed/', '/category/', '/tag/']);
 const markdownPosts: Post[] = loadArticles().map((a) => {
   const path = `/${a.slug}/`;
   if (RESERVED.has(path)) throw new Error(`content/articles/${a.file}: URL ${path} is already used by an existing page or post (to replace a legacy post at the same URL, add "replaces: true")`);
@@ -140,10 +197,31 @@ export const SERVICE_PAGE_PARENT = '25';
 export const servicePages = pages.filter((p) => p.parentId === SERVICE_PAGE_PARENT);
 
 // Location pages: order taken from the "Service Areas" submenu.
-export const areaPages: Page[] = (navigation.primary.find((n) => n.href === '/service-areas/')?.children ?? [])
+/** The 10 original area pages (order from the "Service Areas" menu) — used where space is limited. */
+export const featuredAreaPages: Page[] = (navigation.primary.find((n) => n.href === '/service-areas/')?.children ?? [])
   .map((c) => getPageByPath(c.href))
   .filter((p): p is Page => !!p)
   .reverse();
+/** All area pages: the 10 originals plus the data-driven pages from content/area-list.json. */
+export const areaPages: Page[] = [...featuredAreaPages, ...newAreaPages];
+
+export const areaRegionOf = (p: Page) => areaList.legacyRegions[p.path] ?? areaList.areas.find((a) => `/${a.slug}/` === p.path)?.region ?? 'central';
+export const areaContentFor = (p: Page) => areaContent[p.slug];
+/** Neighbouring area pages: explicit list for new areas, same-region pages otherwise. */
+export function nearbyAreas(p: Page, n = 6): Page[] {
+  const listed = areaList.areas.find((a) => `/${a.slug}/` === p.path)?.nearby ?? [];
+  const explicit = listed.map((x) => getPageByPath(x.startsWith('/') ? x : `/${x}/`)).filter((x): x is Page => !!x);
+  const region = areaRegionOf(p);
+  const sameRegion = areaPages.filter((a) => a.id !== p.id && areaRegionOf(a) === region && !explicit.includes(a));
+  const rest = areaPages.filter((a) => a.id !== p.id && !explicit.includes(a) && !sameRegion.includes(a));
+  return [...explicit, ...sameRegion, ...rest].slice(0, n);
+}
+/** Per-area photo (Antigravity) if it exists in public/images/areas/<key>.webp, where key = slug without "junk-removal-". */
+export function areaImageFor(p: Page): ImageRef | null {
+  const key = p.slug.replace(/^junk-removal-/, '');
+  const file = `/images/areas/${key}.webp`;
+  return fs.existsSync(path.join(process.cwd(), 'public', file)) ? { src: file, alt: '', width: 1600, height: 1000 } : null;
+}
 
 export const isAreaPage = (p: Page) => areaPages.some((a) => a.id === p.id);
 
@@ -152,7 +230,8 @@ export const areaName = (p: Page) =>
   p.title.replace(/^Junk Removal\s+/i, '').replace(' / ', ' & ');
 
 export function pageSeoFor(path: string, fallback: { title: string; description: string }) {
-  return seoOverrides[path] ?? fallback;
+  const area = areaContent[trimSlashes(path)];
+  return seoOverrides[path] ?? (area ? { title: area.seoTitle, description: area.description } : fallback);
 }
 
 // Posts without an AIOSEO title: use the part of the post title before its first separator.
@@ -227,7 +306,12 @@ import serviceContentData from '@/content/service-content.json';
 export type LocalContent = { heading: string; paragraphs: string[]; tips: string[]; jobs: string[]; nearby: string[]; faq: FaqItem[] };
 export type ServiceContent = { pricing: string[]; notTaken: string[]; faq: FaqItem[] };
 
-export const localContentFor = (path: string) => (localContentData as unknown as Record<string, LocalContent>)[path];
+export const localContentFor = (path: string): LocalContent | undefined => {
+  const legacy = (localContentData as unknown as Record<string, LocalContent>)[path];
+  if (legacy) return legacy;
+  const c = areaContent[trimSlashes(path)];
+  return c ? { heading: c.heading, paragraphs: c.paragraphs, tips: c.tips, jobs: c.jobs, nearby: [], faq: c.faq } : undefined;
+};
 export const serviceContentFor = (path: string) => (serviceContentData as unknown as Record<string, ServiceContent>)[path];
 
 // ---------------------------------------------------------------- money page → article links (internal linking)
@@ -237,15 +321,33 @@ import { TOPICS } from './topics';
  * Best articles to link from a service or area page: articles that name this page in their
  * frontmatter (`service` / `areas`) first, then same-topic articles; newest first within each group.
  */
+// Area type → topics that matter most there (keeps area pages' guide lists relevant and varied).
+const REGION_TOPICS: Record<string, string[]> = {
+  'new-dubai': ['furniture-appliances', 'home-cleanouts'],
+  central: ['commercial', 'furniture-appliances'],
+  'old-dubai': ['furniture-appliances', 'commercial'],
+  'barsha-quoz': ['home-cleanouts', 'construction-waste'],
+  villa: ['garden-waste', 'home-cleanouts'],
+  dubailand: ['home-cleanouts', 'furniture-appliances'],
+  east: ['furniture-appliances', 'home-cleanouts'],
+  south: ['construction-waste', 'commercial'],
+};
+
 export function guidesFor(opts: { service?: string; area?: string }, n = 3): Post[] {
   const topic = opts.service ? TOPICS.find((t) => t.service === opts.service)?.slug : undefined;
-  const score = (p: Post) =>
-    (opts.service && p.service === opts.service ? 4 : 0) +
-    (opts.area && p.areas?.includes(opts.area) ? 4 : 0) +
-    (topic && p.topic === topic ? 2 : 0) +
-    (p.source === 'markdown' ? 1 : 0);
+  const areaPage = opts.area ? getPageByPath(opts.area) : undefined;
+  const regionTopics = areaPage ? REGION_TOPICS[areaRegionOf(areaPage)] ?? [] : [];
+  // Small deterministic offset per area so pages in the same region don't all show identical lists.
+  const seed = opts.area ? [...opts.area].reduce((a, c) => a + c.charCodeAt(0), 0) : 0;
+  const score = (p: Post, i: number) =>
+    (opts.service && p.service === opts.service ? 6 : 0) +
+    (opts.area && p.areas?.includes(opts.area) ? 6 : 0) +
+    (topic && p.topic === topic ? 3 : 0) +
+    (regionTopics[0] === p.topic ? 3 : regionTopics[1] === p.topic ? 2 : 0) +
+    (p.source === 'markdown' ? 1 : 0) +
+    (opts.area ? ((i + seed) % 5) / 10 : 0);
   return posts
-    .map((p) => ({ p, s: score(p) }))
+    .map((p, i) => ({ p, s: score(p, i) }))
     .filter((x) => x.s >= 2 || (opts.area && x.s >= 1))
     .sort((a, b) => b.s - a.s || b.p.date.localeCompare(a.p.date))
     .slice(0, n)

@@ -1,68 +1,59 @@
-# Local SEO playbook — Google Business Profile, citations, reviews, tracking
+# Local SEO playbook (without Google Business Profile)
 
-In the UAE, **Google Local Services Ads are not available** (source: Google's LSA help country list, see research-notes.md). For "junk removal near me" and "[service] dubai" searches, the competition is the **Map Pack (Google Business Profile)**, organic results and Google Ads. The Map Pack is the fastest free lead channel.
+**Decision:** the business does **not** use Google Business Profile. Local visibility therefore comes from:
+1. ranking area and service pages
+2. consistent business details on directories
+3. editorial and classified listings
+4. real testimonials on the site
+5. optionally, Google Ads
 
-## 1. Google Business Profile (week 1, then weekly)
+Google Local Services Ads aren't available in the UAE either (research-notes.md).
 
-**Profile setup**
-- **Business name:** exactly the real registered or trading name. Do **not** add keywords to the name; Google suspends profiles for that.
-- **Primary category:** *Waste management service* or *Rubbish removal service* (choose whichever exists in the UAE category list; check which category the top Map Pack competitors use).
-- **Secondary categories:** add the relevant ones available, such as junk removal, garbage collection, demolition / debris removal, recycling centre. Only add categories that match services you actually provide.
-- **Service area business:** if customers don't visit the Al Quoz office, hide the address and list service areas: Dubai Marina, JVC, Palm Jumeirah, Downtown Dubai, Business Bay, Al Barsha, Al Quoz, Arabian Ranches, The Meadows, The Springs, Umm Suqeim, Al Sufouh, and Dubai overall.
-- **Phone:** +971 55 103 1255, the same as the website. **Website:** https://junkremovalgarbage.com/
-- **WhatsApp:** enable chat or messaging if available.
-- **Hours:** the real hours. Don't claim 24/7 unless it's true.
-- **Services:** add each service with a 1–2 sentence description that mirrors the service pages: household junk removal, furniture & appliance disposal, construction waste removal, commercial waste management, garden waste cleanup, sofa disposal, mattress disposal, office clearance, house / villa clearance.
-- **Description (750 characters):** what you remove, who you serve (homes, villas, apartments, offices), areas, same-day availability, recycling, and the contact. No URLs or prices.
-- **Photos:** 15+ at launch, then 3–5 a week. Use real trucks, crew and before/after photos of jobs. Geotagging isn't required, but real and recent photos matter.
+## 1. On-site local signals (built in)
+- **43 area pages:** each has unique local content, its own FAQ (with FAQ structured data), a map, nearby-area links and a "Guides" section.
+- **Service structured data on every area page**, naming the area served.
+- **LocalBusiness structured data site-wide:** name, address (Al Quoz 4, Dubai), phone, email, service catalogue and contact point.
+- **Business details in the footer of every page**, matching the structured data exactly.
+- **Keep it consistent:**
+  - When you add an area page, use `content/area-list.json` and `content/area-pages.json`, with unique content and no near-duplicates.
+  - Add its image to the permanent area prompt list.
 
-**Weekly**
-- **One Google post:** a job of the week (before/after), a seasonal tip (moving-out season, renovation debris), or a link to a new article.
-- **Reviews:** reply to every review within 48 hours. Thank the customer and mention the service and area naturally, e.g. "Glad we could clear your JVC apartment".
-- **Questions & answers:** seed real common questions (from the site FAQ) and answer them.
-
-## 2. Reviews (genuine only)
-- After **every** job, send this on WhatsApp: "Thanks for choosing Shanan Junk Removal! If you were happy, a quick Google review helps us a lot: [review link]". Get the link from GBP → "Ask for reviews".
-- In the first two weeks, contact every customer from the last 3 months.
-- **Never** buy reviews, write them yourself, offer discounts for reviews, or ask staff or family to post them. That breaks Google's policy and the content rules (content-rules.md §2).
-- **Target:** 20 new genuine reviews in 60 days. Recency and steady growth matter more than a burst.
-
-## 3. Citations (consistent business details everywhere)
-Use exactly the same details everywhere:
+## 2. Business details (identical everywhere)
 ```
 Shanan Junk Removal
 Al Quoz 4, Dubai, United Arab Emirates
 +971 55 103 1255
 https://junkremovalgarbage.com/
 ```
-**Batch 1 (week 2):** Bing Places, Apple Business Connect, Facebook page, Instagram profile, Yellow Pages UAE (confirm the correct official domain first), Connect.ae.
-**Batch 2 (week 4):** Dubai Chamber directory (if you're a member), YallaBanana, ExpatWoman directory, Yalwa UAE, 123UAE, GetListedAE, Foursquare.
-**Classifieds (lead channels):** dubizzle services listing, mourjan.com (Arabic classifieds, removal-services category).
-**Editorial outreach:** Property Finder, Bayut and Dubizzle publish junk-removal and bulky-waste guides that list providers. Email their editors with accurate details and photos and ask to be included.
+Use exactly this on every directory, social profile and listing. Record each listing (URL, login, date) in a spreadsheet, and update all of them if anything changes.
 
-Record every listing (URL, login, date) in a shared spreadsheet. Update all of them if the phone or address changes.
+## 3. Directories and listings (no Google profile needed)
+- **Batch 1:** Yellow Pages UAE (confirm the official domain first), Connect.ae, YallaBanana, ExpatWoman directory, your Facebook and Instagram business pages.
+- **Batch 2:** Yalwa UAE, 123UAE, GetListedAE, Foursquare, and the Dubai Chamber directory if you're a member.
+- **Classifieds** (direct lead channels):
+  - dubizzle services listings
+  - mourjan.com, the Arabic removal-services category
+  - OpenSooq
 
-## 4. Lead tracking (week 1 — without it you can't prove the 60-day result)
-- **Analytics:** Vercel Web Analytics is built in. Enable it in the Vercel dashboard → Analytics.
-- **Conversions to track:**
-  1. `tel:` link clicks: header, mobile bar, contact section, article CTAs
-  2. `wa.me` link clicks
-  3. contact form submissions: success state, and the Resend email arrives
-- **Source tagging:**
-  - The website's WhatsApp links pre-fill "Hi, I need junk removal in Dubai."
-  - On GBP and social profiles, use a different greeting, e.g. "Hi, I found you on Google Maps", so you can tell where WhatsApp chats come from.
-- **Lead log:** one row per lead with date, source (website / GBP / social / referral), channel (call / WhatsApp / form), service, area, won or lost, job value. Review it weekly against the KPIs in lead-plan-60-days.md.
-- **Done:** the site sends `call_click`, `whatsapp_click` and `form_submit` events (each with the page), plus the service for forms. They appear in Vercel → Analytics → Events (custom events need Vercel Pro).
+  Link each listing to the most relevant area or service page.
+- **Editorial outreach:** Property Finder, Bayut and Dubizzle publish junk-removal and bulky-waste guides that list providers. Email the editors with accurate details and photos and ask to be included. These links carry real authority.
 
-## 5. Search Console routine
-- **Weekly:** Performance → Queries (new impressions, low-CTR queries to fix with better titles and descriptions), Pages → Not indexed.
-- **After publishing:** URL Inspection → Request indexing.
-- **Monthly:** compare against the keyword roadmap and re-prioritise from real impressions.
+## 4. Testimonials (genuine only)
+- After each job, ask on WhatsApp whether you can quote the customer's feedback (first name and area only) on the website.
+- **Only publish real, permitted testimonials.** Never invent, edit the meaning of, or pay for testimonials (content-rules.md §2). Once there are 5 or more, they can be added to the home and area pages. That's a developer task.
 
-## 6. Google Ads (optional, the fastest bridge)
-If budget allows, run a Search campaign while SEO builds.
-- **Keywords:** exact and phrase match on cluster A (junk removal dubai, furniture removal dubai, sofa disposal dubai, construction waste removal dubai, office clearance dubai, junk removal [area]).
-- **Landing pages:** the matching service or area page, not the homepage.
-- **Assets:** call assets with your phone number, plus location assets.
-- **Exclude:** "jobs", "salary", "free" (unless you're targeting the bulky-waste guide), "buy", "sell", "second hand".
-- **Tracking:** the same conversions as section 4.
+## 5. Lead tracking (built in)
+- **Vercel Web Analytics:** enable it in the Vercel dashboard → Analytics.
+- **Events:** the site sends `call_click`, `whatsapp_click` and `form_submit` (each with the page, and the service for forms). See them in Vercel → Analytics → Events. Custom events need Vercel Pro.
+- **Source tagging:** website WhatsApp links pre-fill "Hi, I need junk removal in Dubai." On directories and classifieds, use a different greeting (e.g. "Hi, I found you on dubizzle") so you can tell where WhatsApp chats come from.
+- **Lead log:** one row per lead with date, source, channel, service, area, won or lost, and job value.
+
+## 6. Search Console routine
+- **Weekly:**
+  - Performance → Queries and Pages. Filter by area slugs to see which area pages are gaining.
+  - Pages → Not indexed.
+- **After publishing or adding pages:** URL Inspection → Request indexing.
+- **Monthly:** re-prioritise the keyword roadmap and article queue from real impressions.
+
+## 7. Google Ads (optional, the fastest bridge)
+Without the map pack, Search ads are the quickest way to appear for "junk removal near me" and "[service] dubai" while organic pages build. See lead-plan-60-days.md for the setup: exact and phrase money keywords, area and service landing pages, call assets, and negative keywords.
