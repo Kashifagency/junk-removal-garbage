@@ -10,13 +10,14 @@ const ORDER = ['/', '/services/', '/service-areas/', '/about-us/', '/blogs/', '/
 const LABELS: Record<string, string> = { '/': 'Home', '/services/': 'Services', '/service-areas/': 'Areas', '/about-us/': 'About', '/blogs/': 'Blog', '/faq/': 'FAQ', '/contact/': 'Contact' };
 export const primaryNav = [...navigation.primary]
   .sort((a, b) => ORDER.indexOf(a.href) - ORDER.indexOf(b.href))
-  .map((n) => ({ ...n, label: LABELS[n.href] ?? n.label }));
+  // "Blog" links to the canonical /blog/ (the legacy /blogs/ page duplicates it).
+  .map((n) => ({ ...n, label: LABELS[n.href] ?? n.label, href: n.href === '/blogs/' ? '/blog/' : n.href }));
 
 export function Logo({ invert = false, compact = false }: { invert?: boolean; compact?: boolean }) {
   return (
-    <Link href="/" className="flex min-w-0 shrink items-center gap-2 sm:gap-2.5" aria-label={`${site.name} – home`}>
+    <Link href="/" className="flex min-w-0 shrink items-center gap-2 sm:gap-2.5">
       <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl sm:h-10 sm:w-10 ${invert ? 'bg-white' : 'bg-brand-50'}`}>
-        <Image src="/brand/mark.png" alt="" width={32} height={32} className="h-6 w-6 sm:h-7 sm:w-7" priority />
+        <Image src="/brand/mark.png" alt="" width={32} height={32} className="h-6 w-6 sm:h-7 sm:w-7" />
       </span>
       <span className="min-w-0 leading-none">
         <span className={`block truncate font-display text-[0.9rem] font-extrabold tracking-tight min-[400px]:text-[1rem] sm:text-[1.1rem] ${invert ? 'text-white' : 'text-ink-900'}`} style={{ fontStretch: '110%' }}>

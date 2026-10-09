@@ -54,7 +54,8 @@ export default function HomePage() {
                   src={hero.image.src}
                   alt="Shanan junk removal truck loaded with waste on a Dubai highway"
                   fill
-                  priority
+                  loading="eager"
+                  fetchPriority="high"
                   sizes="(min-width:1024px) 46vw, 100vw"
                   className="object-cover object-[65%_center]"
                 />
@@ -173,7 +174,7 @@ export default function HomePage() {
             {areaPages.map((p, i) => (
               <li key={p.id} className="border-b border-line">
                 <Link href={p.path} className="group flex items-center gap-4 py-4">
-                  <span className="text-xs font-semibold text-ink-400 tabular-nums">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="text-xs font-semibold text-ink-500 tabular-nums">{String(i + 1).padStart(2, '0')}</span>
                   <span className="flex-1 font-display text-lg font-bold text-ink-900 transition-colors group-hover:text-brand-600" style={{ fontStretch: '108%' }}>
                     {areaName(p)}
                   </span>

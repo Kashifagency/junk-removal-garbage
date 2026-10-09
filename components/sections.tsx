@@ -22,7 +22,7 @@ export function ServiceIndex({ items, invert = false }: { items: Service[]; inve
       {items.map((s, i) => (
         <li key={s.path} className={`border-b ${invert ? 'border-ink-700' : 'border-line'}`}>
           <Link href={s.path} className="group relative grid grid-cols-[auto_1fr_auto] items-center gap-4 py-6 sm:gap-8 sm:py-8 lg:grid-cols-[4rem_1.1fr_1fr_auto]">
-            <span className={`font-display text-sm font-bold tabular-nums sm:text-base ${invert ? 'text-ink-500' : 'text-ink-400'}`}>{String(i + 1).padStart(2, '0')}</span>
+            <span className={`font-display text-sm font-bold tabular-nums sm:text-base ${invert ? 'text-ink-400' : 'text-ink-500'}`}>{String(i + 1).padStart(2, '0')}</span>
             <span className="flex min-w-0 items-center gap-4">
               {s.image && (
                 <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg sm:h-16 sm:w-20 lg:hidden">

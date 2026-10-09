@@ -71,7 +71,7 @@ export function SectionHead({
       <div className={center ? 'max-w-3xl' : 'max-w-3xl'}>
         {kicker && (
           <p className={`kicker ${invert ? '!text-ink-400' : ''}`}>
-            {index && <span className="text-brand-500">{index}</span>}
+            {index && <span className={invert ? 'text-brand-400' : 'text-brand-700'}>{index}</span>}
             {index && <span aria-hidden="true" className={`h-px w-8 ${invert ? 'bg-ink-600' : 'bg-ink-300'}`} />}
             {kicker}
           </p>
@@ -116,7 +116,7 @@ export function PageHeader({
           {aside}
           {!aside && image && (
             <div className="relative aspect-[4/3] overflow-hidden rounded-(--radius-card) lg:aspect-[5/4]">
-              <Image src={image.src} alt={image.alt || ''} fill priority sizes="(min-width:1024px) 40vw, 100vw" className="object-cover" />
+              <Image src={image.src} alt={image.alt || ''} fill loading="eager" fetchPriority="high" sizes="(min-width:1024px) 40vw, 100vw" className="object-cover" />
             </div>
           )}
         </div>
@@ -206,21 +206,21 @@ export function Faq({ items, title = 'Questions about junk removal in Dubai', in
       <div className="container-x grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="kicker">
-            {index && <span className="text-brand-500">{index}</span>}
+            {index && <span className="text-brand-700">{index}</span>}
             {index && <span aria-hidden="true" className="h-px w-8 bg-ink-300" />}
             FAQ
           </p>
           <h2 id="faq-heading" className="display-lg mt-4">
             {title}
           </h2>
-          <p className="mt-5 text-lg text-ink-500">Can’t find your answer? Message us — we usually reply within minutes.</p>
+          <p className="mt-5 text-lg text-ink-500">Can’t find your answer? Call or message us on WhatsApp and we’ll help.</p>
           <CallButtons className="mt-7" />
         </div>
         <div className="border-t border-ink-900">
           {items.map((f, i) => (
             <details key={i} className="group border-b border-line" {...(i === 0 ? { open: true } : {})}>
               <summary className="flex cursor-pointer list-none items-start gap-5 py-6 text-left [&::-webkit-details-marker]:hidden">
-                <span className="mt-1 text-sm font-semibold text-ink-400 tabular-nums">{String(i + 1).padStart(2, '0')}</span>
+                <span className="mt-1 text-sm font-semibold text-ink-500 tabular-nums">{String(i + 1).padStart(2, '0')}</span>
                 <span className="flex-1 font-display text-lg leading-snug font-bold text-ink-900 sm:text-xl" style={{ fontStretch: '106%' }}>
                   {f.q}
                 </span>

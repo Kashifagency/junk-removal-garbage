@@ -11,7 +11,7 @@ export default function NotFound() {
       <div className="container-x grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
         <div>
           <p className="kicker">
-            <span className="text-brand-500">404</span> Page not found
+            <span className="text-brand-700">404</span> Page not found
           </p>
           <h1 className="display-xl mt-5">This page has been cleared away.</h1>
           <p className="mt-6 max-w-lg text-lg text-ink-600">The page you’re looking for doesn’t exist or has moved. Try one of these instead, or get in touch.</p>

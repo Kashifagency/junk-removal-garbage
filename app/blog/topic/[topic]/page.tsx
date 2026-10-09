@@ -14,7 +14,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<'/blog/topic/[topic]'>) {
   const t = topicBySlug((await params).topic);
   if (!t) return {};
-  return buildMetadata({ title: `${t.name} – Junk Removal Guides Dubai`, description: t.description, path: `/blog/topic/${t.slug}/` });
+  const count = posts.filter((p) => p.topic === t.slug).length;
+  // Hubs with fewer than 3 articles are thin: keep them out of the index until they grow.
+  return buildMetadata({ title: `${t.name} – Junk Removal Guides Dubai`, description: t.description, path: `/blog/topic/${t.slug}/`, noindex: count < 3 });
 }
 
 export default async function TopicPage({ params }: PageProps<'/blog/topic/[topic]'>) {

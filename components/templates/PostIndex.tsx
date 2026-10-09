@@ -28,7 +28,7 @@ export function TopicChips({ active }: { active?: string }) {
             aria-current={active === t.slug ? 'page' : undefined}
             className={`inline-flex min-h-10 items-center gap-2 rounded-full px-4 text-sm font-medium transition ${active === t.slug ? 'bg-ink-900 text-white' : 'border border-ink-200 bg-white text-ink-700 hover:border-ink-900'}`}
           >
-            {t.name} <span className={active === t.slug ? 'text-ink-400' : 'text-ink-400'}>{topicCount(t.slug)}</span>
+            {t.name} <span className={active === t.slug ? 'text-ink-300' : 'text-ink-500'}>{topicCount(t.slug)}</span>
           </Link>
         </li>
       ))}

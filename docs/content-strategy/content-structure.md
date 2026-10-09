@@ -90,7 +90,20 @@ Example: `content/articles/dubai-municipality-bulky-waste-vs-private-junk-remova
 
 Cover genuinely local detail: building types (towers vs villas), access and service lifts, community rules, parking and loading, typical jobs in that area, and nearby areas served. Link the area page prominently.
 
-## 4. Existing service and area pages (developer edits)
+## 4. Existing service and area pages
+
+Unique copy for the money pages lives in two JSON files. Edit them directly; the extractor never overwrites them.
+
+| File | Per page | Shown as |
+|---|---|---|
+| `content/local-content.json` | `heading`, `paragraphs` (2), `tips` (4), `jobs` (4), `nearby`, `faq` (4) for each of the 10 area pages | Local guide section, "Before collection day", "Typical jobs", area FAQ and FAQ schema |
+| `content/service-content.json` | `pricing` (factors), `notTaken`, `faq` for each of the 5 service pages | "How pricing works", "What we don't take", service FAQ and FAQ schema |
+
+**Rules:**
+- Every area and service page must stay unique. Never copy sentences between areas, and keep shared text under about 30%.
+- When you add a new area page, add its entry to `local-content.json` at the same time.
+
+## 4b. Further upgrades (developer edits)
 Service and area pages are the main money pages and are edited in code (`content/pages.json` via the extractor, or in the page templates). Planned upgrades (lead-plan weeks 3–4):
 - **Service pages:** a unique FAQ per service, a "what we take / don't take" list, a "how pricing works" section, real job photos, and links to their 2–3 best articles.
 - **Area pages:** a unique local paragraph and FAQ per area, links to related articles, and embedded GBP reviews only when they're real.

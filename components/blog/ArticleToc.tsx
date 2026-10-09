@@ -37,10 +37,10 @@ export function ArticleToc({ items, variant = 'sidebar' }: { items: TocItem[]; v
               className={
                 variant === 'sidebar'
                   ? `-ml-px flex gap-2 border-l-2 py-1.5 pl-4 leading-snug transition-colors ${isActive ? 'border-brand-500 font-semibold text-ink-900' : 'border-transparent text-ink-500 hover:text-ink-900'} ${!isH2 ? 'text-[0.82rem]' : ''}`
-                  : `flex gap-3 leading-snug ${isActive ? 'text-ink-900' : 'text-ink-600'} hover:text-brand-700`
+                  : `flex min-h-6 gap-3 py-1 leading-snug ${isActive ? 'text-ink-900' : 'text-ink-600'} hover:text-brand-700`
               }
             >
-              {isH2 && <span className="w-5 shrink-0 text-ink-400 tabular-nums">{String(n).padStart(2, '0')}</span>}
+              {isH2 && <span className="w-5 shrink-0 text-ink-500 tabular-nums">{String(n).padStart(2, '0')}</span>}
               <span>{t.text}</span>
             </a>
           </li>

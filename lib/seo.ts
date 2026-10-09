@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { absoluteUrl, site, type FaqItem, type ImageRef, type Post } from './content';
+import { absoluteUrl, servicePages, site, type FaqItem, type ImageRef, type Post } from './content';
 
 const DEFAULT_OG = '/wp-content/uploads/2025/12/Gemini_Generated_Image_ip6gtkip6gtkip6g.webp';
 
@@ -12,13 +12,15 @@ export function buildMetadata(opts: {
   publishedTime?: string;
   modifiedTime?: string;
   noindex?: boolean;
+  /** Canonical URL when it differs from `path` (e.g. /blogs/ duplicates /blog/). */
+  canonical?: string;
 }): Metadata {
   const image = opts.image?.src || DEFAULT_OG;
   return {
-    // Append the brand only while the full title stays within ~65 characters.
-    title: { absolute: opts.title.includes(site.name) || opts.title.length + site.name.length > 62 ? opts.title : `${opts.title} | ${site.name}` },
+    // Append the brand only while the full title stays within 60 characters.
+    title: { absolute: opts.title.includes(site.name) || opts.title.length + site.name.length + 3 > 60 ? opts.title : `${opts.title} | ${site.name}` },
     description: opts.description,
-    alternates: { canonical: opts.path },
+    alternates: { canonical: opts.canonical ?? opts.path },
     robots: opts.noindex ? { index: false, follow: true } : undefined,
     openGraph: {
       type: opts.type ?? 'website',
@@ -57,6 +59,12 @@ export function localBusinessLd() {
       addressCountry: site.address.country,
     },
     areaServed: { '@type': 'City', name: 'Dubai' },
+    contactPoint: { '@type': 'ContactPoint', telephone: site.phoneE164, contactType: 'customer service', areaServed: 'AE', availableLanguage: ['English'] },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Junk removal services',
+      itemListElement: servicePages.map((p) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: p.title, url: absoluteUrl(p.path) } })),
+    },
     sameAs: [`https://wa.me/${site.whatsapp}`],
   };
 }

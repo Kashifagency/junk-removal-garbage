@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from 'next';
 import { Archivo, DM_Sans } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
+import { LeadTracker } from '@/components/LeadTracker';
 import { StickyCta } from '@/components/StickyCta';
 import { JsonLd } from '@/components/ui';
 import { site } from '@/lib/content';
@@ -9,7 +11,7 @@ import { graph, localBusinessLd, websiteLd } from '@/lib/seo';
 import './globals.css';
 
 const body = DM_Sans({ subsets: ['latin'], variable: '--font-body', display: 'swap' });
-const display = Archivo({ subsets: ['latin'], variable: '--font-display-face', display: 'swap', axes: ['wdth'] });
+const display = Archivo({ subsets: ['latin'], variable: '--font-display-face', display: 'swap' });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -34,6 +36,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <StickyCta />
         <JsonLd data={graph(localBusinessLd(), websiteLd())} />
+        <LeadTracker />
+        <Analytics />
       </body>
     </html>
   );

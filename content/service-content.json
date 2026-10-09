@@ -1,0 +1,53 @@
+{
+  "_note": "Unique per-service content (Oct 2026): pricing factors, exclusions and FAQ. Approved claims only. Exclusions follow the site FAQ: no hazardous materials, chemicals or medical waste.",
+  "/services/household-junk-removal/": {
+    "pricing": ["How much needs to go (one item, one room or the whole home)", "Item types — bulky furniture and appliances take more handling", "Floor and lift access, stairs and carrying distance", "How soon you need it gone (same-day or scheduled)"],
+    "notTaken": ["Hazardous materials and chemicals (paint thinners, solvents, gas cylinders)", "Medical waste", "Food waste and general household rubbish bags for daily bins"],
+    "faq": [
+      { "q": "What counts as household junk?", "a": "Anything from your home you no longer want that's too big or too much for normal bins: old furniture, appliances, electronics, mattresses, toys, carpets, boxes and general clutter, plus small renovation leftovers from DIY projects." },
+      { "q": "Can you clear a whole apartment or villa?", "a": "Yes. We remove everything you don't want from every room, balconies, storerooms and gardens in one visit, then leave the space clear. Send photos room by room for an accurate price." },
+      { "q": "Do I need to carry items downstairs?", "a": "No. Our crew carries everything out from inside the property, whatever the floor, using the service lift where there is one." },
+      { "q": "How do I book household junk removal?", "a": "Call or WhatsApp +971 55 103 1255 with photos and your location, or fill in the contact form. Same-day or next-day collection is available across Dubai." }
+    ]
+  },
+  "/services/construction-waste-removal/": {
+    "pricing": ["Volume of debris (bags, a pickup load or several loads)", "Material type — concrete and tiles are heavier than wood or drywall", "Access to the site and distance to the loading point", "Whether the waste is already bagged or sorted"],
+    "notTaken": ["Hazardous materials such as asbestos and chemical waste", "Liquid waste, paints and solvents", "Medical waste"],
+    "faq": [
+      { "q": "What construction waste do you remove?", "a": "Concrete, bricks, rubble, tiles, plaster, drywall, wood, metal and scrap, packaging and leftover materials from renovation, fit-out and demolition work." },
+      { "q": "Do you collect renovation debris from apartments?", "a": "Yes. We carry bagged or loose renovation waste out of apartments and villas, using the service lift where available, and leave the area swept clear." },
+      { "q": "Is it better to bag the debris before you arrive?", "a": "Bagging small debris speeds up loading and keeps common areas clean, but it isn't required. Tell us how the waste is stored and we'll plan accordingly." },
+      { "q": "Where does the construction waste go?", "a": "We take it for proper disposal in line with Dubai regulations, and materials like metal and wood are recycled whenever possible." }
+    ]
+  },
+  "/services/commercial-waste-management/": {
+    "pricing": ["Volume and type of items (furniture, equipment, packaging, fixtures)", "Number of floors, lifts and loading bay access", "Timing — after-hours or weekend collections", "One-off clearance or repeat collections"],
+    "notTaken": ["Hazardous and chemical waste", "Medical and clinical waste", "Confidential paper that requires certified shredding"],
+    "faq": [
+      { "q": "Which businesses do you work with?", "a": "Offices, shops, restaurants, warehouses and other commercial premises across Dubai, from single-room clear-outs to full office moves." },
+      { "q": "Can you work outside business hours?", "a": "Tell us the timing that suits your operations and building rules, and we'll plan the collection around it so your team and customers aren't disrupted." },
+      { "q": "Do you remove office furniture and IT equipment?", "a": "Yes — desks, chairs, cabinets, partitions and electronics. Electronics are taken for responsible disposal and recycling where possible." },
+      { "q": "How do we get a price for a commercial clearance?", "a": "Send photos, a short video or a list of items with access details. We'll confirm a clear price before any work starts." }
+    ]
+  },
+  "/services/furniture-appliance-disposal/": {
+    "pricing": ["Number and size of items (a single sofa or a full set)", "Whether items need dismantling to fit through doors and lifts", "Floor and lift access", "Collection timing"],
+    "notTaken": ["Appliances still containing food or liquids — please empty and defrost first", "Gas cylinders", "Hazardous materials and chemicals"],
+    "faq": [
+      { "q": "Which furniture and appliances do you take?", "a": "Sofas, beds, mattresses, wardrobes, tables, chairs, cabinets and office furniture, plus fridges, freezers, washing machines, dryers, ovens, water heaters and AC units." },
+      { "q": "Do I need to prepare appliances before collection?", "a": "Please empty and defrost fridges and freezers a day ahead, and disconnect washing machines and other appliances where it's safe to do so." },
+      { "q": "Can you take apart large furniture?", "a": "Yes. Our crew can dismantle wardrobes, beds and large sofas on site so they can be carried out without damaging your property." },
+      { "q": "Is old furniture recycled?", "a": "Materials like metal, wood and electronics are recycled whenever possible, and everything else is taken for responsible disposal." }
+    ]
+  },
+  "/services/yard-garden-waste-cleanup/": {
+    "pricing": ["Volume of green waste (bags, a load or a full clear-up)", "Type — branches and palm fronds versus leaves and clippings", "Access to the garden and distance to the truck", "Whether other items (outdoor furniture, junk) go in the same visit"],
+    "notTaken": ["Garden chemicals, fertilisers and pesticides", "Soil contaminated with chemicals or oil", "Hazardous materials"],
+    "faq": [
+      { "q": "What garden waste do you remove?", "a": "Branches, palm fronds, hedge trimmings, leaves, grass clippings, soil and other organic garden waste, plus old pots, outdoor furniture and garden junk." },
+      { "q": "Can you clear a garden after landscaping work?", "a": "Yes. We clear green waste and leftover landscaping materials so the garden is ready to enjoy, often in a single visit." },
+      { "q": "Do you work in villa communities?", "a": "Yes — Arabian Ranches, The Meadows, The Springs, Palm Jumeirah and villa communities across Dubai. We keep loading quick and tidy to respect community rules." },
+      { "q": "Can you take garden waste and household junk together?", "a": "Yes. Combining garden waste with household items in one collection saves you booking twice." }
+    ]
+  }
+}

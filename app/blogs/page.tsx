@@ -5,7 +5,8 @@ import { buildMetadata } from '@/lib/seo';
 const seo = pageSeoFor('/blogs/', { title: 'Blogs', description: '' });
 
 export function generateMetadata() {
-  return buildMetadata({ ...seo, path: '/blogs/' });
+  // /blogs/ lists the same articles as /blog/, so /blog/ is the canonical version.
+  return buildMetadata({ ...seo, path: '/blogs/', canonical: '/blog/' });
 }
 
 export default function BlogsPage() {

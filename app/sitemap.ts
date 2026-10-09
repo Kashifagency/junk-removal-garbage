@@ -5,6 +5,7 @@ import { TOPICS } from '@/lib/topics';
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
   for (const p of pages) {
+    if (p.path === '/blogs/') continue; // duplicate of /blog/ (canonical points there)
     entries.push({
       url: absoluteUrl(p.path),
       lastModified: p.modified,
@@ -27,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
   for (const t of TOPICS) {
     const list = posts.filter((p) => p.topic === t.slug);
-    if (list.length) entries.push({ url: absoluteUrl(`/blog/topic/${t.slug}/`), lastModified: list[0].modified, changeFrequency: "weekly", priority: 0.5 });
+    if (list.length >= 3) entries.push({ url: absoluteUrl(`/blog/topic/${t.slug}/`), lastModified: list[0].modified, changeFrequency: "weekly", priority: 0.5 });
   }
   // Paginated archives (/blog/page/2/ …) are crawlable via links; listing them is optional.
   const blogPages = paginate(posts, 1).totalPages;

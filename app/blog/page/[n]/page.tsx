@@ -14,7 +14,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<'/blog/page/[n]'>) {
   const n = Number((await params).n);
-  return buildMetadata({ title: `${seo.title} – Page ${n}`, description: seo.description, path: `/blog/page/${n}/` });
+  return buildMetadata({ title: `${seo.title} – Page ${n}`, description: `${seo.description} Page ${n} of ${totalPages}.`, path: `/blog/page/${n}/` });
 }
 
 export default async function BlogPaged({ params }: PageProps<'/blog/page/[n]'>) {

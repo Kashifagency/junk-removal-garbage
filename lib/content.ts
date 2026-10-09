@@ -164,9 +164,15 @@ function shortTitle(t: string) {
   return s;
 }
 
+// Fixes for broken AIOSEO data in the export (e.g. a description copied from another post).
+const DESCRIPTION_OVERRIDES: Record<string, string> = {
+  'furniture-disposal-dubai-sofa-bed-removal-service':
+    'Furniture disposal in Dubai: sofa, bed and mattress removal from apartments and villas, with responsible disposal. Call or WhatsApp +971 55 103 1255.',
+};
+
 export function postSeo(post: Post) {
   const title = post.seo.title || shortTitle(post.title);
-  const description = post.seo.description || post.excerpt.replace(/…$/, '').slice(0, 155).replace(/\s+\S*$/, '') + '…';
+  const description = DESCRIPTION_OVERRIDES[post.slug] || post.seo.description || post.excerpt.replace(/…$/, '').slice(0, 155).replace(/\s+\S*$/, '') + '…';
   return { title, description };
 }
 
@@ -213,3 +219,13 @@ export const absoluteUrl = (path: string) => `${site.url}${path}`;
 
 export const formatDate = (iso: string) =>
   new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Dubai' });
+
+// ---------------------------------------------------------------- unique per-page content (SEO)
+import localContentData from '@/content/local-content.json';
+import serviceContentData from '@/content/service-content.json';
+
+export type LocalContent = { heading: string; paragraphs: string[]; tips: string[]; jobs: string[]; nearby: string[]; faq: FaqItem[] };
+export type ServiceContent = { pricing: string[]; notTaken: string[]; faq: FaqItem[] };
+
+export const localContentFor = (path: string) => (localContentData as unknown as Record<string, LocalContent>)[path];
+export const serviceContentFor = (path: string) => (serviceContentData as unknown as Record<string, ServiceContent>)[path];

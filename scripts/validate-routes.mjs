@@ -43,7 +43,8 @@ for (const u of urls) {
   const issues = [];
   if (res.status !== 200) issues.push(`status ${res.status}`);
   const canonical = (html.match(/<link rel="canonical" href="([^"]+)"/) || [])[1];
-  if (canonical !== SITE + u.path) issues.push(`canonical ${canonical}`);
+  const CANONICAL_OVERRIDES = { '/blogs/': '/blog/' }; // duplicate listing → canonical to /blog/
+  if (canonical !== SITE + (CANONICAL_OVERRIDES[u.path] ?? u.path)) issues.push(`canonical ${canonical}`);
   const title = (html.match(/<title>([^<]*)<\/title>/) || [])[1];
   if (!title) issues.push('no title');
   if (title && title.length > 70) issues.push(`long title (${title.length})`);
@@ -91,7 +92,7 @@ await expect('/category/junk-removal-in-dubai/', 200);
 await expect('/wp-content/uploads/2025/12/logo-1.png', 200);
 
 const sitemap = await (await fetch(BASE + '/sitemap.xml')).text();
-const missingFromSitemap = urls.filter((u) => !merged.has(u.path) && !sitemap.includes(`<loc>${SITE}${u.path}</loc>`)).map((u) => u.path);
+const missingFromSitemap = urls.filter((u) => !merged.has(u.path) && u.path !== '/blogs/' && !sitemap.includes(`<loc>${SITE}${u.path}</loc>`)).map((u) => u.path);
 
 const report = {
   checkedAt: new Date().toISOString(),

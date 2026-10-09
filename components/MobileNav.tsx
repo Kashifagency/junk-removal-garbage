@@ -70,7 +70,7 @@ export function MobileNav({ items, phone, telHref, whatsappHref }: { items: NavI
                   aria-current={pathname === item.href ? 'page' : undefined}
                   className="flex flex-1 items-baseline gap-3 py-4"
                 >
-                  <span className="w-6 text-xs font-semibold text-ink-400 tabular-nums">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="w-6 text-xs font-semibold text-ink-500 tabular-nums">{String(i + 1).padStart(2, '0')}</span>
                   <span
                     className={`font-display text-[1.6rem] leading-none font-extrabold tracking-tight ${isActive(item.href) ? 'text-brand-600' : 'text-ink-900'}`}
                     style={{ fontStretch: '110%' }}

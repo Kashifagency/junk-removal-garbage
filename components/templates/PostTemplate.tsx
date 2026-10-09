@@ -36,6 +36,18 @@ function withToc(html: string) {
   return { html: out, toc };
 }
 
+/**
+ * Article-body images come straight from WordPress HTML as plain <img> tags (often large PNGs).
+ * Route them through the Next.js image optimizer (AVIF/WebP, responsive widths) and lazy-load them.
+ */
+function optimizeImages(html: string) {
+  return html.replace(/<img\b([^>]*?)src="(\/(?:wp-content|images)\/[^"]+)"([^>]*)>/g, (_, pre: string, src: string, post: string) => {
+    const u = (w: number) => `/_next/image/?url=${encodeURIComponent(src)}&amp;w=${w}&amp;q=75`;
+    const attrs = `${pre}${post}`.replace(/\s(loading|decoding|srcset|sizes)="[^"]*"/g, '').replace(/\s*\/$/, '');
+    return `<img${attrs} src="${u(828)}" srcset="${u(640)} 640w, ${u(828)} 828w, ${u(1080)} 1080w" sizes="(min-width: 768px) 704px, 100vw" loading="lazy" decoding="async" />`;
+  });
+}
+
 /** Splits the article before its 3rd H2 so a contact prompt can sit mid-article. */
 function splitForCta(html: string) {
   const marker = '<!-- cta -->';
@@ -83,7 +95,7 @@ export function PostTemplate({ post, description }: { post: Post; description: s
     { name: post.title, path: post.path },
   ];
   const minutes = Math.max(1, Math.round(post.wordCount / 220));
-  const { html, toc } = withToc(post.html);
+  const { html, toc } = withToc(optimizeImages(post.html));
   const [before, after] = splitForCta(html);
   const servicePath = post.service ?? topic?.service;
   const service = services.find((s) => s.path === servicePath);
@@ -136,7 +148,7 @@ export function PostTemplate({ post, description }: { post: Post; description: s
               </div>
               {post.featuredImage && (
                 <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem] bg-ink-100">
-                  <Image src={post.featuredImage.src} alt={post.featuredImage.alt || post.title} fill priority sizes="(min-width:1024px) 40vw, 100vw" className="object-cover" />
+                  <Image src={post.featuredImage.src} alt={post.featuredImage.alt || post.title} fill loading="eager" fetchPriority="high" sizes="(min-width:1024px) 40vw, 100vw" className="object-cover" />
                 </div>
               )}
             </div>

@@ -1,5 +1,6 @@
 'use client';
 
+import { track } from '@vercel/analytics';
 import { useState } from 'react';
 import { Icon } from './Icon';
 
@@ -44,6 +45,7 @@ export function QuoteForm({
       const json = (await res.json().catch(() => ({}))) as { message?: string };
       if (!res.ok) throw new Error(json.message || 'Something went wrong.');
       setStatus({ kind: 'sent', message: json.message });
+      track('form_submit', { page: window.location.pathname, service: String(data.service || 'unspecified') });
       form.reset();
       setService('');
     } catch (err) {
@@ -114,7 +116,7 @@ export function QuoteForm({
         {!compact && (
           <div>
             <label htmlFor="q-email" className={label}>
-              Email <span className="font-normal text-ink-400">(optional)</span>
+              Email <span className="font-normal text-ink-500">(optional)</span>
             </label>
             <input id="q-email" name="email" type="email" autoComplete="email" className={field} />
           </div>
@@ -153,7 +155,7 @@ export function QuoteForm({
         {status.kind === 'sending' ? 'Submitting…' : 'Submit'}
         <Icon name="arrowRight" className="h-5 w-5" />
       </button>
-      <p className="text-xs text-ink-400">We only use your details to respond to your enquiry.</p>
+      <p className="text-xs text-ink-500">We only use your details to respond to your enquiry.</p>
     </form>
   );
 }
