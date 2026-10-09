@@ -2,9 +2,13 @@ import { site } from '@/lib/content';
 
 export const runtime = 'nodejs';
 
-// Enquiries go to the business email shown on the site. The sender must be on a domain verified in Resend.
+// No domain is verified in Resend, so emails are sent from Resend's shared test sender
+// (onboarding@resend.dev). In this mode Resend only delivers to the email address the
+// Resend account is registered with. So we send to the business email, and if Resend
+// replies that only the account owner's address is allowed, we resend to the address
+// named in that error.
 const QUOTE_TO = site.email;
-const QUOTE_FROM = `${site.name} <quotes@junkremovalgarbage.com>`;
+const QUOTE_FROM = `${site.name} <onboarding@resend.dev>`;
 
 const clean = (v: unknown, max = 2000) => String(v ?? '').replace(/[\r\n]+/g, ' ').trim().slice(0, max);
 const escapeHtml = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -77,24 +81,37 @@ ${rows.map(([k, v]) => `<tr><td style="color:#555"><strong>${k}</strong></td><td
 <p style="font:14px sans-serif"><a href="tel:${escapeHtml(phone.replace(/\s/g, ''))}">Call customer</a> · <a href="${waLink}">WhatsApp customer</a></p>`;
 
   // Resend REST API: https://resend.com/docs/api-reference/emails/send-email
-  const res = await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${RESEND_API_KEY}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      from: QUOTE_FROM,
-      to: [QUOTE_TO],
-      reply_to: email || undefined,
-      subject: `New website enquiry: ${service || 'Junk removal'} – ${name}`,
-      text,
-      html,
-    }),
-  }).catch((err) => {
-    console.error('[quote] Resend request failed', err);
-    return null;
-  });
+  const send = (to: string) =>
+    fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${RESEND_API_KEY}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        from: QUOTE_FROM,
+        to: [to],
+        reply_to: email || undefined,
+        subject: `New website enquiry: ${service || 'Junk removal'} – ${name}`,
+        text,
+        html,
+      }),
+    }).catch((err) => {
+      console.error('[quote] Resend request failed', err);
+      return null;
+    });
+
+  let res = await send(QUOTE_TO);
+  if (res && !res.ok) {
+    const body = await res.text().catch(() => '');
+    // Test mode: "You can only send testing emails to your own email address (owner@example.com)…"
+    const owner = body.match(/own email address \(([^)\s]+@[^)\s]+)\)/i)?.[1];
+    if (owner && owner.toLowerCase() !== QUOTE_TO.toLowerCase()) {
+      res = await send(owner);
+      if (res && !res.ok) console.error('[quote] Resend error (owner retry)', res.status, await res.text().catch(() => ''));
+    } else {
+      console.error('[quote] Resend error', res.status, body);
+    }
+  }
 
   if (!res || !res.ok) {
-    if (res) console.error('[quote] Resend error', res.status, await res.text().catch(() => ''));
     return Response.json({ message: `We couldn't send your request. Please call or WhatsApp us on ${site.phone}.` }, { status: 502 });
   }
 

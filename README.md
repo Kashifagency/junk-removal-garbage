@@ -46,28 +46,17 @@ npm start                       # serves the build on port 3000
 
 Preview deployments automatically serve a `robots.txt` that blocks crawling (`VERCEL_ENV !== 'production'`). Their canonical URLs also point to the production domain.
 
-## Resend setup (quote form)
+## Resend setup (contact form)
 
-`RESEND_API_KEY` is the only environment variable the site uses.
+`RESEND_API_KEY` is the only environment variable the site uses. No domain verification is needed.
 
-1. Create a Resend account and an API key with **Sending access**.
-2. Under **Domains**, add `junkremovalgarbage.com`. Add the DNS records Resend shows (SPF/DKIM) at your DNS provider, then wait until it shows **Verified**. The form sends from `quotes@junkremovalgarbage.com`, so this step is required.
-3. In Vercel → **Settings → Environment Variables**, add `RESEND_API_KEY`, then redeploy. Environment variable changes only apply to new deployments.
+- Emails are sent **from** Resend's shared sender `onboarding@resend.dev`, **to** the email address your Resend account is registered with. Resend's test mode only allows delivery to that address.
+- The code first sends to the business email in `content/site.json`. If Resend replies that only the account owner's address is allowed, it automatically resends to that address.
+- To send from your own domain later (e.g. `quotes@junkremovalgarbage.com`) or to other inboxes, verify the domain in Resend, then change `QUOTE_FROM` and `QUOTE_TO` at the top of `app/api/quote/route.ts`.
 
-Where enquiries go:
+Each email contains every form field, the page it was sent from, one-tap Call and WhatsApp links for the customer, and `Reply-To` set to the customer's email when they gave one.
 
-- **To:** the business email shown on the site (`email` in `content/site.json`, currently `shanancargotransportsofficial@gmail.com`).
-- **From:** `Shanan Junk Removal <quotes@junkremovalgarbage.com>`.
-- **To change either address:** edit `QUOTE_TO` / `QUOTE_FROM` at the top of `app/api/quote/route.ts`.
-
-What each email contains:
-
-- every form field
-- the page the form was sent from
-- one-tap **Call customer** and **WhatsApp customer** links
-- `Reply-To` set to the customer's email, when they gave one
-
-If the key is missing or Resend returns an error (for example, the domain isn't verified yet), visitors see a message asking them to call or WhatsApp instead. Errors are logged in Vercel under **Logs**.
+If the key is missing or Resend returns an error, visitors see a message asking them to call or WhatsApp. Errors are logged in Vercel under **Logs**.
 
 ## Changing the phone number or business details
 
