@@ -8,6 +8,7 @@
 
 | File | What it's for | Who uses it |
 |---|---|---|
+| [article-queue.md](article-queue.md) | Ordered list of articles to write, with status. Used by the daily "write the next three articles" routine | Writers / Claude |
 | [lead-plan-60-days.md](lead-plan-60-days.md) | Week-by-week plan, KPIs, what moves leads fastest | Owner + SEO lead |
 | [keyword-roadmap.md](keyword-roadmap.md) | Money keywords, clusters, which URL targets which keyword, publishing calendar | SEO lead + writers |
 | [content-rules.md](content-rules.md) | Non-negotiable rules: voice, facts, claims, on-page SEO checklist | Every writer, every article |
@@ -26,6 +27,15 @@ The copy-paste article template is in [`content/articles/_template.md`](../../co
 4. **Win where competitors are weak.** Competitors are mostly small exact-match-domain sites with no real area pages, empty blogs and no Arabic. We already have 10 area pages and a proper blog system, so we deepen them and publish item pages they don't have.
 5. **Convert every visit.** Every article ends with call, WhatsApp and the contact form, and has a contact prompt mid-article (built into the template). Track every click.
 6. **Honesty sells.** Clear answers about the free Dubai Municipality service and who it doesn't cover, plus pricing that's clear before work starts. No fake reviews, no invented numbers, no donation claims.
+
+## Daily routine with Claude
+
+Say **"write the next three articles following the md files please"** (or run `/write-articles`). Claude then:
+1. Takes the next three `todo` rows from article-queue.md.
+2. Verifies facts and writes each article following these docs, including the replace and merge redirects.
+3. Builds, checks all URLs, updates the queue and commits locally.
+
+Say **"push"** to publish.
 
 ## Publishing workflow (for writers)
 

@@ -1,5 +1,6 @@
 import type { NextConfig } from 'next';
 import posts from './content/posts.json' with { type: 'json' };
+import { redirectPlan } from './scripts/lib/redirect-plan.mjs';
 
 // Redirects that keep old WordPress URLs working after the move to Vercel.
 async function redirects() {
@@ -18,6 +19,8 @@ async function redirects() {
     // All in One SEO sitemap index/sub-sitemaps -> single Next.js sitemap.
     ...['sitemap_index.xml', 'post-sitemap.xml', 'page-sitemap.xml', 'category-sitemap.xml', 'post_tag-sitemap.xml', 'sitemap.rss'].map((f) => ({ source: '/' + f, destination: '/sitemap.xml', permanent: true })),
   ];
+  // Content consolidation: merged legacy posts (content/redirects.json + article "redirectFrom").
+  list.push(...redirectPlan().redirects.map((r) => ({ ...r, permanent: true })));
   // Plain permalinks (?p=ID / ?page_id=ID) are handled in proxy.ts.
   return list;
 }

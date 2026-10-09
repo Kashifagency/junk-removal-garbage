@@ -25,6 +25,10 @@ export type ArticleFrontmatter = {
   areas?: string[];
   author?: string;
   draft?: boolean;
+  /** true = this article replaces the legacy WordPress post with the same slug (same URL). */
+  replaces?: boolean;
+  /** Legacy post slugs merged into this article; each gets a 301 to it. */
+  redirectFrom?: string[];
 };
 
 export type MarkdownArticle = ArticleFrontmatter & { slug: string; html: string; wordCount: number; file: string };

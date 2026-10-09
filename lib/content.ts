@@ -6,6 +6,7 @@ import termsData from '@/content/terms.json';
 import pageSeo from '@/content/page-seo.json';
 import { loadArticles } from './articles';
 import { classifyTopic } from './topics';
+import { redirectPlan } from '../scripts/lib/redirect-plan.mjs';
 
 export type ImageRef = { src: string; alt: string; width?: number; height?: number };
 export type FaqItem = { q: string; a: string };
@@ -79,13 +80,19 @@ export type Post = {
 export type NavItem = { label: string; href: string; children: { label: string; href: string }[] };
 
 export const pages = pagesData as unknown as Page[];
-const legacyPosts = (postsData as unknown as Omit<Post, 'topic'>[]).map((p) => ({ ...p, source: 'wordpress' as const, topic: classifyTopic(p.title).slug }));
+// Legacy posts that were merged (redirected) or replaced in place by a Markdown article drop out of the blog.
+const plan = redirectPlan();
+const legacyPosts = (postsData as unknown as Omit<Post, 'topic'>[])
+  .filter((p) => !plan.removed.has(p.slug) && !plan.replaced.has(p.slug))
+  .map((p) => ({ ...p, source: 'wordpress' as const, topic: classifyTopic(p.title).slug }));
+const legacySlugs = new Set((postsData as unknown as Post[]).map((p) => p.slug));
 
 const RESERVED = new Set([...(pagesData as unknown as Page[]).map((p) => p.path), ...legacyPosts.map((p) => p.path), '/blog/', '/blogs/', '/feed/', '/category/', '/tag/']);
 const markdownPosts: Post[] = loadArticles().map((a) => {
   const path = `/${a.slug}/`;
-  if (RESERVED.has(path)) throw new Error(`content/articles/${a.file}: URL ${path} is already used by an existing page or post`);
-  const plain = a.html.replace(/<[^>]+>/g, ' ').replace(/s+/g, ' ').trim();
+  if (RESERVED.has(path)) throw new Error(`content/articles/${a.file}: URL ${path} is already used by an existing page or post (to replace a legacy post at the same URL, add "replaces: true")`);
+  if (a.replaces && !legacySlugs.has(a.slug)) throw new Error(`content/articles/${a.file}: "replaces: true" but no legacy post exists at /${a.slug}/`);
+  const plain = a.html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
   return {
     id: `md-${a.slug}`,
     type: 'post',

@@ -30,6 +30,8 @@ Copy [`content/articles/_template.md`](../../content/articles/_template.md) to s
 | `faq` | ✔ | 3–6 `{q, a}` pairs. Real questions with 40–80 word answers. |
 | `author` | — | Defaults to "Shanan Junk Removal team". |
 | `draft` | — | `true` = only visible in local preview. Set `false` to publish. |
+| `replaces` | — | `true` when the article replaces the legacy WordPress post with the **same slug** (same URL, new content). |
+| `redirectFrom` | — | Legacy post slugs merged into this article, e.g. `[old-post-1, old-post-2]`. Each gets a 301 to this article and drops out of the blog and sitemap automatically. |
 
 **URL** = the file name (or `slug:`), e.g. `sofa-disposal-dubai.md` → `/sofa-disposal-dubai/`. The build fails if the URL clashes with an existing page or post.
 

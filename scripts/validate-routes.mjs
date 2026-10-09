@@ -7,6 +7,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { XMLParser } from 'fast-xml-parser';
+import { redirectPlan } from './lib/redirect-plan.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const BASE = (process.argv[2] || 'http://localhost:3000').replace(/\/$/, '');
@@ -26,7 +27,18 @@ const fetchText = async (p, opts = {}) => {
   return { res, html: res.status === 200 ? await res.text() : '' };
 };
 
+// Legacy URLs merged into another page (content consolidation) must 308 to their new home.
+const merged = new Map(redirectPlan({ includeDrafts: false }).redirects.map((r) => [r.source, r.destination]));
+
 for (const u of urls) {
+  if (merged.has(u.path)) {
+    const res = await fetch(BASE + u.path, { redirect: 'manual' });
+    const loc = res.headers.get('location') || '';
+    const issues = res.status === 308 && loc.endsWith(merged.get(u.path)) ? [] : [`expected 308 → ${merged.get(u.path)}, got ${res.status} ${loc}`];
+    if (issues.length) failures++;
+    results.push({ ...u, status: res.status, title: `(merged → ${merged.get(u.path)})`, issues });
+    continue;
+  }
   const { res, html } = await fetchText(u.path);
   const issues = [];
   if (res.status !== 200) issues.push(`status ${res.status}`);
@@ -79,7 +91,7 @@ await expect('/category/junk-removal-in-dubai/', 200);
 await expect('/wp-content/uploads/2025/12/logo-1.png', 200);
 
 const sitemap = await (await fetch(BASE + '/sitemap.xml')).text();
-const missingFromSitemap = urls.filter((u) => !sitemap.includes(`<loc>${SITE}${u.path}</loc>`)).map((u) => u.path);
+const missingFromSitemap = urls.filter((u) => !merged.has(u.path) && !sitemap.includes(`<loc>${SITE}${u.path}</loc>`)).map((u) => u.path);
 
 const report = {
   checkedAt: new Date().toISOString(),

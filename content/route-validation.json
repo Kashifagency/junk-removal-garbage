@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-09T08:07:49.080Z",
+  "checkedAt": "2026-10-09T08:21:04.882Z",
   "base": "http://localhost:3000",
   "total": 62,
   "pages": 24,
@@ -307,8 +307,8 @@
     {
       "type": "post",
       "path": "/cleaning-services-dubai/",
-      "title": "Cleaning Services Dubai | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /garden-waste-removal-dubai/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -433,14 +433,14 @@
     {
       "type": "post",
       "path": "/furniture-removal-dubai-2/",
-      "title": "Need furniture removal Dubai? | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /services/furniture-appliance-disposal/)",
+      "status": 308,
       "issues": []
     },
     {
       "type": "post",
       "path": "/garden-waste-removal-dubai/",
-      "title": "Garden Waste Removal Dubai – Fast &amp; Eco-Friendly",
+      "title": "TEST Garden Waste Removal Dubai | Shanan Junk Removal",
       "status": 200,
       "issues": []
     },
