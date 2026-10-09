@@ -1,6 +1,7 @@
 ---
 name: write-articles
-description: Write the next blog articles for junkremovalgarbage.com from the article queue, following the content-strategy docs. Use when the user says "write the next three articles", "write the next N articles following the md files", "next articles", or runs /write-articles. Optional argument: number of articles (default 3).
+description: Write the next blog articles for junkremovalgarbage.com from the article queue, following the content-strategy docs. Use when the user says "write the next three articles", "write the next three articles following the md files please", "write the next N articles", "next articles", or runs /write-articles. Optional argument: number of articles (default 3).
+argument-hint: "[number of articles, default 3]"
 ---
 
 # Write the next articles (daily routine)
