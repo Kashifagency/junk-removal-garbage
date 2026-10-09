@@ -29,6 +29,7 @@ Read these in full before writing:
 ## 2. Pick the work
 - Take the first **N** rows (default 3, or the number the user gives) with status `todo`, top to bottom. Skip `review`, `written`, `live` and `skip` rows.
 - If fewer than N `todo` rows exist, first add new rows. Use keyword-roadmap.md (P2, then P3) and, if available, Search Console queries with impressions, applying the one-keyword-per-URL rule. Never add a row whose keyword is already owned by another URL.
+- **Quality guard (content-rules.md §2b):** never invent filler topics or near-duplicate pages just to reach N. That includes item/area name swaps and keywords already owned by another URL. If there aren't N genuinely distinct, valuable topics, write fewer and tell the user why. Once the planned queue is finished, recommend 2–4 articles a week driven by Search Console data.
 - Tell the user which rows you're writing before you start.
 
 ## 2b. Process the article images first

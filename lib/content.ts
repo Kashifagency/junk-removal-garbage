@@ -229,3 +229,25 @@ export type ServiceContent = { pricing: string[]; notTaken: string[]; faq: FaqIt
 
 export const localContentFor = (path: string) => (localContentData as unknown as Record<string, LocalContent>)[path];
 export const serviceContentFor = (path: string) => (serviceContentData as unknown as Record<string, ServiceContent>)[path];
+
+// ---------------------------------------------------------------- money page → article links (internal linking)
+import { TOPICS } from './topics';
+
+/**
+ * Best articles to link from a service or area page: articles that name this page in their
+ * frontmatter (`service` / `areas`) first, then same-topic articles; newest first within each group.
+ */
+export function guidesFor(opts: { service?: string; area?: string }, n = 3): Post[] {
+  const topic = opts.service ? TOPICS.find((t) => t.service === opts.service)?.slug : undefined;
+  const score = (p: Post) =>
+    (opts.service && p.service === opts.service ? 4 : 0) +
+    (opts.area && p.areas?.includes(opts.area) ? 4 : 0) +
+    (topic && p.topic === topic ? 2 : 0) +
+    (p.source === 'markdown' ? 1 : 0);
+  return posts
+    .map((p) => ({ p, s: score(p) }))
+    .filter((x) => x.s >= 2 || (opts.area && x.s >= 1))
+    .sort((a, b) => b.s - a.s || b.p.date.localeCompare(a.p.date))
+    .slice(0, n)
+    .map((x) => x.p);
+}

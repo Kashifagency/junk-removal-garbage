@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { Icon } from '@/components/Icon';
-import { ListSection, SplitIntro, blocksOf, sectionHas } from '@/components/sections';
+import { ListSection, PostGrid, SplitIntro, blocksOf, sectionHas } from '@/components/sections';
 import { Faq, JsonLd, PageHeader, ProcessSteps, QuoteSection, SectionHead } from '@/components/ui';
 import { services } from '@/lib/catalog';
-import { defaultFaq, serviceContentFor, site, telHref, type Page } from '@/lib/content';
+import { defaultFaq, guidesFor, serviceContentFor, site, telHref, type Page } from '@/lib/content';
 import { breadcrumbLd, faqLd, graph, serviceLd } from '@/lib/seo';
 
 export function ServiceTemplate({ page, description }: { page: Page; description: string }) {
@@ -18,6 +18,7 @@ export function ServiceTemplate({ page, description }: { page: Page; description
   const others = services.filter((s) => s.path !== page.path);
   const extra = serviceContentFor(page.path);
   const faq = extra?.faq?.length ? extra.faq : defaultFaq;
+  const guides = guidesFor({ service: page.path });
   let n = 1;
   const idx = () => String(n++).padStart(2, '0');
 
@@ -78,6 +79,25 @@ export function ServiceTemplate({ page, description }: { page: Page; description
           </div>
         </div>
       </section>
+
+      {guides.length > 0 && (
+        <section className="py-16 sm:py-20">
+          <div className="container-x">
+            <SectionHead
+              kicker="Guides"
+              title={`${page.title} guides`}
+              action={
+                <Link href="/blog/" className="link-arrow">
+                  All articles <Icon name="arrowRight" className="h-4 w-4" />
+                </Link>
+              }
+            />
+            <div className="mt-10">
+              <PostGrid posts={guides} headingLevel="h3" />
+            </div>
+          </div>
+        </section>
+      )}
 
       <Faq items={faq} index={idx()} title={`${page.title}: your questions`} />
 

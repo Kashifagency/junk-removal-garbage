@@ -24,6 +24,15 @@ Every article, page and Google Business Profile post must follow these rules. If
 - **No competitor bashing.** Comparisons are fine ("free municipal service vs private"), but don't name or disparage competitors.
 - **Contact language:** we use a **contact form, call and WhatsApp**. Don't write "free quote", "get a quote" or "request a quote". Say "send a photo for pricing", "call or WhatsApp", or "fill in the contact form".
 
+## 2b. Quality and Google's spam policies (scaled content)
+Google ranks content written for people, and penalises "scaled content abuse": many pages made mainly to rank, with little unique value. That applies whether pages are written by people or AI. To stay on the right side of it:
+- **Every article answers a different searcher need.** Never publish near-duplicates that just swap the item or area name (e.g. "sofa disposal Dubai Marina", "sofa disposal JVC"…). Area intent belongs on the area pages.
+- **Add something only we can say:** practical Dubai logistics (lifts, building rules, handovers), real job details and real photos as they become available, and clear answers to the owner's common customer questions.
+- **Human review before publishing.** The owner or editor skims every article for accuracy and tone before it's pushed. The `review` status exists for anything uncertain.
+- **Cadence follows the queue, not a quota.** Three articles a day is fine while the queue has distinct topics: the 17 planned items, roughly the first 6 days, many of them refreshes and merges. Once it runs out, slow to **2–4 high-quality articles a week**, driven by Search Console queries, rather than inventing filler topics.
+- **Refresh beats new.** Updating a page that already gets impressions often lifts rankings faster than publishing a new one.
+- **FAQ markup:** keep writing FAQs, because they help readers and AI answers, and the FAQ schema is valid. But since 2023 Google shows FAQ rich results only for well-known government and health sites, so don't expect FAQ snippets in search results.
+
 ## 3. Voice and style
 - **Audience:** Dubai residents (often expats, often in apartments), villa owners, property managers and office managers. They're busy, they have a deadline (moving out, handover, renovation), and they want it gone without hassle.
 - **Tone:** clear, practical, confident and friendly. Write like an experienced crew lead explaining the job, not like an advert.

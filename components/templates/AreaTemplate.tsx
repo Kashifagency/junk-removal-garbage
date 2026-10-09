@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Icon } from '@/components/Icon';
-import { AreasBlock, MapEmbed, blocksOf } from '@/components/sections';
+import { AreasBlock, MapEmbed, PostGrid, blocksOf } from '@/components/sections';
 import { Breadcrumbs, CallButtons, Faq, JsonLd, PromiseStrip, QuoteSection, SectionHead } from '@/components/ui';
 import { services } from '@/lib/catalog';
-import { areaName, areaPages, defaultFaq, localContentFor, type Page } from '@/lib/content';
+import { areaName, areaPages, defaultFaq, guidesFor, localContentFor, type Page } from '@/lib/content';
 import { breadcrumbLd, faqLd, graph, serviceLd } from '@/lib/seo';
 
 export function AreaTemplate({ page, description }: { page: Page; description: string }) {
@@ -16,6 +16,7 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
   // Unique per-area FAQ (falls back to the general FAQ only if no local content exists).
   const faq = local?.faq?.length ? local.faq : defaultFaq;
   const features = blocksOf(page, 'feature');
+  const guides = guidesFor({ area: page.path });
   const trail = [
     { name: 'Home', path: '/' },
     { name: 'Service Areas', path: '/service-areas/' },
@@ -174,6 +175,25 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
           </div>
         </div>
       </section>
+
+      {guides.length > 0 && (
+        <section className="py-16 sm:py-20">
+          <div className="container-x">
+            <SectionHead
+              kicker="Guides"
+              title={`Helpful guides for ${name}`}
+              action={
+                <Link href="/blog/" className="link-arrow">
+                  All articles <Icon name="arrowRight" className="h-4 w-4" />
+                </Link>
+              }
+            />
+            <div className="mt-10">
+              <PostGrid posts={guides} headingLevel="h3" />
+            </div>
+          </div>
+        </section>
+      )}
 
       <div className="bg-paper">
         <Faq items={faq} index={idx()} title={`Junk removal in ${name}: your questions`} />

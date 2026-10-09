@@ -122,4 +122,5 @@ Service and area pages are the main money pages and are edited in code (`content
 
 - Anchor text describes the target ("sofa disposal in Dubai", "junk removal in JVC"). Vary it naturally. Never use "click here".
 - Two to five internal links per 1,000 words is plenty.
+- **Automatic downward links:** service and area pages show a "Guides" section with their 3 most relevant articles. Articles that list the page in `service:` or `areas:` come first, then same-topic articles. Fill in those frontmatter fields accurately and new articles get linked from the money pages automatically.
 - The topic hub, related articles and service sidebar are added automatically. You only write the in-text links.

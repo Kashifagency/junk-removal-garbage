@@ -8,6 +8,11 @@
 3. Rewrite the target page properly, using the blueprints in content-structure.md.
 4. Never redirect to a page that doesn't exist yet. For `/sofa-disposal-dubai/` and `/same-day-junk-removal-dubai/`, publish the new page first.
 
+**Progress:** the live tracker is `article-queue.md`. Each queue row carries out its part of this audit through `replaces` and `redirectFrom`. Done so far (9 Oct):
+- `furniture-disposal-dubai-sofa-bed-removal-service` → `/sofa-disposal-dubai/`
+- `washing-machine-removal-dubai` → `/appliance-removal-services-dubai/`
+- `bed-and-mattress-removal-dubai` and `appliance-removal-services-dubai` refreshed in place
+
 **Order of work (lead plan week 2 onwards):** G1 → G5 → G9 → G3 → G7 → G8 → G6 → G4 → G2 → G10 → G11.
 
 | Group | URL | Words | Action | Notes |

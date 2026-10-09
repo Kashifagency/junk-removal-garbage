@@ -43,7 +43,7 @@ https://junkremovalgarbage.com/
 Record every listing (URL, login, date) in a shared spreadsheet. Update all of them if the phone or address changes.
 
 ## 4. Lead tracking (week 1 — without it you can't prove the 60-day result)
-- **Analytics:** enable Vercel Web Analytics (Vercel dashboard → Analytics), or add GA4.
+- **Analytics:** Vercel Web Analytics is built in. Enable it in the Vercel dashboard → Analytics.
 - **Conversions to track:**
   1. `tel:` link clicks: header, mobile bar, contact section, article CTAs
   2. `wa.me` link clicks
@@ -52,7 +52,7 @@ Record every listing (URL, login, date) in a shared spreadsheet. Update all of t
   - The website's WhatsApp links pre-fill "Hi, I need junk removal in Dubai."
   - On GBP and social profiles, use a different greeting, e.g. "Hi, I found you on Google Maps", so you can tell where WhatsApp chats come from.
 - **Lead log:** one row per lead with date, source (website / GBP / social / referral), channel (call / WhatsApp / form), service, area, won or lost, job value. Review it weekly against the KPIs in lead-plan-60-days.md.
-- **Developer to-do:** add click events (`track('call_click')`, `track('whatsapp_click')`, `track('form_submit')`) once the analytics tool is chosen.
+- **Done:** the site sends `call_click`, `whatsapp_click` and `form_submit` events (each with the page), plus the service for forms. They appear in Vercel → Analytics → Events (custom events need Vercel Pro).
 
 ## 5. Search Console routine
 - **Weekly:** Performance → Queries (new impressions, low-CTR queries to fix with better titles and descriptions), Pages → Not indexed.

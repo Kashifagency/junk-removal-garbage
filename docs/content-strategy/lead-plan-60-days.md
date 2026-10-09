@@ -10,7 +10,7 @@
 
 | Metric | Where | Week 4 target | Week 8 target |
 |---|---|---|---|
-| Leads: calls + WhatsApp clicks + form submissions | GA4 / Vercel Analytics events, GBP Insights, Resend inbox | Baseline +50% | Baseline ×2–3 |
+| Leads: calls + WhatsApp clicks + form submissions | Vercel Analytics events (`call_click`, `whatsapp_click`, `form_submit`), GBP Insights, Resend inbox | Baseline +50% | Baseline ×2–3 |
 | GBP calls / website clicks / direction requests | GBP Performance | Growing weekly | Growing weekly |
 | Google reviews (genuine customers only) | GBP | +8 | +20 |
 | Clicks from Google | Search Console → Performance | Baseline +30% | Baseline ×2 |
@@ -23,8 +23,7 @@ Record the **baseline in week 1**: last 28 days of Search Console clicks, GBP ca
 
 ### Week 1 (12–18 Oct): foundations and tracking
 - [ ] **Tracking.**
-  - Enable Vercel Web Analytics, or add GA4.
-  - Track clicks on `tel:` links, `wa.me` links and form submissions as conversions.
+  - Vercel Analytics plus call, WhatsApp and form events are **already built into the site**. Turn them on in Vercel → Analytics → Enable. Custom events need Vercel Pro; page views work on Hobby.
   - Use a unique WhatsApp greeting per source (website vs GBP) so you can tell them apart.
 - [ ] **Search Console.**
   - Confirm the sitemap is processed.
@@ -34,7 +33,7 @@ Record the **baseline in week 1**: last 28 days of Search Console clicks, GBP ca
   - Primary category, services, service areas (all 10 areas plus Dubai), description, opening hours, and phone **055 103 1255**.
   - Add 15+ real photos of the truck, crew and jobs.
 - [ ] **NAP consistency.** Update the phone number everywhere: GBP, WhatsApp Business, Facebook/Instagram, any old listings.
-- [ ] **Resend.** Verify the domain so the contact form delivers, and send a test.
+- [x] **Contact form.** Working via Resend (no domain verification needed). Send yourself a test after any change.
 - [ ] Publish article #1, the Dubai Municipality bulky waste guide (already drafted). Review the facts, then set `draft: false`.
 
 ### Week 2 (19–25 Oct): consolidate the old blog (biggest SEO lift)
