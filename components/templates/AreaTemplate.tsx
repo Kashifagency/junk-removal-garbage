@@ -19,7 +19,8 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
   const guides = guidesFor({ area: page.path });
   const nearby = nearbyAreas(page, 8);
   // Antigravity photo for this area if available, otherwise the page's original hero image.
-  const heroImage = areaImageFor(page) ?? hero?.image ?? null;
+  const areaImage = areaImageFor(page);
+  const heroImage = areaImage ?? hero?.image ?? null;
   const trail = [
     { name: 'Home', path: '/' },
     { name: 'Service Areas', path: '/service-areas/' },
@@ -51,10 +52,13 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
             </div>
             {heroImage && (
               <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
-                <Image src={heroImage.src} alt={`Junk removal truck serving ${name}, Dubai`} fill loading="eager" fetchPriority="high" sizes="(min-width:1024px) 40vw, 100vw" className="object-cover object-[65%_center]" />
+                <Image src={heroImage.src} alt={areaImage?.alt || `Junk removal truck serving ${name}, Dubai`} fill loading="eager" fetchPriority="high" sizes="(min-width:1024px) 40vw, 100vw" className="object-cover object-[65%_center]" />
                 <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-ink-900 shadow">
                   <Icon name="pin" className="h-4 w-4 text-brand-600" /> {name}, Dubai
                 </span>
+                {areaImage?.credit && (
+                  <span className="absolute top-2 right-3 text-[0.65rem] text-white/80 [text-shadow:0_1px_2px_rgb(0_0_0/0.6)]">Photo: {areaImage.credit} / Unsplash</span>
+                )}
               </div>
             )}
           </div>

@@ -217,10 +217,15 @@ export function nearbyAreas(p: Page, n = 6): Page[] {
   return [...explicit, ...sameRegion, ...rest].slice(0, n);
 }
 /** Per-area photo (Antigravity) if it exists in public/images/areas/<key>.webp, where key = slug without "junk-removal-". */
-export function areaImageFor(p: Page): ImageRef | null {
+// Stock photos (Unsplash License) used for some areas: real alt text + photographer credit.
+const areaImageCredits = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'content/area-image-credits.json'), 'utf8')) as Record<string, { id: string; alt: string; credit: string }>;
+
+export function areaImageFor(p: Page): (ImageRef & { credit?: string }) | null {
   const key = p.slug.replace(/^junk-removal-/, '');
   const file = `/images/areas/${key}.webp`;
-  return fs.existsSync(path.join(process.cwd(), 'public', file)) ? { src: file, alt: '', width: 1600, height: 1000 } : null;
+  if (!fs.existsSync(path.join(process.cwd(), 'public', file))) return null;
+  const stock = areaImageCredits[key];
+  return { src: file, alt: stock?.alt ?? `Junk removal crew loading a truck in ${areaName(p)}, Dubai`, width: 1600, height: 1000, credit: stock?.credit };
 }
 
 export const isAreaPage = (p: Page) => areaPages.some((a) => a.id === p.id);
