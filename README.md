@@ -76,6 +76,16 @@ The phone number, WhatsApp number, email and address live in `content/site.json`
 - **Phone number:** set the constants at the top of `scripts/extract.mjs` (`PHONE_DISPLAY`, `PHONE_E164`, `WHATSAPP`), then run `npm run extract`. Any old number found in page or post text is replaced automatically.
 - **Page SEO text:** edit `content/page-seo.json` by hand. The extractor doesn't overwrite it.
 
+## Writing new blog articles
+
+New articles are Markdown files in `content/articles/` (copy `content/articles/_template.md`). Each file becomes `/<file-name>/` with:
+- table of contents, key takeaways, a mid-article contact prompt and an FAQ (with FAQ schema)
+- related service and area links, an author box and related articles
+
+They appear automatically in the blog, their topic hub (`/blog/topic/...`), the sitemap and the RSS feed. Set `draft: true` to preview locally only (`npm run dev`).
+
+The content strategy, keyword roadmap, content rules and 60-day lead plan are in [`docs/content-strategy/`](docs/content-strategy/README.md).
+
 ## Content pipeline
 
 Content lives as JSON in `content/`, generated from the XML (keep the XML file):

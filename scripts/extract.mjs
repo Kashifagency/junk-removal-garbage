@@ -134,6 +134,10 @@ const COPY_FIXES = [
   [/ensures timely pickup and delivery across Dubai/g, 'ensures timely pickup across Dubai'],
   [/^which areas/i, 'Which areas'],
   [/What Our Clients Says/g, 'What Our Clients Say'],
+  // The business does not donate items (client decision, Oct 2026) — keep recycling claims only.
+  [/We recycle and donate whenever possible/g, 'We recycle whenever possible'],
+  [/Do you recycle or donate items whenever possible\?/g, 'Do you recycle items whenever possible?'],
+  [/recycling materials like metal, wood, and electronics, and donating usable furniture and appliances to local charities whenever possible\./g, 'recycling materials like metal, wood, and electronics whenever possible.'],
   // The site uses a contact form instead of quote requests (client decision, Oct 2026).
   [/Get a Free Quote for Junk Removal, Construction Waste & Cleanup in Dubai/g, 'Junk Removal, Construction Waste & Cleanup in Dubai'],
   [/Need a quote for construction waste cleanup or furniture disposal\?/g, 'Need construction waste cleanup or furniture disposal?'],

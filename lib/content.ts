@@ -4,6 +4,8 @@ import siteData from '@/content/site.json';
 import navData from '@/content/navigation.json';
 import termsData from '@/content/terms.json';
 import pageSeo from '@/content/page-seo.json';
+import { loadArticles } from './articles';
+import { classifyTopic } from './topics';
 
 export type ImageRef = { src: string; alt: string; width?: number; height?: number };
 export type FaqItem = { q: string; a: string };
@@ -62,12 +64,55 @@ export type Post = {
   excerpt: string;
   html: string;
   wordCount: number;
+  /** Blog topic hub slug (see lib/topics.ts). */
+  topic: string;
+  /** Extra fields available on new Markdown articles. */
+  source?: 'wordpress' | 'markdown';
+  summary?: string[];
+  faq?: FaqItem[];
+  service?: string;
+  areas?: string[];
+  primaryKeyword?: string;
+  author?: string;
 };
 
 export type NavItem = { label: string; href: string; children: { label: string; href: string }[] };
 
 export const pages = pagesData as unknown as Page[];
-export const posts = postsData as unknown as Post[]; // newest first
+const legacyPosts = (postsData as unknown as Omit<Post, 'topic'>[]).map((p) => ({ ...p, source: 'wordpress' as const, topic: classifyTopic(p.title).slug }));
+
+const RESERVED = new Set([...(pagesData as unknown as Page[]).map((p) => p.path), ...legacyPosts.map((p) => p.path), '/blog/', '/blogs/', '/feed/', '/category/', '/tag/']);
+const markdownPosts: Post[] = loadArticles().map((a) => {
+  const path = `/${a.slug}/`;
+  if (RESERVED.has(path)) throw new Error(`content/articles/${a.file}: URL ${path} is already used by an existing page or post`);
+  const plain = a.html.replace(/<[^>]+>/g, ' ').replace(/s+/g, ' ').trim();
+  return {
+    id: `md-${a.slug}`,
+    type: 'post',
+    source: 'markdown',
+    path,
+    slug: a.slug,
+    title: a.title,
+    date: a.date,
+    modified: a.updated ?? a.date,
+    seo: { title: a.seoTitle ?? '', description: a.description },
+    featuredImage: a.image ? { src: a.image, alt: a.imageAlt ?? a.title } : null,
+    categories: [{ slug: 'junk-removal-in-dubai', name: 'Junk Removal in Dubai' }],
+    tags: (a.tags ?? []).map((t) => ({ slug: t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''), name: t })),
+    excerpt: a.description || plain.slice(0, 200),
+    html: a.html,
+    wordCount: a.wordCount,
+    topic: classifyTopic(a.title, a.topic).slug,
+    summary: a.summary,
+    faq: a.faq,
+    service: a.service,
+    areas: a.areas,
+    primaryKeyword: a.primaryKeyword,
+    author: a.author,
+  } satisfies Post;
+});
+
+export const posts: Post[] = [...markdownPosts, ...legacyPosts].sort((a, b) => b.date.localeCompare(a.date)); // newest first
 export const site = {
   ...siteData,
   url: siteData.url.replace(/\/$/, ''),
@@ -147,7 +192,7 @@ export const relatedPosts = (post: Post, n = 3) => {
   const tagSet = new Set(post.tags.map((t) => t.slug));
   return posts
     .filter((p) => p.id !== post.id)
-    .map((p) => ({ p, score: p.tags.filter((t) => tagSet.has(t.slug)).length }))
+    .map((p) => ({ p, score: (p.topic === post.topic ? 5 : 0) + p.tags.filter((t) => tagSet.has(t.slug)).length }))
     .sort((a, b) => b.score - a.score || b.p.date.localeCompare(a.p.date))
     .slice(0, n)
     .map((x) => x.p);

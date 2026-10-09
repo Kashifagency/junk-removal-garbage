@@ -9,5 +9,5 @@ export function generateMetadata() {
 }
 
 export default function BlogsPage() {
-  return <PostIndex base="/blogs/" page={1} list={posts} title="Blogs" eyebrow="Articles" intro={seo.description} crumb="Blogs" />;
+  return <PostIndex base="/blogs/" page={1} list={posts} title="Blogs" eyebrow="Articles" intro={seo.description} crumb="Blogs" hubs />;
 }

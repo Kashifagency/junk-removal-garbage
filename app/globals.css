@@ -220,3 +220,12 @@
 .prose-invert strong {
   @apply text-white;
 }
+
+/* Markdown callouts: > **Tip:** / **Note:** / **Important:** / **Warning:** */
+.prose-content blockquote.callout-tip {
+  @apply border-emerald-500 bg-emerald-50;
+}
+.prose-content blockquote.callout-important,
+.prose-content blockquote.callout-warning {
+  @apply border-red-500 bg-red-50;
+}
