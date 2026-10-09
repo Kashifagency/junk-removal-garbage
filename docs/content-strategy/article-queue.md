@@ -1,4 +1,4 @@
-# Article queue
+| 4 | written || 3 | written || 2 | written |# Article queue
 
 The ordered work list for daily article writing. **"Write the next three articles"** means: take the first three rows with status `todo`, from top to bottom. The full procedure is in the project skill `.claude/skills/write-articles/SKILL.md`.
 
@@ -42,3 +42,5 @@ Rows are ordered by lead impact. Keep this table updated every time you write. W
 Add one line per writing session: the date, the rows written, and anything for the owner to check.
 
 - 2026-10-09: queue created. #1 drafted, awaiting owner review.
+- 2026-10-09: image prompts created for #2, #3, #4.
+- 2026-10-09: written #2 sofa-disposal-dubai (new, merges furniture-disposal-dubai-sofa-bed-removal-service), #3 bed-and-mattress-removal-dubai (replaces legacy), #4 appliance-removal-services-dubai (replaces legacy, merges washing-machine-removal-dubai). 6 Antigravity images converted to WebP. Owner check: appliance article states we do not disconnect gas/electrical connections or uninstall AC units (please confirm).

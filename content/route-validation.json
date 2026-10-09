@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-09T08:53:09.415Z",
+  "checkedAt": "2026-10-09T10:12:16.835Z",
   "base": "http://localhost:3000",
   "total": 62,
   "pages": 24,
@@ -188,8 +188,8 @@
     {
       "type": "post",
       "path": "/furniture-disposal-dubai-sofa-bed-removal-service/",
-      "title": "Furniture Disposal Dubai - Sofa &amp; Bed Removal Service",
-      "status": 200,
+      "title": "(merged → /sofa-disposal-dubai/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -370,7 +370,7 @@
     {
       "type": "post",
       "path": "/appliance-removal-services-dubai/",
-      "title": "Appliance Removal Services Dubai | Shanan Junk Removal",
+      "title": "Appliance Removal Dubai | Fridge, Washer &amp; AC Disposal",
       "status": 200,
       "issues": []
     },
@@ -384,15 +384,15 @@
     {
       "type": "post",
       "path": "/bed-and-mattress-removal-dubai/",
-      "title": "Bed and Mattress Removal Dubai | Shanan Junk Removal",
+      "title": "Mattress Disposal Dubai | Bed &amp; Mattress Removal",
       "status": 200,
       "issues": []
     },
     {
       "type": "post",
       "path": "/washing-machine-removal-dubai/",
-      "title": "Washing Machine Removal Dubai | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /appliance-removal-services-dubai/)",
+      "status": 308,
       "issues": []
     },
     {
