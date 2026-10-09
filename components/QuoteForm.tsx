@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Icon, WhatsAppIcon } from './Icon';
+import { Icon } from './Icon';
 
 const SERVICES = [
   'Household junk removal',
@@ -51,17 +51,6 @@ export function QuoteForm({
     }
   }
 
-  function sendOnWhatsApp(form: HTMLFormElement | null) {
-    const d = form ? Object.fromEntries(new FormData(form).entries()) : {};
-    const lines = [
-      'Hi, I would like a junk removal quote.',
-      d.name && `Name: ${d.name}`,
-      d.service && `Service: ${d.service}`,
-      d.area && `Area: ${d.area}`,
-      d.message && `Details: ${d.message}`,
-    ].filter(Boolean);
-    window.open(`https://wa.me/${whatsapp}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
-  }
 
   if (status.kind === 'sent') {
     return (
@@ -69,7 +58,7 @@ export function QuoteForm({
         <span className="flex h-16 w-16 items-center justify-center rounded-full bg-brand-500 text-white">
           <Icon name="check" className="h-8 w-8" strokeWidth={2.5} />
         </span>
-        <h3 className="mt-6 text-2xl font-extrabold">Request received</h3>
+        <h3 className="mt-6 text-2xl font-extrabold">Thank you — form submitted</h3>
         <p className="mt-2 max-w-sm text-ink-500">
           {status.message || 'Our team will contact you shortly.'} For urgent jobs call {phone}.
         </p>
@@ -89,9 +78,9 @@ export function QuoteForm({
       {!compact && (
         <div>
           <p className="font-display text-2xl font-extrabold text-ink-900" style={{ fontStretch: '108%' }}>
-            Request a quote
+            Contact form
           </p>
-          <p className="mt-1 text-sm text-ink-500">Takes under a minute. We reply fast.</p>
+          <p className="mt-1 text-sm text-ink-500">Fill in your details and our team will get back to you.</p>
         </div>
       )}
 
@@ -160,15 +149,10 @@ export function QuoteForm({
         </p>
       )}
 
-      <div className="grid gap-3 sm:grid-cols-[1.4fr_1fr]">
-        <button type="submit" disabled={status.kind === 'sending'} className="btn-primary !min-h-14 text-base disabled:opacity-60">
-          {status.kind === 'sending' ? 'Sending…' : 'Get my free quote'}
-          <Icon name="arrowRight" className="h-5 w-5" />
-        </button>
-        <button type="button" onClick={(e) => sendOnWhatsApp(e.currentTarget.form)} className="btn-whatsapp !min-h-14">
-          <WhatsAppIcon className="h-4 w-4" /> Via WhatsApp
-        </button>
-      </div>
+      <button type="submit" disabled={status.kind === 'sending'} className="btn-primary !min-h-14 w-full text-base disabled:opacity-60">
+        {status.kind === 'sending' ? 'Submitting…' : 'Submit'}
+        <Icon name="arrowRight" className="h-5 w-5" />
+      </button>
       <p className="text-xs text-ink-400">We only use your details to respond to your enquiry.</p>
     </form>
   );

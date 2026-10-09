@@ -115,7 +115,7 @@ export function MobileNav({ items, phone, telHref, whatsappHref }: { items: NavI
       </nav>
 
       <div className="shrink-0 border-t border-line bg-white p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
-        <p className="mb-3 text-center text-xs font-medium tracking-wider text-ink-500 uppercase">Free quotes · {phone}</p>
+        <p className="mb-3 text-center text-xs font-medium tracking-wider text-ink-500 uppercase">Call or WhatsApp · {phone}</p>
         <div className="grid grid-cols-2 gap-3">
           <a href={telHref} className="btn-dark !px-3">
             <Icon name="phone" className="h-4 w-4" /> Call

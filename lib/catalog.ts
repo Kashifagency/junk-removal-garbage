@@ -48,10 +48,10 @@ export const ITEMS: { icon: IconName; title: string; text: string }[] = [
 ];
 
 export const STEPS: { icon: IconName; title: string; text: string }[] = [
-  { icon: 'phone', title: 'Tell us what needs to go', text: 'Call, WhatsApp photos, or send the quote form with your area in Dubai.' },
-  { icon: 'tag', title: 'Get a clear quote', text: 'Upfront pricing based on volume, item type and access — before any work starts.' },
+  { icon: 'phone', title: 'Tell us what needs to go', text: 'Call, WhatsApp photos, or fill in the contact form with your area in Dubai.' },
+  { icon: 'tag', title: 'Clear, upfront pricing', text: 'Pricing based on volume, item type and access — agreed before any work starts.' },
   { icon: 'truck', title: 'We load and haul it away', text: 'Our crew does the lifting, from any floor, and leaves the space clean.' },
   { icon: 'recycle', title: 'Responsible disposal', text: 'Items are recycled or donated whenever possible, reducing landfill waste.' },
 ];
 
-export const PROMISES = ['Same-day service available', 'Upfront, transparent quotes', 'Eco-friendly disposal', 'Homes & businesses'];
+export const PROMISES = ['Same-day service available', 'Upfront, transparent pricing', 'Eco-friendly disposal', 'Homes & businesses'];

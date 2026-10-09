@@ -172,7 +172,7 @@ export function ContactTemplate({ page, description }: { page: Page; description
                 ))}
               </ul>
             </div>
-            <div id="quote" className="min-w-0 scroll-mt-24 rounded-[1.5rem] bg-white p-5 shadow-[0_30px_80px_-30px_rgba(24,21,15,0.35)] ring-1 ring-line sm:p-8 lg:self-start">
+            <div id="contact-form" className="min-w-0 scroll-mt-24 rounded-[1.5rem] bg-white p-5 shadow-[0_30px_80px_-30px_rgba(24,21,15,0.35)] ring-1 ring-line sm:p-8 lg:self-start">
               <QuoteForm whatsapp={site.whatsapp} phone={site.phone} />
             </div>
           </div>

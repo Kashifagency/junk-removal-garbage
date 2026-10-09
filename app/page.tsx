@@ -70,8 +70,8 @@ export default function HomePage() {
                 <WhatsAppIcon className="h-5 w-5" />
               </span>
               <span className="leading-tight">
-                <span className="block text-sm font-bold text-ink-900">Send a photo, get a price</span>
-                <span className="block text-xs text-ink-500">Fastest way to a quote</span>
+                <span className="block text-sm font-bold text-ink-900">Chat with us on WhatsApp</span>
+                <span className="block text-xs text-ink-500">Send a photo of your items</span>
               </span>
             </a>
             <div className="absolute top-4 right-4 hidden rounded-2xl bg-ink-900 px-5 py-4 text-white sm:block">
@@ -154,8 +154,8 @@ export default function HomePage() {
             <h2 className="display-lg mt-4 !text-white">From a single sofa to a full site clearance.</h2>
             <p className="mt-5 max-w-xl text-lg text-white/85">No matter the item’s size, weight or condition, our team removes it safely without damaging your property.</p>
             <div className="mt-8 flex flex-col gap-3 min-[420px]:flex-row">
-              <Link href="#quote" className="btn-dark">
-                Get a free quote <Icon name="arrowRight" className="h-4 w-4" />
+              <Link href="#contact-form" className="btn-dark">
+                Fill in the form <Icon name="arrowRight" className="h-4 w-4" />
               </Link>
               <a href={whatsappHref()} target="_blank" rel="noopener noreferrer" className="btn-light">
                 <WhatsAppIcon className="h-4 w-4" /> WhatsApp a photo

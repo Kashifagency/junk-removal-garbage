@@ -12,8 +12,8 @@ export function StickyCta() {
         <a href={whatsappHref()} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 rounded-xl py-3 text-white">
           <WhatsAppIcon className="h-4 w-4 text-whatsapp" /> WhatsApp
         </a>
-        <a href="#quote" className="flex items-center justify-center gap-1.5 rounded-xl bg-brand-500 py-3 text-white">
-          Free quote <Icon name="arrowRight" className="h-4 w-4" />
+        <a href="#contact-form" className="flex items-center justify-center gap-1.5 rounded-xl bg-brand-500 py-3 text-white">
+          Contact <Icon name="arrowRight" className="h-4 w-4" />
         </a>
       </div>
       <a

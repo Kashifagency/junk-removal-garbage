@@ -134,6 +134,12 @@ const COPY_FIXES = [
   [/ensures timely pickup and delivery across Dubai/g, 'ensures timely pickup across Dubai'],
   [/^which areas/i, 'Which areas'],
   [/What Our Clients Says/g, 'What Our Clients Say'],
+  // The site uses a contact form instead of quote requests (client decision, Oct 2026).
+  [/Get a Free Quote for Junk Removal, Construction Waste & Cleanup in Dubai/g, 'Junk Removal, Construction Waste & Cleanup in Dubai'],
+  [/Need a quote for construction waste cleanup or furniture disposal\?/g, 'Need construction waste cleanup or furniture disposal?'],
+  [/We'll assess your needs and provide a fair quote\./g, "We'll assess your needs and give you a fair price."],
+  [/You'll receive a clear quote before we begin any work/g, "You'll know the price before we begin any work"],
+  [/Get upfront quotes for construction waste, household junk, and furniture disposal before we start any work\./g, 'Pricing for construction waste, household junk, and furniture disposal is agreed upfront, before we start any work.'],
 ];
 const fix = (s) => COPY_FIXES.reduce((acc, [re, rep]) => acc.replace(re, rep), str(s));
 
@@ -382,6 +388,12 @@ function cleanPostHtml(raw, slug) {
     return m;
   });
   h = h.replace(/<a href="(https?:\/\/[^"]+)"/g, '<a href="$1" target="_blank" rel="noopener noreferrer"');
+  // The site uses a contact form instead of quote requests (client decision, Oct 2026).
+  h = h
+    .replace(/for a free quote/gi, 'for pricing')
+    .replace(/Free quote when you say/g, 'Call us when you say')
+    .replace(/Receive((?:\s|<[^>]+>)+)free quote/g, 'Receive$1pricing')
+    .replace(/Get free quote/g, 'Get pricing');
   return h;
 }
 

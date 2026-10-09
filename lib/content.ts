@@ -154,7 +154,7 @@ export const relatedPosts = (post: Post, n = 3) => {
 };
 
 export const telHref = `tel:${site.phoneE164}`;
-export const whatsappHref = (text = 'Hi, I would like a quote for junk removal in Dubai.') =>
+export const whatsappHref = (text = 'Hi, I need junk removal in Dubai.') =>
   `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(text)}`;
 
 export const absoluteUrl = (path: string) => `${site.url}${path}`;

@@ -75,7 +75,7 @@ export function Header() {
                       </ul>
                       <div className="flex flex-col justify-between rounded-xl bg-ink-900 p-6 text-white">
                         <div>
-                          <p className="kicker !text-brand-300">Free quote</p>
+                          <p className="kicker !text-brand-300">Need help?</p>
                           <p className="mt-3 font-display text-2xl leading-tight font-extrabold" style={{ fontStretch: '110%' }}>
                             Not sure which service you need?
                           </p>
@@ -127,8 +127,8 @@ export function Header() {
               <span className="block text-sm font-semibold text-ink-900">{site.phone}</span>
             </span>
           </a>
-          <Link href="/contact/#quote" className="btn-primary hidden !min-h-11 sm:inline-flex">
-            Free quote
+          <Link href="/contact/#contact-form" className="btn-primary hidden !min-h-11 sm:inline-flex">
+            Contact us
           </Link>
           <MobileNav items={primaryNav} phone={site.phone} telHref={telHref} whatsappHref={whatsappHref()} />
         </div>

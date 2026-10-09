@@ -131,7 +131,7 @@ export function PostTemplate({ post, description }: { post: Post; description: s
                 <p className="font-display text-2xl leading-tight font-extrabold" style={{ fontStretch: '110%' }}>
                   Need junk removed?
                 </p>
-                <p className="mt-2 text-sm text-ink-300">Free quotes across Dubai. Same-day service available.</p>
+                <p className="mt-2 text-sm text-ink-300">Serving all areas of Dubai. Same-day service available.</p>
                 <div className="mt-5 grid gap-2">
                   <a href={telHref} className="btn-primary">
                     <Icon name="phone" className="h-4 w-4" /> {site.phone}

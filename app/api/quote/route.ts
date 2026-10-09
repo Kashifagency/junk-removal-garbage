@@ -69,7 +69,7 @@ export async function POST(req: Request) {
   ];
   const text = [...rows.map(([k, v]) => `${k}: ${v}`), '', 'Message:', message || '-'].join('\n');
   const waLink = `https://wa.me/${phone.replace(/\D/g, '').replace(/^0/, '971')}`;
-  const html = `<h2 style="margin:0 0 12px">New quote request</h2>
+  const html = `<h2 style="margin:0 0 12px">New website enquiry</h2>
 <table cellpadding="6" style="border-collapse:collapse;font:14px/1.4 sans-serif">
 ${rows.map(([k, v]) => `<tr><td style="color:#555"><strong>${k}</strong></td><td>${escapeHtml(v)}</td></tr>`).join('\n')}
 </table>
@@ -84,7 +84,7 @@ ${rows.map(([k, v]) => `<tr><td style="color:#555"><strong>${k}</strong></td><td
       from: QUOTE_FROM,
       to: [QUOTE_TO],
       reply_to: email || undefined,
-      subject: `New quote request: ${service || 'Junk removal'} – ${name}`,
+      subject: `New website enquiry: ${service || 'Junk removal'} – ${name}`,
       text,
       html,
     }),

@@ -24,8 +24,8 @@ export function ServiceTemplate({ page, description }: { page: Page; description
       <JsonLd data={graph(breadcrumbLd(trail), serviceLd({ name: page.title, description, path: page.path }), faqLd(defaultFaq))} />
       <PageHeader title={page.title} kicker="Service" intro={description} trail={trail} image={svc?.image ?? blocksOf(page, 'image')[0]?.image}>
         <div className="mt-8 flex flex-col gap-3 min-[420px]:flex-row">
-          <a href="#quote" className="btn-primary">
-            Get a free quote <Icon name="arrowRight" className="h-4 w-4" />
+          <a href="#contact-form" className="btn-primary">
+            Contact us <Icon name="arrowRight" className="h-4 w-4" />
           </a>
           <a href={telHref} className="btn-line">
             <Icon name="phone" className="h-4 w-4" /> {site.phone}
@@ -71,7 +71,7 @@ export function ServiceTemplate({ page, description }: { page: Page; description
         </div>
       </section>
 
-      <QuoteSection title={`Get a free ${page.title.toLowerCase()} quote`} defaultService={serviceOption(page.title)} />
+      <QuoteSection title={`Contact us about ${page.title.toLowerCase()}`} defaultService={serviceOption(page.title)} />
     </>
   );
 }

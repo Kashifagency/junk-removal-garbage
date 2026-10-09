@@ -101,7 +101,7 @@ export function AreaTemplate({ page, description }: { page: Page; description: s
       <div className="bg-paper">
         <Faq items={defaultFaq} index={idx()} />
       </div>
-      <QuoteSection title={`Get a free quote in ${name}`} defaultArea={name} />
+      <QuoteSection title={`Contact us in ${name}`} defaultArea={name} />
     </>
   );
 }

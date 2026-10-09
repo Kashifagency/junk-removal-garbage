@@ -237,20 +237,20 @@ export function Faq({ items, title = 'Questions about junk removal in Dubai', in
   );
 }
 
-/** Big closing band — every page ends with this and the quote form (#quote). */
-export function QuoteSection({ title = 'Get a free junk removal quote', text, defaultService, defaultArea }: { title?: string; text?: string; defaultService?: string; defaultArea?: string }) {
+/** Closing contact band — every page ends with this and the contact form (#contact-form). */
+export function QuoteSection({ title = 'Get in touch with our team', text, defaultService, defaultArea }: { title?: string; text?: string; defaultService?: string; defaultArea?: string }) {
   return (
-    <section id="quote" className="scroll-mt-20 bg-ink-900 text-white" aria-labelledby="quote-heading">
+    <section id="contact-form" className="scroll-mt-20 bg-ink-900 text-white" aria-labelledby="contact-heading">
       <div className="container-x grid gap-12 py-16 sm:py-24 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
         <div className="min-w-0">
           <p className="kicker !text-ink-400">
-            <span className="h-2 w-2 rounded-full bg-brand-500" /> Free, no-obligation quote
+            <span className="h-2 w-2 rounded-full bg-brand-500" /> Contact us
           </p>
-          <h2 id="quote-heading" className="display-lg mt-4 !text-white">
+          <h2 id="contact-heading" className="display-lg mt-4 !text-white">
             {title}
           </h2>
           <p className="mt-5 max-w-lg text-lg leading-relaxed text-ink-300">
-            {text ?? 'Tell us what needs removing and we’ll come back with a clear, upfront price. Prefer to talk? Call or WhatsApp — photos get the fastest quote.'}
+            {text ?? 'Fill in the form with what needs removing and our team will contact you. Prefer to talk? Call or WhatsApp us.'}
           </p>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-2">
@@ -265,7 +265,7 @@ export function QuoteSection({ title = 'Get a free junk removal quote', text, de
               <WhatsAppIcon className="h-5 w-5 text-whatsapp" />
               <span className="mt-4 block text-xs tracking-wider text-ink-400 uppercase">WhatsApp</span>
               <span className="mt-1 block font-display text-xl font-bold text-white" style={{ fontStretch: '108%' }}>
-                Send a photo
+                Message us
               </span>
             </a>
             <a href={`mailto:${site.email}`} className="rounded-(--radius-card) border border-ink-700 p-5 transition-colors hover:border-brand-500 sm:col-span-2">
