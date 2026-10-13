@@ -45,6 +45,7 @@ Method: web search and page review. Searches were **not** run from a Dubai locat
 
 ## 5. E-waste
 - **Enviroserve** (Dubai Industrial City) is a licensed e-waste recycler, co-owned by Tadweer Group and Dubai Holding. Source: Bayut, link above.
+- **Verified 13 Oct 2026:** Dubai Municipality's free bulky-waste service includes used household electrical and electronic appliances for eligible individuals, excluding residents of real-estate development zones and free zones. Sources: https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/ and https://www.dm.gov.ae/dubai-municipality-promotes-waste-segregation-through-free-bulky-waste-disposal-service/. Dubai Municipality also lists a technical guideline for recycling waste electrical and electronic equipment: https://www.dm.gov.ae/municipality-business/waste-department-technical-guidelines-2/. No claim about our own certified data destruction or downstream processor is established by these sources.
 
 ## 6. Market pricing signals (for internal reference only — never publish as our prices)
 

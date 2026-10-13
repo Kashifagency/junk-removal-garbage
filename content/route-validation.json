@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-09T14:27:21.600Z",
+  "checkedAt": "2026-10-13T18:51:39.493Z",
   "base": "http://localhost:3000",
   "total": 62,
   "pages": 24,
@@ -196,14 +196,14 @@
     {
       "type": "post",
       "path": "/house-cleanout-dubai-complete-home-clearing-service/",
-      "title": "House Cleanout Dubai - Complete Home Clearing Service",
+      "title": "House Clearance Dubai | Apartment and Villa Removal",
       "status": 200,
       "issues": []
     },
     {
       "type": "post",
       "path": "/office-cleanout-dubai-complete-commercial-clearing-service/",
-      "title": "Office Cleanout Dubai - Complete Commercial Clearing Service",
+      "title": "Office Clearance Dubai | Furniture and Equipment Removal",
       "status": 200,
       "issues": []
     },
@@ -238,8 +238,8 @@
     {
       "type": "post",
       "path": "/house-cleanout-dubai-complete-junk-removal-service/",
-      "title": "House Cleanout Dubai - Complete Junk Removal Service",
-      "status": 200,
+      "title": "(merged → /house-cleanout-dubai-complete-home-clearing-service/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -308,8 +308,8 @@
     {
       "type": "post",
       "path": "/cleaning-services-dubai/",
-      "title": "Cleaning Services Dubai | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /services/household-junk-removal/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -336,8 +336,8 @@
     {
       "type": "post",
       "path": "/residential-junk-removal-dubai/",
-      "title": "Residential Junk Removal Dubai | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /house-cleanout-dubai-complete-home-clearing-service/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -406,8 +406,8 @@
     {
       "type": "post",
       "path": "/office-junk-removal-dubai/",
-      "title": "Office Junk Removal Dubai | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /office-cleanout-dubai-complete-commercial-clearing-service/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -420,8 +420,8 @@
     {
       "type": "post",
       "path": "/commercial-junk-removal-dubai/",
-      "title": "Commercial Junk Removal Dubai | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /commercial-junk-removal/)",
+      "status": 308,
       "issues": []
     },
     {
