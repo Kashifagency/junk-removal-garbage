@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-13T18:51:39.493Z",
+  "checkedAt": "2026-10-14T20:25:14.698Z",
   "base": "http://localhost:3000",
   "total": 62,
   "pages": 24,
@@ -168,15 +168,15 @@
     {
       "type": "post",
       "path": "/same-day-junk-removal-services-dubai-quick-cleanup/",
-      "title": "Same-Day Junk Removal Services Dubai: Quick Cleanup",
-      "status": 200,
+      "title": "(merged → /same-day-junk-removal-dubai/)",
+      "status": 308,
       "issues": []
     },
     {
       "type": "post",
       "path": "/garbage-pickup-dubai-same-day-service/",
-      "title": "Garbage Pickup Dubai - Same Day Service",
-      "status": 200,
+      "title": "(merged → /garbage-pickup-dubai/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -224,8 +224,8 @@
     {
       "type": "post",
       "path": "/same-day-junk-removal-dubai-fast-emergency-service/",
-      "title": "Junk Removal Dubai - Fast Emergency Service",
-      "status": 200,
+      "title": "(merged → /same-day-junk-removal-dubai/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -315,8 +315,8 @@
     {
       "type": "post",
       "path": "/waste-management-near-me-dubai/",
-      "title": "Waste Management Near Me in Dubai | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /garbage-pickup-dubai/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -350,8 +350,8 @@
     {
       "type": "post",
       "path": "/dubai-waste-collection-services/",
-      "title": "Dubai Waste Collection Services | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /garbage-pickup-dubai/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -399,7 +399,7 @@
     {
       "type": "post",
       "path": "/garbage-pickup-dubai/",
-      "title": "Garbage Pickup Dubai | Shanan Junk Removal",
+      "title": "Garbage Pickup Dubai | Bulky Waste Collection",
       "status": 200,
       "issues": []
     },
@@ -441,7 +441,7 @@
     {
       "type": "post",
       "path": "/garden-waste-removal-dubai/",
-      "title": "Garden Waste Removal Dubai – Fast &amp; Eco-Friendly",
+      "title": "Garden Waste Removal Dubai | Villa Garden Clear-Outs",
       "status": 200,
       "issues": []
     },
