@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-14T20:25:14.698Z",
+  "checkedAt": "2026-10-15T19:21:06.555Z",
   "base": "http://localhost:3000",
   "total": 62,
   "pages": 24,
@@ -322,8 +322,8 @@
     {
       "type": "post",
       "path": "/furniture-removal-dubai/",
-      "title": "Furniture Removal Dubai | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /services/furniture-appliance-disposal/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -343,7 +343,7 @@
     {
       "type": "post",
       "path": "/cheap-junk-removal-dubai/",
-      "title": "Cheap Junk Removal Dubai | Shanan Junk Removal",
+      "title": "Cheap Junk Removal Dubai | Clear, Affordable Pricing",
       "status": 200,
       "issues": []
     },
@@ -364,8 +364,8 @@
     {
       "type": "post",
       "path": "/furniture-removal-services-dubai/",
-      "title": "Furniture Removal Services Dubai | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /services/furniture-appliance-disposal/)",
+      "status": 308,
       "issues": []
     },
     {
@@ -378,7 +378,7 @@
     {
       "type": "post",
       "path": "/old-furniture-removal-dubai/",
-      "title": "Old Furniture Removal Dubai | Shanan Junk Removal",
+      "title": "Old Furniture Disposal Dubai | Easy Collection",
       "status": 200,
       "issues": []
     },
@@ -427,15 +427,15 @@
     {
       "type": "post",
       "path": "/office-furniture-removal-dubai/",
-      "title": "Office Furniture Removal Dubai – Fast &amp; Professional Service",
+      "title": "Office Furniture Disposal Dubai | Business Collection",
       "status": 200,
       "issues": []
     },
     {
       "type": "post",
       "path": "/furniture-removal-dubai-2/",
-      "title": "Need furniture removal Dubai? | Shanan Junk Removal",
-      "status": 200,
+      "title": "(merged → /services/furniture-appliance-disposal/)",
+      "status": 308,
       "issues": []
     },
     {

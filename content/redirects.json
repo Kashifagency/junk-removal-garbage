@@ -4,5 +4,8 @@
   { "from": "construction-removal-service-in-dubai-2026", "to": "/services/construction-waste-removal/" },
   { "from": "construction-waste-removal-dubai-best-price-fast-service", "to": "/services/construction-waste-removal/" },
   { "from": "commercial-junk-removal-dubai", "to": "/commercial-junk-removal/" },
-  { "from": "cleaning-services-dubai", "to": "/services/household-junk-removal/" }
+  { "from": "cleaning-services-dubai", "to": "/services/household-junk-removal/" },
+  { "from": "furniture-removal-dubai", "to": "/services/furniture-appliance-disposal/" },
+  { "from": "furniture-removal-dubai-2", "to": "/services/furniture-appliance-disposal/" },
+  { "from": "furniture-removal-services-dubai", "to": "/services/furniture-appliance-disposal/" }
 ]
