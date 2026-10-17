@@ -22,7 +22,7 @@ Google Local Services Ads aren't available in the UAE either (research-notes.md)
 ```
 Shanan Junk Removal
 Al Quoz 4, Dubai, United Arab Emirates
-+971 55 103 1255
++971 55 765 1866
 https://junkremovalgarbage.com/
 ```
 Use exactly this on every directory, social profile and listing. Record each listing (URL, login, date) in a spreadsheet, and update all of them if anything changes.

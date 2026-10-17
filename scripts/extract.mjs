@@ -12,10 +12,10 @@ const XML_PATH = process.argv[2] || path.resolve(ROOT, '..', 'junkremovalgarbage
 const OUT = path.join(ROOT, 'content');
 const SITE = 'https://junkremovalgarbage.com';
 
-// Business phone (replaces the old WordPress-era number +971 55 765 1866 and its typo variants everywhere).
-const PHONE_DISPLAY = '+971 55 103 1255';
-const PHONE_E164 = '+971551031255';
-const WHATSAPP = '971551031255';
+// Business phone. The WordPress export also contains typo variants of it (…765 1666 / …765 1855), normalised below.
+const PHONE_DISPLAY = '+971 55 765 1866';
+const PHONE_E164 = '+971557651866';
+const WHATSAPP = '971557651866';
 const OLD_PHONE_SPACED = /(?:\+971|\b0)[ -]?55[ -]?765[ -]?1(?:866|666|855)\b/g;
 const OLD_PHONE_DIGITS = /\+?971557651(?:866|666|855)\b/g;
 const replacePhones = (text) =>

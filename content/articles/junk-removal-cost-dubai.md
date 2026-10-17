@@ -153,4 +153,4 @@ Because we price the job properly before we arrive. We ask for photos, access de
 - **Eco-friendly disposal**, with materials recycled whenever possible.
 - **Homes and businesses**, from a single item to a full clear-out.
 
-Ready to find out what your job costs? Call or WhatsApp **+971 55 103 1255** with a few photos, or fill in the contact form below. We'll reply with a clear price, and we can often collect the same day.
+Ready to find out what your job costs? Call or WhatsApp **+971 55 765 1866** with a few photos, or fill in the contact form below. We'll reply with a clear price, and we can often collect the same day.

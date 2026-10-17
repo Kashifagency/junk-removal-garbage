@@ -119,4 +119,4 @@ Our [construction waste removal service](/services/construction-waste-removal/) 
 
 ## Book construction waste removal in Dubai
 
-Get your renovation debris removed the right way. Call or WhatsApp **+971 55 103 1255** with photos of the debris and your location, or fill in the contact form below. We'll confirm a clear price before work starts, and same-day or next-day collection is available across Dubai.
+Get your renovation debris removed the right way. Call or WhatsApp **+971 55 765 1866** with photos of the debris and your location, or fill in the contact form below. We'll confirm a clear price before work starts, and same-day or next-day collection is available across Dubai.

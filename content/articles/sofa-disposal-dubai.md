@@ -140,4 +140,4 @@ If you're clearing more than a sofa, take a look at our guide to [old furniture 
 
 ## Book your sofa disposal today
 
-Getting rid of an old sofa in Dubai doesn't have to mean booking lifts, finding a truck and lifting it yourself. Call or WhatsApp **+971 55 103 1255** with a photo of the sofa and your location, or fill in the contact form below, and we'll take it from there.
+Getting rid of an old sofa in Dubai doesn't have to mean booking lifts, finding a truck and lifting it yourself. Call or WhatsApp **+971 55 765 1866** with a photo of the sofa and your location, or fill in the contact form below, and we'll take it from there.

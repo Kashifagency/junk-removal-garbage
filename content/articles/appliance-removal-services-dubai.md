@@ -137,4 +137,4 @@ Replacing furniture as well? Read our guides to [sofa disposal](/sofa-disposal-d
 
 ## Book appliance removal in Dubai
 
-Ready to get rid of an old fridge, washing machine, oven or AC unit? Call or WhatsApp **+971 55 103 1255** with a photo and your location, or fill in the contact form below. We'll confirm the price and a collection time that suits you.
+Ready to get rid of an old fridge, washing machine, oven or AC unit? Call or WhatsApp **+971 55 765 1866** with a photo and your location, or fill in the contact form below. We'll confirm the price and a collection time that suits you.

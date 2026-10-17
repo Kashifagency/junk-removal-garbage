@@ -23,7 +23,7 @@ Read these in full before writing:
 - No "quote" wording ("free quote", "get a quote", "request a quote"). Use "pricing", "send a photo for pricing", "call or WhatsApp", "fill in the contact form".
 - No donation or charity claims. Recycling claims are fine.
 - No invented facts, prices, reviews, statistics, response-time promises, or claims the owner hasn't approved. Approved claims are listed in content-rules.md §2.
-- Phone: **+971 55 103 1255** (tel `+971551031255`, WhatsApp `971551031255`).
+- Phone: **+971 55 765 1866** (tel `+971557651866`, WhatsApp `971557651866`).
 - British/UAE English.
 
 ## 2. Pick the work
@@ -86,11 +86,11 @@ Body requirements:
 
   Only link to URLs that exist; check `content/pages.json`, `content/posts.json` and `content/articles/`. Never link to a URL listed as a redirect source.
 - A `> **Tip:**` or `> **Note:**` callout where it genuinely helps. A table where comparison helps.
-- End with a clear call to action: call or WhatsApp +971 55 103 1255, or fill in the contact form.
+- End with a clear call to action: call or WhatsApp +971 55 765 1866, or fill in the contact form.
 
 **d. Manual 301s:** append the row's manual 301 entries to `content/redirects.json` as `{ "from": "<legacy-slug>", "to": "<target path>" }`. Never add one whose target doesn't exist.
 
-**e. Self-review:** go through the content-rules.md §4 checklist item by item. Grep your file for `quote`, `donat`, `AED` (only owner-approved prices allowed), `free quote`, and any old phone digits (`765`). Fix anything you find.
+**e. Self-review:** go through the content-rules.md §4 checklist item by item. Grep your file for `quote`, `donat`, `AED` (only owner-approved prices allowed), `free quote`, and the retired number (`103 1255`, `551031255`). Fix anything you find.
 
 ## 4. Build and validate (must pass before committing)
 From `website/`:

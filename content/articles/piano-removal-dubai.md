@@ -134,4 +134,4 @@ Wherever you are, send photos and your location, and we'll confirm the price and
 - **Fully insured, licensed and professional crews** used to heavy, awkward items
 - **Eco-friendly disposal**, with materials recycled whenever possible
 
-Have an old piano that needs to go? Call or WhatsApp **+971 55 103 1255** with photos, rough dimensions, your area and floor, or fill in the contact form below. We'll confirm the price and plan the collection.
+Have an old piano that needs to go? Call or WhatsApp **+971 55 765 1866** with photos, rough dimensions, your area and floor, or fill in the contact form below. We'll confirm the price and plan the collection.

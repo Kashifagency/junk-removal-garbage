@@ -51,4 +51,4 @@ Link to the money page with descriptive anchor text, e.g. [furniture disposal in
 
 ## Final H2 — summary and next step
 
-End with a clear call to action: call or WhatsApp +971 55 103 1255, or fill in the contact form.
+End with a clear call to action: call or WhatsApp +971 55 765 1866, or fill in the contact form.

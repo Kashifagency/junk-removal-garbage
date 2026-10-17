@@ -155,4 +155,4 @@ We also state the exclusions clearly. Hazardous materials, chemicals and medical
 
 ## How do you arrange garbage pickup in Dubai?
 
-**Send photos of the entire load and describe what is inside every bag.** Call or WhatsApp **+971 55 103 1255**, or fill in the contact form below. Include the Dubai area, property type, floor, lift or stairs, parking route and preferred collection window. We will confirm what can be collected, the clear price and the available same-day or next-day slot before work starts.
+**Send photos of the entire load and describe what is inside every bag.** Call or WhatsApp **+971 55 765 1866**, or fill in the contact form below. Include the Dubai area, property type, floor, lift or stairs, parking route and preferred collection window. We will confirm what can be collected, the clear price and the available same-day or next-day slot before work starts.

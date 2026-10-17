@@ -108,4 +108,4 @@ The most useful information you can give us is simple: photos, an item list, the
 
 ## How do you book office clearance in Dubai?
 
-**Send photos and your deadline, then confirm building access with management.** Call or WhatsApp **+971 55 103 1255**, or fill in the contact form below. Tell us which rooms and items need clearing and whether any lift or loading bay booking is already in place; we will discuss the job and give clear pricing before work starts.
+**Send photos and your deadline, then confirm building access with management.** Call or WhatsApp **+971 55 765 1866**, or fill in the contact form below. Tell us which rooms and items need clearing and whether any lift or loading bay booking is already in place; we will discuss the job and give clear pricing before work starts.

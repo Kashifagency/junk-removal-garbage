@@ -125,4 +125,4 @@ The strongest reason to plan ahead is practical: community security, parking, ga
 
 ## How do you arrange garden waste removal in Dubai?
 
-**Photograph the complete pile and the largest items, then send the images with your area and access details.** Call or WhatsApp **+971 55 103 1255**, or fill in the contact form below. Mention soil, large planters, thorny branches, stairs and narrow gates. We will confirm what can be collected, clear pricing and the available same-day or next-day slot before work starts.
+**Photograph the complete pile and the largest items, then send the images with your area and access details.** Call or WhatsApp **+971 55 765 1866**, or fill in the contact form below. Mention soil, large planters, thorny branches, stairs and narrow gates. We will confirm what can be collected, clear pricing and the available same-day or next-day slot before work starts.

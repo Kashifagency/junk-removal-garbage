@@ -114,4 +114,4 @@ Whichever option you choose, never leave furniture or waste beside a building or
 
 ## The bottom line
 
-If you're eligible and not in a hurry, Dubai Municipality's free bulky waste service is a good option for a few household items. If you live in a development-zone community, need items carried out, have renovation or garden waste, or need it gone today, book private [junk removal in Dubai](/services/household-junk-removal/). Call or WhatsApp **+971 55 103 1255**, or fill in the contact form below.
+If you're eligible and not in a hurry, Dubai Municipality's free bulky waste service is a good option for a few household items. If you live in a development-zone community, need items carried out, have renovation or garden waste, or need it gone today, book private [junk removal in Dubai](/services/household-junk-removal/). Call or WhatsApp **+971 55 765 1866**, or fill in the contact form below.

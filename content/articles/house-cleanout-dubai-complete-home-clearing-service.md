@@ -110,4 +110,4 @@ We can plan around apartment access or a villa's larger load when we have good p
 
 ## How do you arrange house clearance in Dubai?
 
-**Send photos of every room and storage space, along with the address, access details and deadline.** Call or WhatsApp **+971 55 103 1255**, or fill in the contact form below. We will confirm what can be removed and give clear pricing before work starts, so you can schedule the remaining handover tasks with confidence.
+**Send photos of every room and storage space, along with the address, access details and deadline.** Call or WhatsApp **+971 55 765 1866**, or fill in the contact form below. We will confirm what can be removed and give clear pricing before work starts, so you can schedule the remaining handover tasks with confidence.

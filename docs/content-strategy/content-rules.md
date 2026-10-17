@@ -56,13 +56,13 @@ Google ranks content written for people, and penalises "scaled content abuse": m
   - Converted automatically to WebP: featured 1600×1000, in-article 1200×800, each 250 KB or less.
   - Alt text describes what's actually in the image.
   - AI images are illustrative only. Never present one as a specific real customer's job.
-- [ ] **CTA:** the template adds a mid-article contact prompt plus the end form. The last paragraph must also tell the reader what to do next (call or WhatsApp 055 103 1255, or fill in the form).
+- [ ] **CTA:** the template adds a mid-article contact prompt plus the end form. The last paragraph must also tell the reader what to do next (call or WhatsApp 055 765 1866, or fill in the form).
 - [ ] **No "quote" wording, no donation claims, no unapproved numbers.**
 - [ ] Spell-checked. All links work. Preview looks right on mobile.
 
 ## 5. Local signals
 - Name real Dubai areas naturally where they're relevant, and link the matching area page. Never stuff lists of 20 areas.
-- Business details must be identical everywhere: **Shanan Junk Removal · Al Quoz 4, Dubai · +971 55 103 1255**.
+- Business details must be identical everywhere: **Shanan Junk Removal · Al Quoz 4, Dubai · +971 55 765 1866**.
 - Area pages need **unique local detail** (access, building types, typical jobs). Never duplicate copy between areas and only swap the name.
 
 ## 6. Updating content

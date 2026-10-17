@@ -7,7 +7,7 @@ Status: built and validated locally, ready to deploy on Vercel. WordPress will b
 
 - **Hosting:** Vercel, with the domain connected to Vercel.
 - **Quote-form email:** Resend.
-- **Business phone / WhatsApp:** +971 55 103 1255.
+- **Business phone / WhatsApp:** +971 55 765 1866.
 - **WordPress:** shut down once the new site is live.
 
 ## 1. URL coverage
@@ -117,11 +117,11 @@ Routes added to keep WordPress behaviour:
 - **Address:** "Al Qouz Fourth" became "Al Quoz 4, Dubai".
 - **Headings:** ALL-CAPS Elementor headings were converted to Title Case.
 
-**Phone number.** The site now uses **+971 55 103 1255** everywhere:
+**Phone number.** The site now uses **+971 55 765 1866** everywhere:
 
 - the header, footer, buttons, mobile action bar and structured data
 - every `tel:` link
-- WhatsApp links (`wa.me/971551031255`)
+- WhatsApp links (`wa.me/971557651866`)
 - the hero and contact copy, the FAQ answers, page SEO descriptions, and 38 posts
 
 The extractor replaces the old number +971 55 765 1866 in every format it appeared in, including the typo variants in the source (…765 1666, …7651855, and the number without +971). 16 broken `tel:` links in posts were rewritten as part of this; the list is in `content/link-fixes.json`.
@@ -156,4 +156,4 @@ The extractor replaces the old number +971 55 765 1866 in every format it appear
 6. **Maps.** Area and contact pages use keyless Google Maps embeds. No setup is needed.
 7. **After launch.**
    - Submit `/sitemap.xml` in Google Search Console and watch the coverage report for 404s.
-   - Update the phone number on the Google Business Profile, WhatsApp Business and other listings to +971 55 103 1255, so it matches the website.
+   - Update the phone number on the Google Business Profile, WhatsApp Business and other listings to +971 55 765 1866, so it matches the website.

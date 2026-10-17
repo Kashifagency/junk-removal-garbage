@@ -181,4 +181,4 @@ The team is licensed, insured and prepared for apartment, villa and commercial a
 
 ## How do you get affordable junk removal in Dubai?
 
-**Send a complete view of the load and access route before choosing a collection.** Call or WhatsApp **+971 55 103 1255**, or fill in the contact form below. Include your area, property type, floor, lift or stairs, parking details, material types and preferred window. We will confirm what can be collected and the clear price before work starts.
+**Send a complete view of the load and access route before choosing a collection.** Call or WhatsApp **+971 55 765 1866**, or fill in the contact form below. Include your area, property type, floor, lift or stairs, parking details, material types and preferred window. We will confirm what can be collected and the clear price before work starts.

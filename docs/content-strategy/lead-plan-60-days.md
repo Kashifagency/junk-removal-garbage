@@ -74,7 +74,7 @@ Record the **baseline in week 1**: last 28 days of Search Console clicks and the
 ## Optional: Google Ads (fastest leads without the map pack)
 - **Campaign:** a Search campaign on exact and phrase match money keywords: junk removal dubai, furniture removal dubai, sofa disposal dubai, construction waste removal dubai, and junk removal [top areas].
 - **Landing pages:** the matching area or service page, never the homepage.
-- **Assets:** call assets with +971 55 103 1255.
+- **Assets:** call assets with +971 55 765 1866.
 - **Negative keywords:** jobs, salary, buy, sell, second hand, free.
 - **Tracking:** use the same conversions as above.
 

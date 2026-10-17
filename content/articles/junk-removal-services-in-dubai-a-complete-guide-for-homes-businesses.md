@@ -27,7 +27,7 @@ faq:
   - q: "Do you work in all areas of Dubai?"
     a: "Yes. We cover all Dubai areas, from high-rise communities like Dubai Marina and Downtown Dubai to villa communities, older neighbourhoods and industrial areas like Al Quoz. Same-day or next-day collection is available, and access details like service lifts and loading bays are planned in advance."
   - q: "How do I book junk removal in Dubai?"
-    a: "Call or WhatsApp +971 55 103 1255 with photos of the items and your location, or fill in the contact form. We'll confirm the price and a collection time, and the crew handles the carrying, loading and disposal. You don't need to move anything to the corridor or loading bay first."
+    a: "Call or WhatsApp +971 55 765 1866 with photos of the items and your location, or fill in the contact form. We'll confirm the price and a collection time, and the crew handles the carrying, loading and disposal. You don't need to move anything to the corridor or loading bay first."
 draft: false
 ---
 
@@ -124,4 +124,4 @@ We're a Dubai junk removal team based in Al Quoz, working with homes and busines
 - **Eco-friendly disposal**, with materials recycled whenever possible
 - **Residential and commercial jobs**, from a single item to a full clear-out
 
-Ready to clear the space? Call or WhatsApp **+971 55 103 1255** with a few photos, or fill in the contact form below. We'll confirm the price and get it collected, often the same day.
+Ready to clear the space? Call or WhatsApp **+971 55 765 1866** with a few photos, or fill in the contact form below. We'll confirm the price and get it collected, often the same day.

@@ -137,4 +137,4 @@ Our [commercial waste management service](/services/commercial-waste-management/
 - **Eco-friendly disposal**, with wood, metal, cardboard and plastics recycled whenever possible
 - **Based in Al Quoz**, close to Dubai's main industrial areas
 
-Ready to get your floor space back? Call or WhatsApp **+971 55 103 1255** with photos of the warehouse and your location, or fill in the contact form below. We'll confirm the price and plan the clearance around your operations.
+Ready to get your floor space back? Call or WhatsApp **+971 55 765 1866** with photos of the warehouse and your location, or fill in the contact form below. We'll confirm the price and plan the clearance around your operations.

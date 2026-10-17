@@ -182,4 +182,4 @@ Our team serves offices, shops and other commercial properties. We carry and loa
 
 ## How do you book office furniture disposal in Dubai?
 
-**Send an inventory, wide photos and the approved building-access details.** Include the company location, floor, furniture quantities, dismantling needs, service lift, loading bay, parking and deadline. Call or WhatsApp **+971 55 103 1255**, or fill in the contact form below. We will confirm the accepted scope, clear price and available collection window before work starts.
+**Send an inventory, wide photos and the approved building-access details.** Include the company location, floor, furniture quantities, dismantling needs, service lift, loading bay, parking and deadline. Call or WhatsApp **+971 55 765 1866**, or fill in the contact form below. We will confirm the accepted scope, clear price and available collection window before work starts.

@@ -104,4 +104,4 @@ Same-day or next-day service is available subject to the schedule and the buildi
 
 ## How do you arrange e-waste disposal in Dubai?
 
-**Prepare an item list, protect your data and send photos of the electronics and access route.** Call or WhatsApp **+971 55 103 1255**, or fill in the contact form below. Tell us if batteries are damaged, if a device is fixed in place, or if your organisation requires a specialist certificate. We will confirm the suitable collection scope and clear pricing before work starts.
+**Prepare an item list, protect your data and send photos of the electronics and access route.** Call or WhatsApp **+971 55 765 1866**, or fill in the contact form below. Tell us if batteries are damaged, if a device is fixed in place, or if your organisation requires a specialist certificate. We will confirm the suitable collection scope and clear pricing before work starts.

@@ -147,4 +147,4 @@ Wherever you are in Dubai, send a photo and your location, and we'll confirm the
 - **Eco-friendly disposal**, with steel and electronics recycled whenever possible
 - **Homes and businesses**, from one treadmill to a full gym
 
-Ready to clear the space? Call or WhatsApp **+971 55 103 1255** with a photo of the equipment, your area and floor, or fill in the contact form below. We'll confirm the price and collect it, often the same day.
+Ready to clear the space? Call or WhatsApp **+971 55 765 1866** with a photo of the equipment, your area and floor, or fill in the contact form below. We'll confirm the price and collect it, often the same day.

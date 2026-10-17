@@ -5,7 +5,7 @@ A Next.js 16 (App Router) site that replaces the old WordPress/Elementor site. I
 
 - **Hosting:** Vercel.
 - **Quote-form email:** Resend.
-- **Business phone / WhatsApp:** +971 55 103 1255 (055 103 1255).
+- **Business phone / WhatsApp:** +971 55 765 1866 (055 765 1866).
 - **After launch:** WordPress is shut down. This repo is the only copy of the content and images.
 
 ## Requirements

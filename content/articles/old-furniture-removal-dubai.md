@@ -144,4 +144,4 @@ The crew handles carrying from apartments and villas, including upper floors whe
 
 ## How do you book old furniture disposal in Dubai?
 
-**Photograph every item and send the property details in one message.** Include your Dubai area, building or community, floor, lift or stairs, parking point and preferred collection window. Call or WhatsApp **+971 55 103 1255**, or fill in the contact form below. We will confirm what can be taken, the clear price and the available time before work starts.
+**Photograph every item and send the property details in one message.** Include your Dubai area, building or community, floor, lift or stairs, parking point and preferred collection window. Call or WhatsApp **+971 55 765 1866**, or fill in the contact form below. We will confirm what can be taken, the clear price and the available time before work starts.

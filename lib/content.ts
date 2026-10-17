@@ -251,7 +251,7 @@ function shortTitle(t: string) {
 // Fixes for broken AIOSEO data in the export (e.g. a description copied from another post).
 const DESCRIPTION_OVERRIDES: Record<string, string> = {
   'furniture-disposal-dubai-sofa-bed-removal-service':
-    'Furniture disposal in Dubai: sofa, bed and mattress removal from apartments and villas, with responsible disposal. Call or WhatsApp +971 55 103 1255.',
+    'Furniture disposal in Dubai: sofa, bed and mattress removal from apartments and villas, with responsible disposal. Call or WhatsApp +971 55 765 1866.',
 };
 
 export function postSeo(post: Post) {

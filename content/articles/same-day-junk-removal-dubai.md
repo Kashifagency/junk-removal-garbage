@@ -140,4 +140,4 @@ In [Jumeirah Village Circle](/jumeirah-village-circle/), share the district, bui
 
 ## How do you book same-day junk removal in Dubai?
 
-**Send your photos and deadline now so availability can be checked.** Call or WhatsApp **+971 55 103 1255**, or fill in the contact form below. Include every item, the Dubai location, floor, stairs or service lift, parking route and latest completion time. We will confirm the collection scope, clear pricing and the available slot before the crew is dispatched.
+**Send your photos and deadline now so availability can be checked.** Call or WhatsApp **+971 55 765 1866**, or fill in the contact form below. Include every item, the Dubai location, floor, stairs or service lift, parking route and latest completion time. We will confirm the collection scope, clear pricing and the available slot before the crew is dispatched.

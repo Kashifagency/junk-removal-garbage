@@ -28,7 +28,7 @@ for (const e of entries) {
   if (e.tips?.length !== 4 || e.jobs?.length !== 4 || e.faq?.length !== 4) p('tips/jobs/faq count');
   if (!/junk removal in/i.test(e.intro)) p('intro missing "junk removal in"');
   const all = JSON.stringify(e);
-  for (const bad of [/\bquote/i, /donat/i, /charit/i, /24\/7/, /\bAED\b/, /765/, /cheapest|fastest|guarantee/i]) if (bad.test(all)) p(`banned: ${bad}`);
+  for (const bad of [/\bquote/i, /donat/i, /charit/i, /24\/7/, /\bAED\b/, /103[ -]?1255|551031255/,/cheapest|fastest|guarantee/i]) if (bad.test(all)) p(`banned: ${bad}`);
   const total = [e.intro, ...e.paragraphs, ...e.tips, ...e.faq.flatMap((f) => [f.q, f.a])].map(words).reduce((x, y) => x + y, 0);
   e._words = total;
   if (total < 450) p(`only ${total} unique words`);
