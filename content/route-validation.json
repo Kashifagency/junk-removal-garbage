@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-17T16:19:46.410Z",
+  "checkedAt": "2026-10-19T21:00:17.065Z",
   "base": "http://localhost:3000",
   "total": 62,
   "pages": 24,
@@ -448,14 +448,14 @@
     {
       "type": "post",
       "path": "/professional-junk-removal/",
-      "title": "Professional Junk Removal Dubai | What to Expect",
+      "title": "Professional Junk Removal Dubai | Licensed Waste Removal",
       "status": 200,
       "issues": []
     },
     {
       "type": "post",
       "path": "/commercial-junk-removal/",
-      "title": "Commercial Junk Removal Dubai | Business Collection",
+      "title": "Commercial Junk Removal Dubai | Offices, Retail &amp; Fit-Outs",
       "status": 200,
       "issues": []
     }
