@@ -78,7 +78,7 @@ const expect = async (p, status, location) => {
 };
 await expect('/this-page-does-not-exist/', 404);
 await expect('/services/not-a-service/', 404);
-await expect('/blog/page/5/', 404);
+await expect('/blog/page/99/', 404);
 await expect('/blog/page/2/', 200);
 await expect('/blogs/page/2/', 200); // legacy archive pagination; page count shrinks as legacy posts merge
 await expect('/blogs/page/99/', 404);

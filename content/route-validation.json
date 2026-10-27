@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-26T19:42:25.082Z",
+  "checkedAt": "2026-10-27T16:02:08.319Z",
   "base": "http://localhost:3000",
   "total": 62,
   "pages": 24,
@@ -10,7 +10,7 @@
   "extraChecks": [
     "OK  /this-page-does-not-exist/ -> 404",
     "OK  /services/not-a-service/ -> 404",
-    "OK  /blog/page/5/ -> 404",
+    "OK  /blog/page/99/ -> 404",
     "OK  /blog/page/2/ -> 200",
     "OK  /blogs/page/2/ -> 200",
     "OK  /blogs/page/99/ -> 404",
