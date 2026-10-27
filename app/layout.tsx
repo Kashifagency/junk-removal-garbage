@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   description: 'Junk removal and waste management in Dubai for homes and businesses.',
   applicationName: site.name,
   formatDetection: { telephone: false },
+  verification: { google: 'fzUskS1kJQ2ppQMnBOOPRZB0XcK-NFzzfbFAe-fmff8' },
   alternates: { types: { 'application/rss+xml': [{ url: '/feed/', title: `${site.name} – Blog` }] } },
 };
 
