@@ -1,11 +1,13 @@
-import { absoluteUrl, posts, site } from '@/lib/content';
+import { absoluteUrl, getPosts, site } from '@/lib/content';
 
-export const dynamic = 'force-static';
+// ISR: re-render hourly so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
+export const revalidate = 3600;
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 // RSS 2.0 feed at /feed/ (same URL WordPress used).
 export function GET() {
+  const posts = getPosts();
   const items = posts
     .slice(0, 20)
     .map(
@@ -27,7 +29,7 @@ export function GET() {
   <atom:link href="${absoluteUrl('/feed/')}" rel="self" type="application/rss+xml" />
   <description>Junk removal tips and guides for Dubai</description>
   <language>en</language>
-  <lastBuildDate>${new Date(posts[0].modified).toUTCString()}</lastBuildDate>
+  <lastBuildDate>${new Date(posts[0]?.modified ?? Date.now()).toUTCString()}</lastBuildDate>
 ${items}
 </channel>
 </rss>`;

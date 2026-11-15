@@ -1,6 +1,9 @@
 import { PostIndex } from '@/components/templates/PostIndex';
-import { pageSeoFor, posts } from '@/lib/content';
+import { getPosts, pageSeoFor } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
+
+// ISR: re-render hourly so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
+export const revalidate = 3600;
 
 const seo = pageSeoFor('/blogs/', { title: 'Blogs', description: '' });
 
@@ -10,5 +13,5 @@ export function generateMetadata() {
 }
 
 export default function BlogsPage() {
-  return <PostIndex base="/blogs/" page={1} list={posts} title="Blogs" eyebrow="Articles" intro={seo.description} crumb="Blogs" hubs />;
+  return <PostIndex base="/blogs/" page={1} list={getPosts()} title="Blogs" eyebrow="Articles" intro={seo.description} crumb="Blogs" hubs />;
 }

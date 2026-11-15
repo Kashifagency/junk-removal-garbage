@@ -3,12 +3,13 @@ import Link from 'next/link';
 import { BlogSearch } from '@/components/blog/BlogSearch';
 import { Pagination, PostCard, PostGrid } from '@/components/sections';
 import { Breadcrumbs, JsonLd, QuoteSection, SectionHead } from '@/components/ui';
-import { absoluteUrl, paginate, posts as allPosts, type Post } from '@/lib/content';
+import { absoluteUrl, paginate, getPosts, type Post } from '@/lib/content';
 import { breadcrumbLd, graph } from '@/lib/seo';
 import { TOPICS, topicBySlug } from '@/lib/topics';
 
-const searchItems = () => allPosts.map((p) => ({ title: p.title, path: p.path, excerpt: p.excerpt, topic: topicBySlug(p.topic)?.name ?? '' }));
-const topicCount = (slug: string) => allPosts.filter((p) => p.topic === slug).length;
+// Published posts only (filtered on the server before reaching the client search component).
+const searchItems = () => getPosts().map((p) => ({ title: p.title, path: p.path, excerpt: p.excerpt, topic: topicBySlug(p.topic)?.name ?? '' }));
+const topicCount = (slug: string) => getPosts().filter((p) => p.topic === slug).length;
 
 export function TopicChips({ active }: { active?: string }) {
   return (
@@ -65,7 +66,7 @@ function TopicHubs() {
         <SectionHead kicker="Browse by topic" title="Find the right guide for your job" />
         <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {TOPICS.filter((t) => topicCount(t.slug) > 0).map((t) => {
-            const latest = allPosts.find((p) => p.topic === t.slug);
+            const latest = getPosts().find((p) => p.topic === t.slug);
             return (
               <li key={t.slug}>
                 <Link href={`/blog/topic/${t.slug}/`} className="group panel flex h-full overflow-hidden transition hover:border-ink-900">

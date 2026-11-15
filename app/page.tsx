@@ -4,8 +4,11 @@ import { Icon, WhatsAppIcon } from '@/components/Icon';
 import { FeatureList, PostCard, ServiceIndex, blocksOf } from '@/components/sections';
 import { AreaMarquee, CallButtons, Faq, ItemsGrid, JsonLd, ProcessSteps, PromiseStrip, QuoteSection, SectionHead } from '@/components/ui';
 import { services } from '@/lib/catalog';
-import { areaName, areaPages, featuredAreaPages, defaultFaq, getPageByPath, pageSeoFor, posts, site, telHref, whatsappHref } from '@/lib/content';
+import { areaName, areaPages, featuredAreaPages, defaultFaq, getPageByPath, getPosts, pageSeoFor, site, telHref, whatsappHref } from '@/lib/content';
 import { buildMetadata, faqLd, graph } from '@/lib/seo';
+
+// ISR: re-render hourly so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
+export const revalidate = 3600;
 
 const home = getPageByPath('/')!;
 // The location pages carry the cleaner copy of the shared "Why choose us" cards (the home copy repeats one description).
@@ -20,7 +23,7 @@ export default function HomePage() {
   const hero = blocksOf(home, 'hero')[0];
   const features = blocksOf(featureSource, 'feature');
   const lead = hero.text.replace(/^Call:\s*\+[\d\s]+\.\s*/, '');
-  const [featured, ...rest] = posts.slice(0, 3);
+  const [featured, ...rest] = getPosts().slice(0, 3);
 
   return (
     <>

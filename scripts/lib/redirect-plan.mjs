@@ -19,9 +19,38 @@ const slugOf = (file, data) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
 
-/** @returns {{ redirects: {source:string,destination:string}[], replaced: Set<string>, removed: Set<string> }} */
-export function redirectPlan({ includeDrafts = process.env.NODE_ENV === 'development' } = {}) {
+// Scheduled publishing (mirrors lib/publish.ts, which this .mjs can't import): a date-only value goes
+// live at 00:00 Asia/Dubai on that day, a value with a time at that moment; missing/unparseable = live.
+const dubaiToday = (now) =>
+  new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Dubai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
+/** Normalised publish date ("YYYY-MM-DD" or full ISO timestamp), or undefined. */
+export function articlePublishAt(value) {
+  if (value === null || value === undefined || value === '') return undefined;
+  if (value instanceof Date) {
+    if (Number.isNaN(value.getTime())) return undefined;
+    const iso = value.toISOString();
+    return iso.endsWith('T00:00:00.000Z') ? iso.slice(0, 10) : iso;
+  }
+  const s = String(value).trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
+  const dmy = s.match(/^(\d{1,2})[/.-](\d{1,2})[/.-](\d{2}|\d{4})$/);
+  if (dmy) return `${dmy[3].length === 2 ? `20${dmy[3]}` : dmy[3]}-${dmy[2].padStart(2, '0')}-${dmy[1].padStart(2, '0')}`;
+  const t = Date.parse(s);
+  return Number.isNaN(t) ? undefined : new Date(t).toISOString();
+}
+export function isLive(publishAt, now = new Date()) {
+  if (!publishAt) return true;
+  return /^\d{4}-\d{2}-\d{2}$/.test(publishAt) ? dubaiToday(now) >= publishAt : now.getTime() >= Date.parse(publishAt);
+}
+
+/**
+ * @returns {{ redirects: {source:string,destination:string}[], scheduled: {source:string,destination:string,publishAt:string}[], replaced: Set<string>, removed: Set<string> }}
+ * `redirects` are live now (baked into next.config.ts). `scheduled` belong to future-dated articles: the
+ * legacy post keeps serving at `source` until the article's date, then app/[slug] 308s it (see lib/content.ts).
+ */
+export function redirectPlan({ includeDrafts = process.env.NODE_ENV === 'development', now = new Date() } = {}) {
   const redirects = [];
+  const scheduled = [];
   const replaced = new Set(); // legacy slugs now served by a Markdown article at the same URL
   if (fs.existsSync(MANUAL)) {
     for (const r of JSON.parse(fs.readFileSync(MANUAL, 'utf8'))) redirects.push({ source: clean(r.from), destination: clean(r.to) });
@@ -33,15 +62,20 @@ export function redirectPlan({ includeDrafts = process.env.NODE_ENV === 'develop
       if (data.draft && !includeDrafts) continue;
       const slug = slugOf(file, data);
       if (data.replaces) replaced.add(slug);
-      for (const from of data.redirectFrom ?? []) redirects.push({ source: clean(from), destination: `/${slug}/` });
+      const publishAt = articlePublishAt(data.date);
+      for (const from of data.redirectFrom ?? []) {
+        const r = { source: clean(from), destination: `/${slug}/` };
+        if (isLive(publishAt, now)) redirects.push(r);
+        else scheduled.push({ ...r, publishAt });
+      }
     }
   }
   const seen = new Set();
-  for (const r of redirects) {
+  for (const r of [...redirects, ...scheduled]) {
     if (r.source === r.destination) throw new Error(`Redirect loop: ${r.source}`);
     if (seen.has(r.source)) throw new Error(`Duplicate redirect source: ${r.source}`);
     seen.add(r.source);
   }
   const removed = new Set(redirects.map((r) => r.source.replace(/^\/|\/$/g, '')));
-  return { redirects, replaced, removed };
+  return { redirects, scheduled, replaced, removed };
 }

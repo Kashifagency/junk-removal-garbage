@@ -1,20 +1,17 @@
 import { notFound } from 'next/navigation';
 import { PostIndex } from '@/components/templates/PostIndex';
-import { posts, tagsInUse } from '@/lib/content';
+import { tagData, tagsInUse } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
 
 // WordPress tag archives (/tag/{slug}/). Kept so existing links resolve, but marked noindex
 // because most tags hold only one or two posts (thin content).
-export const dynamicParams = false;
+// ISR: re-render hourly so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
+export const revalidate = 3600;
+// dynamicParams stays true; tags without published posts -> 404 (tagData returns null).
 
 export function generateStaticParams() {
   return tagsInUse().map((t) => ({ slug: t.slug }));
 }
-
-const tagData = (slug: string) => {
-  const term = tagsInUse().find((t) => t.slug === slug);
-  return term ? { term, list: posts.filter((p) => p.tags.some((t) => t.slug === slug)) } : null;
-};
 
 export async function generateMetadata({ params }: PageProps<'/tag/[slug]'>) {
   const d = tagData((await params).slug);

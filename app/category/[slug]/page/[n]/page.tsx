@@ -3,7 +3,9 @@ import { PostIndex, pageNumbers } from '@/components/templates/PostIndex';
 import { categoriesInUse, categoryData, paginate } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
 
-export const dynamicParams = false;
+// ISR: re-render hourly so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
+export const revalidate = 3600;
+// dynamicParams stays true so new pages appear when scheduled posts go live; out-of-range n -> 404.
 
 export function generateStaticParams() {
   return categoriesInUse().flatMap((c) => pageNumbers(paginate(categoryData(c.slug)!.list, 1).totalPages).map(({ n }) => ({ slug: c.slug, n })));
@@ -24,6 +26,6 @@ export default async function CategoryPaged({ params }: PageProps<'/category/[sl
   const { slug, n } = await params;
   const d = categoryData(slug);
   const page = Number(n);
-  if (!d || page < 2 || page > paginate(d.list, 1).totalPages) notFound();
+  if (!d || !Number.isInteger(page) || page < 2 || page > paginate(d.list, 1).totalPages) notFound();
   return <PostIndex base={`/category/${slug}/`} page={page} list={d.list} title={d.term.name} eyebrow="Category" crumb={d.term.name} />;
 }

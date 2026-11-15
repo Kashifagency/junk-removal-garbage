@@ -1,8 +1,12 @@
 import type { MetadataRoute } from 'next';
-import { absoluteUrl, categoriesInUse, categoryData, pages, paginate, posts } from '@/lib/content';
+import { absoluteUrl, categoriesInUse, categoryData, getPosts, pages, paginate } from '@/lib/content';
 import { TOPICS } from '@/lib/topics';
 
+// ISR: re-generated hourly so scheduled posts appear once live (lib/publish.ts).
+export const revalidate = 3600;
+
 export default function sitemap(): MetadataRoute.Sitemap {
+  const posts = getPosts();
   const entries: MetadataRoute.Sitemap = [];
   for (const p of pages) {
     if (p.path === '/blogs/') continue; // duplicate of /blog/ (canonical points there)

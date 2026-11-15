@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import { AreaTemplate } from '@/components/templates/AreaTemplate';
 import { PostTemplate } from '@/components/templates/PostTemplate';
 import {
@@ -9,7 +9,7 @@ import {
   GenericTemplate,
   ServiceAreasTemplate,
 } from '@/components/templates/StandardPages';
-import { getPageByPath, getPostBySlug, isAreaPage, pageSeoFor, pages, postSeo, posts } from '@/lib/content';
+import { getPageByPath, getPostBySlug, getPosts, isAreaPage, pageSeoFor, pages, postSeo, scheduledRedirectFor } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
 
 // Top-level WordPress pages and all posts share the /{slug}/ namespace (WP permalink "/%postname%/").
@@ -17,15 +17,21 @@ import { buildMetadata } from '@/lib/seo';
 const OWN_ROUTE = new Set(['/', '/services/', '/blog/', '/blogs/']);
 const topLevelPages = pages.filter((p) => p.parentId === '0' && !OWN_ROUTE.has(p.path));
 
-export const dynamicParams = false;
+// ISR: re-render hourly so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
+export const revalidate = 3600;
+// dynamicParams stays true (default) so a scheduled post that wasn't prebuilt renders on demand once
+// its date passes; unknown or not-yet-published slugs still 404 via resolve() -> notFound().
 
 export function generateStaticParams() {
-  return [...topLevelPages.map((p) => ({ slug: p.slug })), ...posts.map((p) => ({ slug: p.slug }))];
+  return [...topLevelPages.map((p) => ({ slug: p.slug })), ...getPosts().map((p) => ({ slug: p.slug }))];
 }
 
 function resolve(slug: string) {
   const page = getPageByPath(`/${slug}/`);
   if (page && topLevelPages.includes(page)) return { page } as const;
+  // Legacy post merged into a scheduled article (redirectFrom) whose date has now arrived.
+  const moved = scheduledRedirectFor(slug);
+  if (moved) permanentRedirect(moved);
   const post = getPostBySlug(slug);
   if (post) return { post } as const;
   return null;

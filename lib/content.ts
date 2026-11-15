@@ -8,6 +8,9 @@ import termsData from '@/content/terms.json';
 import pageSeo from '@/content/page-seo.json';
 import { loadArticles } from './articles';
 import { classifyTopic } from './topics';
+import { isPublished } from './publish';
+
+export { dubaiToday, isPublished, normalizePublishDate } from './publish';
 import { redirectPlan } from '../scripts/lib/redirect-plan.mjs';
 
 export type ImageRef = { src: string; alt: string; width?: number; height?: number };
@@ -77,6 +80,8 @@ export type Post = {
   areas?: string[];
   primaryKeyword?: string;
   author?: string;
+  /** Markdown articles: publish date as written ("YYYY-MM-DD" or a timestamp); legacy posts use `date`. */
+  publishAt?: string;
 };
 
 export type NavItem = { label: string; href: string; children: { label: string; href: string }[] };
@@ -139,16 +144,21 @@ const newAreaPages: Page[] = areaList.areas
 export const pages: Page[] = [...wpPages, ...newAreaPages];
 // Legacy posts that were merged (redirected) or replaced in place by a Markdown article drop out of the blog.
 const plan = redirectPlan();
-const legacyPosts = (postsData as unknown as Omit<Post, 'topic'>[])
-  .filter((p) => !plan.removed.has(p.slug) && !plan.replaced.has(p.slug))
+// Replaced posts stay in this list so the legacy post keeps its URL until a scheduled (future-dated)
+// replacement article goes live; getPosts() drops them once the replacement is published.
+const legacyCandidates = (postsData as unknown as Omit<Post, 'topic'>[])
+  .filter((p) => !plan.removed.has(p.slug))
   .map((p) => ({ ...p, source: 'wordpress' as const, topic: classifyTopic(p.title).slug }));
+const legacyPosts = legacyCandidates.filter((p) => !plan.replaced.has(p.slug));
 const legacySlugs = new Set((postsData as unknown as Post[]).map((p) => p.slug));
 
 const RESERVED = new Set([...pages.map((p) => p.path), ...legacyPosts.map((p) => p.path), '/blog/', '/blogs/', '/feed/', '/category/', '/tag/']);
+const replacingSlugs = new Set<string>();
 const markdownPosts: Post[] = loadArticles().map((a) => {
   const path = `/${a.slug}/`;
   if (RESERVED.has(path)) throw new Error(`content/articles/${a.file}: URL ${path} is already used by an existing page or post (to replace a legacy post at the same URL, add "replaces: true")`);
   if (a.replaces && !legacySlugs.has(a.slug)) throw new Error(`content/articles/${a.file}: "replaces: true" but no legacy post exists at /${a.slug}/`);
+  if (a.replaces) replacingSlugs.add(a.slug);
   const plain = a.html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
   return {
     id: `md-${a.slug}`,
@@ -158,6 +168,7 @@ const markdownPosts: Post[] = loadArticles().map((a) => {
     slug: a.slug,
     title: a.title,
     date: a.date,
+    publishAt: a.publishAt,
     modified: a.updated ?? a.date,
     seo: { title: a.seoTitle ?? '', description: a.description },
     featuredImage: a.image ? { src: a.image, alt: a.imageAlt ?? a.title } : null,
@@ -176,7 +187,39 @@ const markdownPosts: Post[] = loadArticles().map((a) => {
   } satisfies Post;
 });
 
-export const posts: Post[] = [...markdownPosts, ...legacyPosts].sort((a, b) => b.date.localeCompare(a.date)); // newest first
+const byNewest = (a: Post, b: Post) => b.date.localeCompare(a.date);
+
+/** Scheduled publishing (lib/publish.ts): is this post live at `now`? */
+export const isPostPublished = (p: Post, now: Date = new Date()) => isPublished(p.publishAt ?? p.date, now);
+
+/**
+ * RAW list: every post in the build, including scheduled (future-dated) ones and legacy posts that a
+ * scheduled replacement article will take over. Internal use only — never render this publicly.
+ */
+export const allPostsIncludingScheduled: Post[] = [...markdownPosts, ...legacyCandidates].sort(byNewest);
+
+/**
+ * Published posts, newest first. Evaluated per call (not at module load) so that ISR regenerations
+ * pick up scheduled posts once their date arrives. All public pages must use this (or the helpers below).
+ */
+export function getPosts(now: Date = new Date()): Post[] {
+  const md = markdownPosts.filter((p) => isPostPublished(p, now));
+  const liveReplacements = new Set(md.filter((p) => replacingSlugs.has(p.slug)).map((p) => p.slug));
+  const legacy = legacyCandidates.filter(
+    (p) => (plan.replaced.has(p.slug) ? !liveReplacements.has(p.slug) : true) && !scheduledRedirectFor(p.slug, now) && isPostPublished(p, now),
+  );
+  return [...md, ...legacy].sort(byNewest);
+}
+
+/**
+ * `redirectFrom` of a scheduled (future-dated) article: the legacy post keeps its URL until the article
+ * goes live, then this returns the new destination and app/[slug] issues a permanent redirect.
+ * (Redirects already live at build time are in next.config.ts instead.)
+ */
+export function scheduledRedirectFor(slug: string, now: Date = new Date()): string | undefined {
+  const r = plan.scheduled.find((s) => s.source === `/${slug}/`);
+  return r && isPublished(r.publishAt, now) ? r.destination : undefined;
+}
 export const site = {
   ...siteData,
   url: siteData.url.replace(/\/$/, ''),
@@ -191,7 +234,7 @@ export const POSTS_PER_PAGE = 10;
 const seoOverrides = pageSeo as unknown as Record<string, { title: string; description: string }>;
 
 export const getPageByPath = (path: string) => pages.find((p) => p.path === path);
-export const getPostBySlug = (slug: string) => posts.find((p) => p.slug === slug);
+export const getPostBySlug = (slug: string) => getPosts().find((p) => p.slug === slug);
 
 export const SERVICE_PAGE_PARENT = '25';
 export const servicePages = pages.filter((p) => p.parentId === SERVICE_PAGE_PARENT);
@@ -271,23 +314,28 @@ export function paginate<T>(list: T[], page: number, perPage = POSTS_PER_PAGE) {
 
 export const categoriesInUse = () => {
   const map = new Map<string, Term>();
-  posts.forEach((p) => p.categories.forEach((c) => map.set(c.slug, c)));
+  getPosts().forEach((p) => p.categories.forEach((c) => map.set(c.slug, c)));
   return [...map.values()];
 };
 export const tagsInUse = () => {
   const map = new Map<string, Term>();
-  posts.forEach((p) => p.tags.forEach((t) => map.set(t.slug, t)));
+  getPosts().forEach((p) => p.tags.forEach((t) => map.set(t.slug, t)));
   return [...map.values()];
 };
 
 export const categoryData = (slug: string) => {
   const term = categoriesInUse().find((c) => c.slug === slug);
-  return term ? { term, list: posts.filter((p) => p.categories.some((c) => c.slug === slug)) } : null;
+  return term ? { term, list: getPosts().filter((p) => p.categories.some((c) => c.slug === slug)) } : null;
+};
+
+export const tagData = (slug: string) => {
+  const term = tagsInUse().find((t) => t.slug === slug);
+  return term ? { term, list: getPosts().filter((p) => p.tags.some((t) => t.slug === slug)) } : null;
 };
 
 export const relatedPosts = (post: Post, n = 3) => {
   const tagSet = new Set(post.tags.map((t) => t.slug));
-  return posts
+  return getPosts()
     .filter((p) => p.id !== post.id)
     .map((p) => ({ p, score: (p.topic === post.topic ? 5 : 0) + p.tags.filter((t) => tagSet.has(t.slug)).length }))
     .sort((a, b) => b.score - a.score || b.p.date.localeCompare(a.p.date))
@@ -351,7 +399,7 @@ export function guidesFor(opts: { service?: string; area?: string }, n = 3): Pos
     (regionTopics[0] === p.topic ? 3 : regionTopics[1] === p.topic ? 2 : 0) +
     (p.source === 'markdown' ? 1 : 0) +
     (opts.area ? ((i + seed) % 5) / 10 : 0);
-  return posts
+  return getPosts()
     .map((p, i) => ({ p, s: score(p, i) }))
     .filter((x) => x.s >= 2 || (opts.area && x.s >= 1))
     .sort((a, b) => b.s - a.s || b.p.date.localeCompare(a.p.date))

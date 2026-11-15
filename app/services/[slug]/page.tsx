@@ -5,6 +5,8 @@ import { pageSeoFor, servicePages } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
 
 export const dynamicParams = false;
+// ISR: the "guides" list re-renders hourly so scheduled posts appear once live (lib/publish.ts).
+export const revalidate = 3600;
 
 export function generateStaticParams() {
   return servicePages.map((p) => ({ slug: p.slug }));

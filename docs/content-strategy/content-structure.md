@@ -18,7 +18,7 @@ Copy [`content/articles/_template.md`](../../content/articles/_template.md) to s
 | `title` | ✔ | The H1. Natural, contains the primary keyword, ideally 50–75 characters. |
 | `seoTitle` | ✔ (in practice) | 60 characters or less, keyword first. If omitted, `title` is used. |
 | `description` | ✔ | 140–160 characters. Used as the meta description and the intro under the H1. |
-| `date` | ✔ | `YYYY-MM-DD` publish date. |
+| `date` | ✔ | `YYYY-MM-DD` publish date. Set the publish date to a future date to schedule an article; it is deployed but stays hidden (404, not in listings/sitemap/feed) until that date (Asia/Dubai), then goes live automatically within ~1 hour. (Avoid `redirectFrom` on a scheduled article: the old URLs would redirect to a 404 until it goes live. `replaces: true` is fine — the legacy post stays up until then.) |
 | `updated` | — | Add when meaningfully updated. Shown as "Updated …" and sent to Google. |
 | `topic` | ✔ | `construction-waste` · `garden-waste` · `commercial` · `furniture-appliances` · `home-cleanouts` · `guides`. Decides the topic hub and related articles. |
 | `primaryKeyword` | ✔ | The one keyword this URL owns (from keyword-roadmap.md). |

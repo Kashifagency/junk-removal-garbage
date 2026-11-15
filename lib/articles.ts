@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
+import { normalizePublishDate } from './publish';
 
 /**
  * New blog articles live as Markdown files in /content/articles/*.md (see docs/content-strategy/).
@@ -31,7 +32,14 @@ export type ArticleFrontmatter = {
   redirectFrom?: string[];
 };
 
-export type MarkdownArticle = ArticleFrontmatter & { slug: string; html: string; wordCount: number; file: string };
+export type MarkdownArticle = ArticleFrontmatter & {
+  slug: string;
+  html: string;
+  wordCount: number;
+  file: string;
+  /** Publish date as written: "YYYY-MM-DD" (goes live that day, Asia/Dubai) or a full timestamp. See lib/publish.ts. */
+  publishAt?: string;
+};
 
 const DIR = path.join(process.cwd(), 'content', 'articles');
 
@@ -43,7 +51,7 @@ const slugify = (s: string) =>
 
 const isoDate = (d: unknown) => {
   if (!d) return undefined;
-  const date = d instanceof Date ? d : new Date(String(d));
+  const date = d instanceof Date ? d : new Date(normalizePublishDate(d) ?? String(d)); // also accepts dd/mm/yy
   if (Number.isNaN(date.getTime())) throw new Error(`Invalid date: ${String(d)}`);
   return date.toISOString();
 };
@@ -77,6 +85,7 @@ export function loadArticles(): MarkdownArticle[] {
     list.push({
       ...fm,
       date: isoDate(fm.date)!,
+      publishAt: normalizePublishDate(fm.date),
       updated: isoDate(fm.updated),
       slug,
       html,

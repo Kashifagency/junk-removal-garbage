@@ -65,7 +65,7 @@ The owner generates images in Antigravity from the prompts made by `/article-ima
 **c. Write** `content/articles/<slug>.md` using the blueprint for the row's type (content-structure.md §3).
 
 Frontmatter to include:
-- `title`, `seoTitle` (60 characters or less), `description` (140–160 characters), `date` (today), `topic`, `primaryKeyword`, `tags`
+- `title`, `seoTitle` (60 characters or less), `description` (140–160 characters), `date` (today; Set the publish date to a future date to schedule an article; it is deployed but stays hidden (404, not in listings/sitemap/feed) until that date (Asia/Dubai), then goes live automatically within ~1 hour.), `topic`, `primaryKeyword`, `tags`
 - `image` / `imageAlt`: use `/images/blog/<slug>.webp` if step 2b produced it. Otherwise use the row's suggested image (or a better relevant file in `public/wp-content/uploads/`). The alt text describes what's actually in the image and includes the primary keyword naturally.
 - `service`, `areas`
 - `summary` (3–5 bullets) and `faq` (3–6 real questions, 40–80 word answers)
