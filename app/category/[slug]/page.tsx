@@ -4,8 +4,8 @@ import { categoriesInUse, categoryData } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
 
 // WordPress category archives (/category/{slug}/) for categories that have published posts.
-// ISR: re-render hourly so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
-export const revalidate = 3600;
+// ISR: re-render daily (fallback; the /api/revalidate cron refreshes at Dubai midnight) so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
+export const revalidate = 86400;
 // dynamicParams stays true; categories without published posts -> 404 (categoryData returns null).
 
 export function generateStaticParams() {

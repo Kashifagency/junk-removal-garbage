@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next';
 import { absoluteUrl, categoriesInUse, categoryData, getPosts, pages, paginate } from '@/lib/content';
 import { TOPICS } from '@/lib/topics';
 
-// ISR: re-generated hourly so scheduled posts appear once live (lib/publish.ts).
-export const revalidate = 3600;
+// ISR: re-generated daily (+ /api/revalidate cron at Dubai midnight) so scheduled posts appear once live (lib/publish.ts).
+export const revalidate = 86400;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getPosts();

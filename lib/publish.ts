@@ -1,7 +1,8 @@
 /**
  * Scheduled publishing. A post whose publish date is in the future is built and deployed but stays
  * hidden (404, not in listings/sitemap/feed) until that date, then goes live automatically: the
- * routes that list or render posts use ISR (`revalidate`), so they re-check on the next regeneration.
+ * routes that list or render posts use ISR (`revalidate`, 24h) and are refreshed just after midnight
+ * Asia/Dubai by the daily Vercel cron (vercel.json -> app/api/revalidate), so they re-check then.
  *
  * Rule: date-only values ("2026-11-20", "20/11/26") go live at 00:00 Asia/Dubai on that day; values
  * with a time ("2026-08-13T09:48:08Z") go live at that exact moment. Missing or unparseable dates

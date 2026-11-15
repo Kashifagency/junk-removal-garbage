@@ -17,8 +17,8 @@ import { buildMetadata } from '@/lib/seo';
 const OWN_ROUTE = new Set(['/', '/services/', '/blog/', '/blogs/']);
 const topLevelPages = pages.filter((p) => p.parentId === '0' && !OWN_ROUTE.has(p.path));
 
-// ISR: re-render hourly so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
-export const revalidate = 3600;
+// ISR: re-render daily (fallback; the /api/revalidate cron refreshes at Dubai midnight) so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
+export const revalidate = 86400;
 // dynamicParams stays true (default) so a scheduled post that wasn't prebuilt renders on demand once
 // its date passes; unknown or not-yet-published slugs still 404 via resolve() -> notFound().
 

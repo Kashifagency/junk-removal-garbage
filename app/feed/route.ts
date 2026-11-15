@@ -1,7 +1,7 @@
 import { absoluteUrl, getPosts, site } from '@/lib/content';
 
-// ISR: re-render hourly so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
-export const revalidate = 3600;
+// ISR: re-render daily (fallback; the /api/revalidate cron refreshes at Dubai midnight) so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
+export const revalidate = 86400;
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 

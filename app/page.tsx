@@ -7,8 +7,8 @@ import { services } from '@/lib/catalog';
 import { areaName, areaPages, featuredAreaPages, defaultFaq, getPageByPath, getPosts, pageSeoFor, site, telHref, whatsappHref } from '@/lib/content';
 import { buildMetadata, faqLd, graph } from '@/lib/seo';
 
-// ISR: re-render hourly so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
-export const revalidate = 3600;
+// ISR: re-render daily (fallback; the /api/revalidate cron refreshes at Dubai midnight) so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
+export const revalidate = 86400;
 
 const home = getPageByPath('/')!;
 // The location pages carry the cleaner copy of the shared "Why choose us" cards (the home copy repeats one description).

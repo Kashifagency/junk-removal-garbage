@@ -4,8 +4,8 @@ import { getPosts, pageSeoFor, paginate } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
 
 // WordPress-style pagination: /blog/page/2/ … (page 1 lives at /blog/).
-// ISR: re-render hourly so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
-export const revalidate = 3600;
+// ISR: re-render daily (fallback; the /api/revalidate cron refreshes at Dubai midnight) so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
+export const revalidate = 86400;
 // dynamicParams stays true so new pages appear when scheduled posts go live; out-of-range n -> 404.
 const totalPages = () => paginate(getPosts(), 1).totalPages;
 const seo = pageSeoFor('/blog/', { title: 'Blog', description: '' });

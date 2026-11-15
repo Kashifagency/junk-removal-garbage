@@ -5,8 +5,8 @@ import { buildMetadata } from '@/lib/seo';
 
 // WordPress tag archives (/tag/{slug}/). Kept so existing links resolve, but marked noindex
 // because most tags hold only one or two posts (thin content).
-// ISR: re-render hourly so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
-export const revalidate = 3600;
+// ISR: re-render daily (fallback; the /api/revalidate cron refreshes at Dubai midnight) so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
+export const revalidate = 86400;
 // dynamicParams stays true; tags without published posts -> 404 (tagData returns null).
 
 export function generateStaticParams() {

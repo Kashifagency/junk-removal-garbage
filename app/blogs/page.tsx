@@ -2,8 +2,8 @@ import { PostIndex } from '@/components/templates/PostIndex';
 import { getPosts, pageSeoFor } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
 
-// ISR: re-render hourly so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
-export const revalidate = 3600;
+// ISR: re-render daily (fallback; the /api/revalidate cron refreshes at Dubai midnight) so scheduled (future-dated) posts go live without a redeploy (lib/publish.ts).
+export const revalidate = 86400;
 
 const seo = pageSeoFor('/blogs/', { title: 'Blogs', description: '' });
 
